@@ -133,7 +133,7 @@
         <!-- End Page Header -->
         
         <!-- Step Form -->
-        <form style="margin-left: 5rem; margin-right: 5rem;" class="js-step-form py-md-0" id="stepForm"
+        <div style="margin-left: 5rem; margin-right: 5rem;" class="js-step-form py-md-0" id="stepForm"
               data-hs-step-form-options='{
                 "progressSelector": "#addUserStepFormProgress",
                 "stepsSelector": "#addUserStepFormContent",
@@ -194,7 +194,7 @@
               <!-- Content Step Form -->
               <div id="addUserStepFormContent">
                 <!-- Card -->
-                <div id="addThongTin" class="card card-lg active js-validate">
+                <form id="addThongTin" class="card card-lg active js-validate">
                   <div class="card-header">
                     <div class="card-header-title mr-2" style="color: black;">Thông tin cơ bản</div>
                     <div class="hs-unfold mr-2">
@@ -421,7 +421,7 @@
                     <!-- End Form Group -->
                   </div>
                   <!-- End Body -->
-                </div>
+                </form>
                 <!-- End Card -->
 
                 <div id="addTongMuc" class="card card-lg" style="display: none;">
@@ -1251,13 +1251,7 @@
               <!-- End Content Step Form -->
             </div>
           </div>
-          <!-- End Row -->
-        </form>
-        <!-- End Step Form -->
-      </div>
-      <!-- End Content -->
-      
-      <div class="nav-divider"></div>
+          <div class="nav-divider"></div>
 
       <!-- Footer -->
         <div class=" page-footer">
@@ -1273,6 +1267,13 @@
             </div>
           </div>
         </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Step Form -->
+      </div>
+      <!-- End Content -->
+      
+      
       
 
       
