@@ -76,7 +76,7 @@
     <!-- Navbar Vertical -->
     
     
-    <aside id="verticalMenu" class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered  ">
+    <aside id="verticalMenu" class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-lg navbar-bordered  ">
     </aside>
     
 
@@ -107,9 +107,9 @@
                     </div>
                     <div class="modal-body">
                       <div class="text-center">
-                        <a type="button" class="btn btn-soft-secondary" style="width: 292px;height: 40px;" href="Add_DAPPP_LCNT.html" style="color: #064D69;">Dự án PPP</a>
-                        <a type="button" class="btn btn-soft-secondary" style="width: 292px;height: 40px;margin-top: 16px;" href="Add_DA_SDD.html" style="color: #064D69;">Sử dụng đất</a>
-                        <a type="button" class="btn btn-soft-secondary" style="width: 292px;height: 40px;margin-top: 16px;" href="#" style="color: #064D69;">Xã hội hóa</a>
+                        <a type="button" class="btn btn-soft-secondary col-md-12 mt-3" href="Add_DAPPP_LCNT.html" style="color: #064D69;">Dự án PPP</a>
+                        <a type="button" class="btn btn-soft-secondary col-md-12 mt-3" href="Add_DA_SDD.html" style="color: #064D69;">Sử dụng đất</a>
+                        <a type="button" class="btn btn-soft-secondary col-md-12 mt-3" href="#" style="color: #064D69;">Xã hội hóa</a>
                       </div>
                     </div>
                   </div>
@@ -126,177 +126,185 @@
         <div class="card">
           <!-- Header -->
           <div class="card-header">
-            <div class="row justify-content-between align-items-center flex-grow-1">
-              <div style="width: 172px;height: 38px;margin-left: 24px;">
-                <form>
-                  <!-- Search -->
-                  <div class="input-group input-group-merge" style="max-width: 10rem;">
-                    <input id="datatableSearch" type="search" class="form-control" placeholder="Số dự án" aria-label="Search users">
+            <div class="align-items-center flex-grow-1">
+              <div class="row">
+                <div class="col-6 d-flex">
+                  <div class="row col-md-4">                    
+                    <!-- Search -->
+                      <div class="input-group input-group-merge">
+                        <input id="datatableSearch" type="search" class="form-control" placeholder="Số dự án" aria-label="Search users">
+                      </div>
+                    <!-- End Search -->
                   </div>
+                    <!-- Search -->
+                  <div class="d-inline-block d-flex col-md-8">
+                        <div class="input-group input-group-merge">
+                          <input id="datatableSearch2" type="search" class="form-control" placeholder="Tên dự án" aria-label="Search users">
+                        </div>
+                        <div class="col-auto">
+                          <button class="btn btn-soft-secondary">Tìm kiếm</button>
+                        </div>
+                  </div>
+                  <!-- <div class="col-sm-auto">
+                    <button class="btn btn-soft-secondary">Tìm kiếm</button>
+                  </div> -->
                   <!-- End Search -->
-                </form>
-              </div>
-
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-
-                  <!-- Filter Collapse Trigger -->
-                  <div class="hs-unfold mr-2">
-                    <!-- Button trigger modal -->
-                    <button id="modalTK" type="button" class="btn btn-white" data-toggle="modal" data-target="#exampleModal" style="width: 171px;height: 40px;">
-                      Tìm kiếm nâng cao
-                    </button>
-                    <!-- End Button trigger modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered" role="form">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Tìm kiếm nâng cao</h5>
-                            <button type="button" class="btn btn-xs btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
-                              <i class="tio-clear tio-lg"></i>
-                            </button>
-                          </div>
-
-                          <div class="nav-divider"></div>
-
-                          <div class="modal-body">
-                             <span>Tổng mức đầu tư</span>
-
-                             <div class="row form-group">
-                               <form class="multi-range-field my-5 pb-5">
-                                <input id="multi7" class="multi-range" type="range" />
-                              </form>
-                             </div>
-
-                             <div class="row">
-                              <div class="col-sm-12">
-                                <div class="input-group input-group-sm-down-break">
-                                  <!-- Custom Radio -->
-                                  <div>
-                                    <div style="width: 200px;height: 40px;margin-left: 1.5ex;">
-                                      <input type="text" class="js-masked-input form-control" name="userAccountTypeRadio" id="userAccountTypeRadio1">
-                                    </div>
-                                  </div>
-                                  <!-- End Custom Radio -->
-        
-                                  <label style="width: 12px;height: 1px; margin-left: 22px;margin-top: 7px;">-</label>
-        
-                                  <!-- Custom Radio -->
-                                  <div style="width: 200px;height: 40px;" class="col-sm-6">
-                                    <div>
-                                      <input type="text" class="js-masked-input form-control" name="userAccountTypeRadio" id="userAccountTypeRadio2">
-                                    </div>
-                                  </div>
-                                  <!-- End Custom Radio -->
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="nav-divider">
-                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
-                        </div>
-                      </div>
+                </div>
+                
+                <div class="col-md-6 text-right">
+                    <!-- Filter Collapse Trigger -->
+                    <div class="hs-unfold">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-white" data-toggle="modal" data-target="#exampleModal">
+                        Tìm kiếm nâng cao
+                      </button>
+                      <!-- End Button trigger modal -->
                     </div>
-                    
-                    <div id="usersFilterDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right dropdown-card card-dropdown-filter-centered" style="min-width: 22rem;">
-                      <!-- Card -->
-                      <div class="card">
-                        <div class="card-header">
-                          <h5 class="card-header-title">Filter users</h5>
-
-                          <!-- Toggle Button -->
-                          <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-ghost-secondary ml-2" href="javascript:;"
-                             data-hs-unfold-options='{
-                              "target": "#usersFilterDropdown",
-                              "type": "css-animation",
-                              "smartPositionOff": true
-                             }'>
-                            <i class="tio-clear tio-lg"></i>
-                          </a>
-                          <!-- End Toggle Button -->
-                        </div>
-
-                        <div class="card-body">
-                          <form>
-                            <div class="form-group">
-                              <small class="text-cap mb-2">Role</small>
-
-                              <div class="form-row">
-                                <div class="col">
-                                  <!-- Checkbox -->
-                                  <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="usersFilerCheck1" checked>
-                                    <label class="custom-control-label" for="usersFilerCheck1">All</label>
-                                  </div>
-                                  <!-- End Checkbox -->
-                                </div>
-
-                                <div class="col">
-                                  <!-- Checkbox -->
-                                  <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="usersFilerCheck2">
-                                    <label class="custom-control-label" for="usersFilerCheck2">Employee</label>
-                                  </div>
-                                  <!-- End Checkbox -->
-                                </div>
-                              </div>
-                              <!-- End Row -->
-                            </div>
-
-                            <div class="form-row">
-                              <div class="col-sm form-group">
-                                <small class="text-cap mb-2">Position</small>
-
-                                <!-- Select -->
-                                <select class="js-select2-custom js-datatable-filter"
-                                        data-target-column-index="2"
-                                        data-hs-select2-options='{
-                                          "minimumResultsForSearch": "Infinity"
-                                        }'>
-                                  <option value="">Any</option>
-                                  <option value="Accountant">Accountant</option>
-                                  <option value="Co-founder">Co-founder</option>
-                                  <option value="Designer">Designer</option>
-                                  <option value="Developer">Developer</option>
-                                  <option value="Director">Director</option>
-                                </select>
-                                <!-- End Select -->
-                              </div>
-
-                              <div class="col-sm form-group">
-                                <small class="text-cap mb-2">Status</small>
-
-                                <!-- Select -->
-                                <select class="js-select2-custom js-datatable-filter"
-                                        data-target-column-index="4"
-                                        data-hs-select2-options='{
-                                          "minimumResultsForSearch": "Infinity"
-                                        }'>
-                                  <option value="">Any status</option>
-                                  <option value="Active" data-option-template='<span class="legend-indicator bg-success"></span>Active'>Active</option>
-                                  <option value="Pending" data-option-template='<span class="legend-indicator bg-warning"></span>Pending'>Pending</option>
-                                  <option value="Suspended" data-option-template='<span class="legend-indicator bg-danger"></span>Suspended'>Suspended</option>
-                                </select>
-                                <!-- End Select -->
-                              </div>
-                            </div>
-                            <!-- End Row -->
-
-                            <a class="js-hs-unfold-invoker btn btn-block btn-primary" href="javascript:;"
-                               data-hs-unfold-options='{
-                                "target": "#usersFilterDropdown",
-                                "type": "css-animation",
-                                "smartPositionOff": true
-                               }'>Apply</a>
-                          </form>
-                        </div>
+                    <!-- End Filter Collapse Trigger -->
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="form">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Tìm kiếm nâng cao</h5>
+                        <button type="button" class="btn btn-xs btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+                          <i class="tio-clear tio-lg"></i>
+                        </button>
                       </div>
-                      <!-- End Card -->
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="card-title text-left">Tổng mức đầu tư</div>
+                            <!-- Range Slider -->
+                            <input class="js-ion-range-slider" type="text"
+                                   data-hs-ion-range-slider-options='{
+                                     "extra_classes": "range-slider-custom range-slider-indicator range-slider-grid",
+                                     "type": "double",
+                                     "grid": false,
+                                     "hide_from_to": true,
+                                     "prefix": "$",
+                                     "min": 0,
+                                     "max": 20000000,
+                                     "from": 1000000,
+                                     "to": 10000000,
+                                     "result_min_target_el": "#rangeSliderExample3MinResult",
+                                     "result_max_target_el": "#rangeSliderExample3MaxResult"
+                                   }'>
+                                   
+                            <div class="row justify-content-between mt-5">
+                              <div class="col-6 mb-2">
+                                <div class="input-group input-group-merge">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text" id="vnd1">
+                                      <i class="nav-icon">VND</i>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" id="rangeSliderExample3MinResult" aria-describedby="vnd1">
+                                </div>
+                              </div>
+                              <div class="col-6 mb-2">
+                                <div class="input-group input-group-merge">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text" id="vnd2">
+                                      <i class="icon">VND</i>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" id="rangeSliderExample3MaxResult" aria-describedby="vnd2">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Range Slider -->
+                          </li>
+                          <li class="list-group-item">
+                            <div class="header mb-2">
+                              <span class="text-left card-title">Ngày tạo dự án</span>
+                            </div>
+                            <div class="col-7 form-group">
+                              <div class="input-group input-group-merge">
+                                <div class="input-group-append">
+                                  <span class="input-group-text" id="inputGroupMergeEmailOptionalAddOn2">
+                                    <i class="icon nav-icon"><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt="datetime"></i>
+                                  </span>
+                                </div> 
+                                <input type="text" class="js-daterangepicker form-control daterangepicker-custom-input" aria-describedby="inputGroupMergeEmailOptionalAddOn2"
+                                      data-hs-daterangepicker-options='{
+                                        "parentEl": "#exampleModal"
+                                      }'>
+                              </div>
+                            </div>
+                           
+                          </li>
+                          <li class="list-group-item">
+                            <div class="mb-2 header text-left card-title">Trạng thái</div>
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                  <!-- Checkbox -->
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customCheck12" class="custom-control-input" >
+                                    <label class="custom-control-label" for="customCheck12">Đã đăng tải</label>
+                                  </div>
+                                  <!-- End Checkbox -->
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                  <!-- Checkbox -->
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customCheck14" class="custom-control-input">
+                                    <label class="custom-control-label" for="customCheck14">Chờ đăng tải</label>
+                                  </div>
+                                  <!-- End Checkbox -->
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                  <!-- Checkbox -->
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customCheck15" class="custom-control-input">
+                                    <label class="custom-control-label" for="customCheck15">Đã huỷ</label>
+                                  </div>
+                                  <!-- End Checkbox -->
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="header card-title mb-2">Người tạo</div>
+                            <!-- Select2 -->
+                            <select class="js-select2-custom"
+                                    data-hs-select2-options='{
+                                      "minimumResultsForSearch": "Infinity",
+                                      "placeholder": "Chọn"
+                                    }'>
+                                  <option label="empty"></option>
+                                  <option value="1">Bruce Maynard</option>
+                                  <option value="2">Hollis Clark</option>
+                                  <option value="3">Lester Howard</option>
+                                  <option value="4">George Marino</option>
+                                  <option value="5">Tyler Johnson</option>
+                                  <option value="6">Jennifer Craig</option>
+                                  <option value="7">Martha Barnwell</option>
+                                  <option value="8">Florencia Todd</option>
+                                  <option value="9">Henry Sloan</option>
+                                  <option value="10">Abigail Watson</option>
+                            </select>
+                            <!-- End Select2 -->
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <button type="button" style="border-color: #064D69;color: #064D69;" class="btn btn-white btn-dashed-outline">Làm mới</button>
+                              </div>
+                              <div class="col-md-6 text-right">
+                                <button type="button" class="btn btn-white" style="border-color: #064D69;background-color: #064D69;">Tìm kiếm</button>
+                              </div>
+                            </div>
+                            
+                          </li>
+                        </ul>
+                        <!-- End List Group -->
                     </div>
                   </div>
-                  <!-- End Filter Collapse Trigger -->
                 </div>
               </div>
             </div>
@@ -345,7 +353,7 @@
                   <th scope="col" class="sorting">Ngày tạo</th>
                   <th scope="col" class="sorting" style="min-width: 7rem;">Người tạo</th>
                   <th scope="col" class="sorting" class="table-column-pl-0">Tổng đầu tư</th>
-                  <th scope="col" class="text-center" style="min-width: 14rem;" >Thao tác</th>
+                  <th scope="col" class="text-center">Thao tác</th>
                 </tr>
               </thead>
 
@@ -366,9 +374,9 @@
                   <td>
                     <span>10,000,000,000,000</span>
                   </td>
-                  <td>
+                  <td class="text-center">
                     <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Sửa"><img src="../../../assets/img/160x160/Table/Element/icon/outlined/editor/edit.jpg" alt="edit"></a>
-                    <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tải lên"><img src="../../../assets/img/160x160/Table/Element/icon/outlined/application/Vector.jpg" alt="update"></a>
+                    <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tải lên"><img src="../../../assets/img/160x160/Table/Table/Element/icon/outlined/application/Vector.jpg" alt="update"></a>
                     <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Thông báo"><img src="../../../assets/img/160x160/untitled folder/Table/Element/icon/outlined/application/Vector.jpg" alt="noti"></a>
                     <a class="icon" href="#" style="color: black;"type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Xoá"><img src="../../../assets/img/160x160/untitled folder 2/Table/Element/icon/outlined/editor/Vector.png" alt="de;e"></a>
                   </td>
@@ -390,9 +398,9 @@
                   <td>
                     <span>10,000,000,000,000</span>
                   </td>
-                  <td>
+                  <td class="text-center">
                     <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Sửa"><img src="../../../assets/img/160x160/Table/Element/icon/outlined/editor/edit.jpg" alt="edit"></a>
-                    <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tải lên"><img src="../../../assets/img/160x160/Table/Element/icon/outlined/application/Vector.jpg" alt="update"></a>
+                    <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tải lên"><img src="../../../assets/img/160x160/Table/Table/Element/icon/outlined/application/Vector.jpg" alt="update"></a>
                     <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Thông báo"><img src="../../../assets/img/160x160/untitled folder/Table/Element/icon/outlined/application/Vector.jpg" alt="noti"></a>
                     <a class="icon" href="#" style="color: black;"type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Xoá"><img src="../../../assets/img/160x160/untitled folder 2/Table/Element/icon/outlined/editor/Vector.png" alt="de;e"></a>
                   </td>
@@ -414,9 +422,9 @@
                   <td>
                     <span>10,000,000,000,000</span>
                   </td>
-                  <td>
+                  <td class="text-center">
                     <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Sửa"><img src="../../../assets/img/160x160/Table/Element/icon/outlined/editor/edit.jpg" alt="edit"></a>
-                    <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tải lên"><img src="../../../assets/img/160x160/Table/Element/icon/outlined/application/Vector.jpg" alt="update"></a>
+                    <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tải lên"><img src="../../../assets/img/160x160/Table/Table/Element/icon/outlined/application/Vector.jpg" alt="update"></a>
                     <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Thông báo"><img src="../../../assets/img/160x160/untitled folder/Table/Element/icon/outlined/application/Vector.jpg" alt="noti"></a>
                     <a class="icon" href="#" style="color: black;"type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Xoá"><img src="../../../assets/img/160x160/untitled folder 2/Table/Element/icon/outlined/editor/Vector.png" alt="de;e"></a>
                   </td>
@@ -436,9 +444,9 @@
                   <td>
                     <span>10,000,000,000,000</span>
                   </td>
-                  <td>
+                  <td class="text-center">
                     <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Sửa"><img src="../../../assets/img/160x160/Table/Element/icon/outlined/editor/edit.jpg" alt="edit"></a>
-                    <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tải lên"><img src="../../../assets/img/160x160/Table/Element/icon/outlined/application/Vector.jpg" alt="update"></a>
+                    <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tải lên"><img src="../../../assets/img/160x160/Table/Table/Element/icon/outlined/application/Vector.jpg" alt="update"></a>
                     <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Thông báo"><img src="../../../assets/img/160x160/untitled folder/Table/Element/icon/outlined/application/Vector.jpg" alt="noti"></a>
                     <a class="icon" href="#" style="color: black;"type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Xoá"><img src="../../../assets/img/160x160/untitled folder 2/Table/Element/icon/outlined/editor/Vector.png" alt="de;e"></a>
                   </td>
@@ -460,9 +468,9 @@
                   <td>
                     <span>10,000,000,000,000</span>
                   </td>
-                  <td>
+                  <td class="text-center">
                     <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Sửa"><img src="../../../assets/img/160x160/Table/Element/icon/outlined/editor/edit.jpg" alt="edit"></a>
-                    <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tải lên"><img src="../../../assets/img/160x160/Table/Element/icon/outlined/application/Vector.jpg" alt="update"></a>
+                    <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tải lên"><img src="../../../assets/img/160x160/Table/Table/Element/icon/outlined/application/Vector.jpg" alt="update"></a>
                     <a class="icon" href="#" style="color: black;" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Thông báo"><img src="../../../assets/img/160x160/untitled folder/Table/Element/icon/outlined/application/Vector.jpg" alt="noti"></a>
                     <a class="icon" href="#" style="color: black;"type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Xoá"><img src="../../../assets/img/160x160/untitled folder 2/Table/Element/icon/outlined/editor/Vector.png" alt="de;e"></a>
                   </td>
@@ -479,7 +487,7 @@
             <div class="row justify-content-center justify-content-sm-between align-items-sm-center">
               <div class="col-sm mb-2 mb-sm-0">
                 <div class="d-flex justify-content-center justify-content-sm-start align-items-center">
-                  <span class="mr-2">Trang:</span>
+                  <span>Trang:</span>
 
                   <!-- Select -->
                   <select id="datatableEntries" class="js-select2-custom"
@@ -496,7 +504,7 @@
                   </select>
                   <!-- End Select -->
 
-                  <span style="width: 44px;" class="text-secondary mr-2">trên <span id="datatableWithPaginationInfoTotalQty">50</span></span>
+                  <span class="text-secondary">trên <span id="datatableWithPaginationInfoTotalQty">50</span></span>
 
                   <!-- Pagination Quantity -->
                   
@@ -519,338 +527,6 @@
       <!-- End Content -->
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
-
-    <!-- ========== SECONDARY CONTENTS ========== -->
-    <!-- Keyboard Shortcuts -->
-    <div id="keyboardShortcutsSidebar" class="hs-unfold-content sidebar sidebar-bordered sidebar-box-shadow">
-      <div class="card card-lg sidebar-card sidebar-scrollbar">
-        <div class="card-header">
-          <h4 class="card-header-title">Keyboard shortcuts</h4>
-
-          <!-- Toggle Button -->
-          <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-ghost-dark ml-2" href="javascript:;"
-             data-hs-unfold-options='{
-                "target": "#keyboardShortcutsSidebar",
-                "type": "css-animation",
-                "animationIn": "fadeInRight",
-                "animationOut": "fadeOutRight",
-                "hasOverlay": true,
-                "smartPositionOff": true
-               }'>
-            <i class="tio-clear tio-lg"></i>
-          </a>
-          <!-- End Toggle Button -->
-        </div>
-
-        <!-- Body -->
-        <div class="card-body sidebar-body">
-          <div class="list-group list-group-sm list-group-flush list-group-no-gutters mb-5">
-            <div class="list-group-item">
-              <h5 class="mb-1">Formatting</h5>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span class="font-weight-bold">Bold</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">b</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <em>italic</em>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">i</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <u>Underline</u>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">u</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <s>Strikethrough</s>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">Alt</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">s</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span class="small">Small text</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">s</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <mark>Highlight</mark>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">e</kbd>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="list-group list-group-sm list-group-flush list-group-no-gutters mb-5">
-            <div class="list-group-item">
-              <h5 class="mb-1">Insert</h5>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Mention person <a href="#">(@Brian)</a></span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">@</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Link to doc <a href="#">(+Meeting notes)</a></span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">+</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <a href="#">#hashtag</a>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">#hashtag</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Date</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">/date</kbd>
-                  <kbd class="d-inline-block mb-1">Space</kbd>
-                  <kbd class="d-inline-block mb-1">/datetime</kbd>
-                  <kbd class="d-inline-block mb-1">/datetime</kbd>
-                  <kbd class="d-inline-block mb-1">Space</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Time</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">/time</kbd>
-                  <kbd class="d-inline-block mb-1">Space</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Note box</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">/note</kbd>
-                  <kbd class="d-inline-block mb-1">Enter</kbd>
-                  <kbd class="d-inline-block mb-1">/note red</kbd>
-                  <kbd class="d-inline-block mb-1">/note red</kbd>
-                  <kbd class="d-inline-block mb-1">Enter</kbd>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="list-group list-group-sm list-group-flush list-group-no-gutters mb-5">
-            <div class="list-group-item">
-              <h5 class="mb-1">Editing</h5>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Find and replace</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">r</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Find next</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">n</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Find previous</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">p</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Indent</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Tab</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Un-indent</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Shift</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">Tab</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Move line up</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">Shift</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1"><i class="tio-arrow-large-upward-outlined"></i></kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Move line down</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">Shift</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1"><i class="tio-arrow-large-downward-outlined font-size-sm"></i></kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Add a comment</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">Alt</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">m</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Undo</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">z</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Redo</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">y</kbd>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="list-group list-group-sm list-group-flush list-group-no-gutters">
-            <div class="list-group-item">
-              <h5 class="mb-1">Application</h5>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Create new doc</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">Alt</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">n</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Present</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">Shift</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">p</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Share</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">Shift</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">s</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Search docs</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">Shift</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">o</kbd>
-                </div>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="row align-items-center">
-                <div class="col-5">
-                  <span>Keyboard shortcuts</span>
-                </div>
-                <div class="col-7 text-right">
-                  <kbd class="d-inline-block mb-1">Ctrl</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">Shift</kbd> <small class="text-muted">+</small> <kbd class="d-inline-block mb-1">/</kbd>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Body -->
-      </div>
-    </div>
-    <!-- End Keyboard Shortcuts -->
 
     <!-- Activity -->
     <div id="activitySidebar" class="hs-unfold-content sidebar sidebar-bordered sidebar-box-shadow sidebar-scrollbar">

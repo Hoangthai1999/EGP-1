@@ -142,7 +142,7 @@
               }'>
               <!-- Step -->
               <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
-                <li class="step-item">
+                <li class="step-item" data-step="1">
                   <a class="step-content-wrapper" href="#addThongTin;"
                      data-hs-step-form-next-options='{
                       "targetSelector": "#addThongTin"
@@ -154,7 +154,7 @@
                   </a>
                 </li>
 
-                <li class="step-item">
+                <li class="step-item" data-step="2">
                   <a class="step-content-wrapper" href="#addTongMuc;"
                      data-hs-step-form-next-options='{
                       "targetSelector": "#addTongMuc"
@@ -165,7 +165,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="step-item">
+                <li class="step-item" data-step="3">
                   <a class="step-content-wrapper" href="#addQuyetDinh;"
                      data-hs-step-form-next-options='{
                       "targetSelector": "#addQuyetDinh"
@@ -176,7 +176,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="step-item">
+                <li class="step-item" data-step="4">
                   <a class="step-content-wrapper" href="#addXacNhan;"
                      data-hs-step-form-next-options='{
                       "targetSelector": "#addXacNhan"
@@ -570,35 +570,35 @@
                       <label for="vndLabel" class="col-sm-3 col-form-label input-label">Tổng mức đàu tư quy đổi về VND</label>
 
                       <div class="col-sm-9">
-                        <div class="input-group input-group-merge input-group-light">
-                          <input style="max-width: 17.5rem;; height: 48px;" type="number" class="form-control" name="vnd" id="vndLabel" aria-label="vnd" aria-describedby="inputDateVND">
-                          <div class="input-group-prepend">
+                        <div class="input-group input-group-merge">
+                          <input style="max-width: 17.5rem;; height: 48px;" type="number" class="form-control input-group-light" name="vnd" id="vndLabel" aria-label="vnd" aria-describedby="inputDateVND" disabled>
+                          <!-- <div class="input-group-append">
                             <span class="input-group-text" id="inputDateVND">
-                              VND
+                              <i>VND</i> 
                             </span>
-                          </div>
+                          </div> -->
                         </div>
                       </div>
                     </div>
                     <!-- End Form Group -->
 
                     <!-- Form Group -->
-                    <div class="js-add-field row form-group">
+                    <div class="row form-group">
                       <label for="TGianLabel" class="col-sm-3 col-form-label input-label">Thời điểm quy đổi tỷ giá</label>
 
                       <div class="col-sm-9">
                         <div class="input-group input-group-sm-down-break">
-                          <div style="max-width: 10.5rem;" class="input-group input-group-light">
+                          <div style="max-width: 10.5rem;" class="input-group ">
                             <!-- Flatpickr -->
-                            <input type="text" id="js-flatpickr-disabling-dates" class="form-control flatpickr-custom" placeholder="Select dates"
+                            <input type="text" id="js-flatpickr-disabling-dates" class="form-control flatpickr-custom input-group-light" placeholder="dd/MM/yyyy" disabled
                                    data-hs-flatpickr-options='{
                                      "dateFormat": "d/m/Y"
                                    }'>
                             <!-- End Flatpickr -->
                           </div>
 
-                          <div style="max-width: 9rem;"  class="form-group input-group-light col-auto">
-                            <input type="time" class="form-control" placeholder="hh/mm" id="TimeLabel">
+                          <div style="max-width: 9rem;"  class="form-group col-auto">
+                            <input type="time" class="form-control  input-group-light" placeholder="hh/mm" id="TimeLabel" disabled>
                           </div>
                         </div>
                       </div>
@@ -609,8 +609,8 @@
                     <div class="row form-group">
                       <label for="zipCodeLabel" class="col-sm-3 col-form-label input-label">Số tiền bằng chữ</label>
 
-                      <div class="col-sm-9 input-group-light">
-                        <input type="text" class="js-masked-input form-control" name="zipCode" id="zipCodeLabel">
+                      <div class="col-sm-9 t">
+                        <input type="text" class="form-control input-group-light" name="zipCode" id="zipCodeLabel" disabled>
                       </div>
                     </div>
                     <!-- End Form Group -->
@@ -733,7 +733,7 @@
                   <!-- End Body -->
       
                   <!-- Card -->
-                  <div class="card mb-3 mb-lg-5">
+                  <div class="card mb-3 mb-lg-5 mt-5">
                     <!-- Header -->
                     <div class="card-header">
                       <h4 class="card-header-title">Danh sách KHLCNT</h4>
@@ -1267,10 +1267,7 @@
             </div>
             <div class="col-auto" style="margin-right: 11rem;">
               <button style="margin-right: 5px;" style="background-color: #F5F5F5;" type="submit" id="btnLuu" class="btn btn-white" >Lưu<i style="margin-left: 3px;" class="tio-save-outlined"></i></button>
-              <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary"
-              data-hs-step-form-prev-options='{
-                "targetSelector": "#addTongMuc"
-              }'>
+              <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" data-step="1" class="btn btn-primary" >
                 Tiếp tục<i class="tio-next-ui" style="margin-left: 1ex;"></i>
               </button>
             </div>
@@ -1569,23 +1566,6 @@
       });
     </script>
     <script>
-      $(document).on('ready',function(){
-        $("#btnNext").click(function(){
-          $('.js-step-form').each(function () {
-          var stepForm = new HSStepForm($(this), {
-            finish: function() {
-              if("#btnNext".click("#addThongTin")){
-                $("#addQuyetDinh").hide();
-                $("#addTongMuc").hide();
-                $("#addXacNhan").hide();
-              }
-            }
-          }).init();
-         });
-        })
-      })
-    </script>
-    <script>
       $("#header").load("../../../Layout/Element/Header/HeaderEGP.html");
       $("#verticalMenu").load("../../../Layout/Element/Sidebar/Submenu.html");
     </script>
@@ -1595,4 +1575,13 @@
       if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/polyfill.min.js"><\/script>');
     </script>
   </body>
+  <script>
+    
+    $("#btnNext").click(function(){
+      debugger;
+      var step = $(this).data("step");
+      $(this).attr("data-step",step + 1);
+      $("#addUserStepFormProgress [data-step="+(step + 1)+"]").addClass("active");
+    });
+  </script>
 </html>
