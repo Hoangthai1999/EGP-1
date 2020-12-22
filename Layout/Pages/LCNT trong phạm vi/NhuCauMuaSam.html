@@ -100,205 +100,104 @@
         <div class="card">
           <!-- Header -->
           <div class="card-header">
-            <div class="row justify-content-between align-items-center flex-grow-1">
-              <div>
-                <div class="row" style="margin-left: 14px;">
-                  <div class="d-lg-flex">
-                    <form style="width: 172px;height: 40px;">
-                      <!-- Search -->
+            <div class="align-items-center flex-grow-1">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                  <div class="row col-md-4">                    
+                    <!-- Search -->
                       <div class="input-group input-group-merge">
                         <input id="datatableSearch" type="search" class="form-control" placeholder="Số kế hoạch" aria-label="Search users">
                       </div>
-                      <!-- End Search -->
-                    </form>
-                    <form style="width: 265px;height: 40px; margin-left: 0.5rem;">
-                      <!-- Search -->
-                      <div class="input-group input-group-merge">
-                        <input id="datatableSearch2" type="search" class="form-control" placeholder="Tên KHLCNT" aria-label="Search users">
-                      </div>
-                      <!-- End Search -->
-                    </form>
-                    <form style="margin-left: 0.5rem;width: 90px;height: 40px;">
-                      <button class="btn btn-soft-secondary">Tìm kiếm</button>
-                    </form>
-                    
+                    <!-- End Search -->
                   </div>
+                    <!-- Search -->
+                  <div class="d-inline-block d-flex col-md-8">
+                        <div class="input-group input-group-merge">
+                          <input id="datatableSearch2" type="search" class="form-control" placeholder="Tên KHLCNT" aria-label="Search users">
+                        </div>
+                        <div class="col-auto">
+                          <button class="btn btn-soft-secondary">Tìm kiếm</button>
+                        </div>
+                  </div>
+                  <!-- <div class="col-sm-auto">
+                    <button class="btn btn-soft-secondary">Tìm kiếm</button>
+                  </div> -->
+                  <!-- End Search -->
                 </div>
                 
-              </div>
-
-              <div class="col-auto">
-                <div class="d-flex align-items-center">
-
-                  <!-- Filter Collapse Trigger -->
-                  <div class="hs-unfold mr-2">
-                    <a style="height: 40px;width: 143px;" class="text-center js-hs-unfold-invoker btn btn-sm btn-white dropdown-toggle" href="javascript:;"
-                       data-hs-unfold-options='{
-                         "target": "#usersExportDropdown",
-                         "type": "css-animation"
-                       }'>
-                      <span>Ngày tổng hợp</span>
-                    </a>
-
-                    <div id="usersExportDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right">
-                      <span class="dropdown-header">Options</span>
-                      <a id="export-copy" class="dropdown-item" href="javascript:;">
-                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/illustrations/copy.svg" alt="Image Description">
-                        Copy
-                      </a>
-                      <a id="export-print" class="dropdown-item" href="javascript:;">
-                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/illustrations/print.svg" alt="Image Description">
-                        Print
-                      </a>
-                      <div class="dropdown-divider"></div>
-                      <span class="dropdown-header">Download options</span>
-                      <a id="export-excel" class="dropdown-item" href="javascript:;">
-                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/brands/excel.svg" alt="Image Description">
-                        Excel
-                      </a>
-                      <a id="export-csv" class="dropdown-item" href="javascript:;">
-                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/components/placeholder-csv-format.svg" alt="Image Description">
-                        .CSV
-                      </a>
-                      <a id="export-pdf" class="dropdown-item" href="javascript:;">
-                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/brands/pdf.svg" alt="Image Description">
-                        PDF
-                      </a>
-                    </div>
-                  </div>
+                <div class="col-md-6 text-right">
+                    <!-- Filter Collapse Trigger -->
                     <div class="hs-unfold mr-2">
-                        <a style="height: 40px;width: 120px;" class="text-center js-hs-unfold-invoker btn btn-sm btn-white dropdown-toggle" href="javascript:;"
-                           data-hs-unfold-options='{
-                             "target": "#usersExportDropdown2",
-                             "type": "css-animation"
-                           }'>
-                          <span>Chọn đơn vị</span>
+                      <a class="text-center js-hs-unfold-invoker btn btn-sm btn-white dropdown-toggle" href="javascript:;"
+                         data-hs-unfold-options='{
+                           "target": "#usersExportDropdown",
+                           "type": "css-animation"
+                         }'>
+                        <span>Ngày tổng hợp</span>
+                      </a>
+  
+                      <div id="usersExportDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right">
+                        <span class="dropdown-header">Options</span>
+                        <a id="export-copy" class="dropdown-item" href="javascript:;">
+                          <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/illustrations/copy.svg" alt="Image Description">
+                          Copy
                         </a>
-    
-                        <div id="usersExportDropdown2" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right">
-                          <span class="dropdown-header">Options</span>
-                          <a id="export-copy" class="dropdown-item" href="javascript:;">
-                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/illustrations/copy.svg" alt="Image Description">
-                            Copy
-                          </a>
-                          <a id="export-print" class="dropdown-item" href="javascript:;">
-                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/illustrations/print.svg" alt="Image Description">
-                            Print
-                          </a>
-                          <div class="dropdown-divider"></div>
-                          <span class="dropdown-header">Download options</span>
-                          <a id="export-excel" class="dropdown-item" href="javascript:;">
-                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/brands/excel.svg" alt="Image Description">
-                            Excel
-                          </a>
-                          <a id="export-csv" class="dropdown-item" href="javascript:;">
-                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/components/placeholder-csv-format.svg" alt="Image Description">
-                            .CSV
-                          </a>
-                          <a id="export-pdf" class="dropdown-item" href="javascript:;">
-                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/brands/pdf.svg" alt="Image Description">
-                            PDF
-                          </a>
-                        </div>
-                    </div>
-
-                    <div id="usersFilterDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right dropdown-card card-dropdown-filter-centered" style="min-width: 22rem;">
-                      <!-- Card -->
-                      <div class="card">
-                        <div class="card-header">
-                          <h5 class="card-header-title">Filter users</h5>
-
-                          <!-- Toggle Button -->
-                          <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-ghost-secondary ml-2" href="javascript:;"
-                             data-hs-unfold-options='{
-                              "target": "#usersFilterDropdown",
-                              "type": "css-animation",
-                              "smartPositionOff": true
-                             }'>
-                            <i class="tio-clear tio-lg"></i>
-                          </a>
-                          <!-- End Toggle Button -->
-                        </div>
-
-                        <div class="card-body">
-                          <form>
-                            <div class="form-group">
-                              <small class="text-cap mb-2">Role</small>
-
-                              <div class="form-row">
-                                <div class="col">
-                                  <!-- Checkbox -->
-                                  <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="usersFilerCheck1" checked>
-                                    <label class="custom-control-label" for="usersFilerCheck1">All</label>
-                                  </div>
-                                  <!-- End Checkbox -->
-                                </div>
-
-                                <div class="col">
-                                  <!-- Checkbox -->
-                                  <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="usersFilerCheck2">
-                                    <label class="custom-control-label" for="usersFilerCheck2">Employee</label>
-                                  </div>
-                                  <!-- End Checkbox -->
-                                </div>
-                              </div>
-                              <!-- End Row -->
-                            </div>
-
-                            <div class="form-row">
-                              <div class="col-sm form-group">
-                                <small class="text-cap mb-2">Position</small>
-
-                                <!-- Select -->
-                                <select class="js-select2-custom js-datatable-filter"
-                                        data-target-column-index="2"
-                                        data-hs-select2-options='{
-                                          "minimumResultsForSearch": "Infinity"
-                                        }'>
-                                  <option value="">Any</option>
-                                  <option value="Accountant">Accountant</option>
-                                  <option value="Co-founder">Co-founder</option>
-                                  <option value="Designer">Designer</option>
-                                  <option value="Developer">Developer</option>
-                                  <option value="Director">Director</option>
-                                </select>
-                                <!-- End Select -->
-                              </div>
-
-                              <div class="col-sm form-group">
-                                <small class="text-cap mb-2">Status</small>
-
-                                <!-- Select -->
-                                <select class="js-select2-custom js-datatable-filter"
-                                        data-target-column-index="4"
-                                        data-hs-select2-options='{
-                                          "minimumResultsForSearch": "Infinity"
-                                        }'>
-                                  <option value="">Any status</option>
-                                  <option value="Active" data-option-template='<span class="legend-indicator bg-success"></span>Active'>Active</option>
-                                  <option value="Pending" data-option-template='<span class="legend-indicator bg-warning"></span>Pending'>Pending</option>
-                                  <option value="Suspended" data-option-template='<span class="legend-indicator bg-danger"></span>Suspended'>Suspended</option>
-                                </select>
-                                <!-- End Select -->
-                              </div>
-                            </div>
-                            <!-- End Row -->
-
-                            <a class="js-hs-unfold-invoker btn btn-block btn-primary" href="javascript:;"
-                               data-hs-unfold-options='{
-                                "target": "#usersFilterDropdown",
-                                "type": "css-animation",
-                                "smartPositionOff": true
-                               }'>Apply</a>
-                          </form>
-                        </div>
+                        <a id="export-print" class="dropdown-item" href="javascript:;">
+                          <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/illustrations/print.svg" alt="Image Description">
+                          Print
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <span class="dropdown-header">Download options</span>
+                        <a id="export-excel" class="dropdown-item" href="javascript:;">
+                          <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/brands/excel.svg" alt="Image Description">
+                          Excel
+                        </a>
+                        <a id="export-csv" class="dropdown-item" href="javascript:;">
+                          <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/components/placeholder-csv-format.svg" alt="Image Description">
+                          .CSV
+                        </a>
+                        <a id="export-pdf" class="dropdown-item" href="javascript:;">
+                          <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/brands/pdf.svg" alt="Image Description">
+                          PDF
+                        </a>
                       </div>
-                      <!-- End Card -->
                     </div>
-
-                  <!-- End Filter Collapse Trigger -->
+                      <div class="hs-unfold mr-2">
+                          <a class="text-center js-hs-unfold-invoker btn btn-sm btn-white dropdown-toggle" href="javascript:;"
+                             data-hs-unfold-options='{
+                               "target": "#usersExportDropdown2",
+                               "type": "css-animation"
+                             }'>
+                            <span>Chọn đơn vị</span>
+                          </a>
+      
+                          <div id="usersExportDropdown2" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right">
+                            <span class="dropdown-header">Options</span>
+                            <a id="export-copy" class="dropdown-item" href="javascript:;">
+                              <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/illustrations/copy.svg" alt="Image Description">
+                              Copy
+                            </a>
+                            <a id="export-print" class="dropdown-item" href="javascript:;">
+                              <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/illustrations/print.svg" alt="Image Description">
+                              Print
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <span class="dropdown-header">Download options</span>
+                            <a id="export-excel" class="dropdown-item" href="javascript:;">
+                              <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/brands/excel.svg" alt="Image Description">
+                              Excel
+                            </a>
+                            <a id="export-csv" class="dropdown-item" href="javascript:;">
+                              <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/components/placeholder-csv-format.svg" alt="Image Description">
+                              .CSV
+                            </a>
+                            <a id="export-pdf" class="dropdown-item" href="javascript:;">
+                              <img class="avatar avatar-xss avatar-4by3 mr-2" src="../../../assets/svg/brands/pdf.svg" alt="Image Description">
+                              PDF
+                            </a>
+                          </div>
+                      </div>
+                    <!-- End Filter Collapse Trigger -->
                 </div>
               </div>
             </div>

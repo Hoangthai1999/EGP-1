@@ -92,7 +92,7 @@
                 <!-- End Modal -->
   
                 <h1 class="page-title">Tạo dự án PPP</h1>
-              </div>
+            </div>
   
               <div class="dropdown" style="margin-top: 1.5rem;">
                 <a class="btn btn-white dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -103,7 +103,6 @@
                   <a class="dropdown-item " href="Add_DA_SDD.html">Sử dụng đất</a>
                   <a class="dropdown-item" href="#">Xã hội hoá</a>
                 </div>
-              </div>
               </div>
               <!-- End Profile Header -->
   
@@ -122,722 +121,234 @@
                   </span>
               </div>
               <!-- End Nav -->
-              <div class="content container-fluid">
-                <div class="col-lg-11">        
-                 <form style="margin-left: 5rem; margin-right: 5rem;" class="js-step-form py-md-0" id="stepForm"
-                     data-hs-step-form-options='{
-                       "progressSelector": "#addUserStepFormProgress",
-                       "stepsSelector": "#addUserStepFormContent",
-                       "endSelector": "#addUserFinishBtn",
-                       "isValidate": true
-                     }'>
-                 <!-- Step -->
-                 <div class="justify-content-lg-center">
-                 <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
-                       <li class="step-item">
-                         <a class="step-content-wrapper" href="#TTHangHoa"
-                            data-hs-step-form-next-options='{
-                             "targetSelector": "#TTHangHoa"
-                           }'>
-                           <span class="step-icon step-icon-soft-dark">01</span>
-                           <div class="step-content">
-                             <small><span class="step-title" style="color: black;">Thông tin hàng hoá</span></small>
-                           </div>
-                         </a>
-                       </li>
-                       <li class="step-item">
-                         <a class="step-content-wrapper" href="#addQuyetDinh"
-                            data-hs-step-form-next-options='{
-                             "targetSelector": "#addQuyetDinh"
-                           }'>
-                           <span class="step-icon step-icon-soft-dark">02</span>
-                           <div class="step-content">
-                             <small><span class="step-title">Quyết định phê duyệt</span></small>
-                           </div>
-                         </a>
-                       </li>
-                       <li class="step-item">
-                        <a class="step-content-wrapper" href="#addDA"
-                           data-hs-step-form-next-options='{
-                            "targetSelector": "#addDA"
-                          }'>
-                          <span class="step-icon step-icon-soft-dark">03</span>
-                          <div class="step-content">
-                            <small><span class="step-title">Dự kiến tiến độ triển khai</span></small>
-                          </div>
-                        </a>
-                      </li>
+              <div class="content container-fluid justify-content-between">
+                <div class="col-lg-11">
+                  <!-- Step Form -->
+                  <form class="js-step-form js-validate"
+                        data-hs-step-form-options='{
+                          "progressSelector": "#validationFormProgress",
+                          "stepsSelector": "#validationFormContent",
+                          "endSelector": "#validationFormFinishBtn",
+                          "isValidate": true
+                        }'>
+                    <!-- Step -->
+                    <ul id="validationFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7">
                       <li class="step-item">
-                        <a class="step-content-wrapper" href="#addXacNhan;"
+                        <a class="step-content-wrapper" href="javascript:;"
                            data-hs-step-form-next-options='{
-                            "targetSelector": "#addXacNhan"
+                            "targetSelector": "#validationFormAccount"
                           }'>
-                          <span class="step-icon step-icon-soft-dark">04</span>
+                          <span class="step-icon step-icon-soft-dark">1</span>
                           <div class="step-content">
-                            <small><span class="step-title">Xác nhận thông tin</span></small>
+                            <span class="step-title">Account</span>
                           </div>
                         </a>
                       </li>
-                 </ul>
-                </div>
-                 <!-- End Step -->
-                     <!-- Content Step Form -->
-                    <div id="addUserStepFormContent">
-                       <!-- Card -->
-                        <div id="TTHangHoa" class="row justify-content-lg-center hs-nav-scroller-unfold active">
-                          <!-- Card -->
-                          <div class="card mb-3 mb-lg-5 col-sm-11">
-                            <!-- Header -->
-                            <div class="card-header">
-                              <h4 class="card-header-title">Thông tin chi tiết gói thầu</h4>
-                            </div>
-                            <!-- End Header -->
-              
-                            <!-- Body -->
-                            <div class="card-body">
-                                <div class="row form-group">
-                                    <label for="FileExcel" class="col-sm-3 col-form-label input-label">Trong nước/ Quốc tế?</label>
-    
-                                    <div class="col-sm-9">
-                                        <div class="input-group input-group-sm-down-break">
-                                          <!-- Custom Radio -->
-                                          <div class="form-control">
-                                            <div class="custom-control custom-radio">
-                                              <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio1">
-                                              <label class="custom-control-label" for="userAccountTypeRadio1" style="color: grey;">Trong nước</label>
-                                            </div>
-                                          </div>
-                                          <!-- End Custom Radio -->
-                
-                                          <label class="col-sm-1"></label>
-                
-                                          <!-- Custom Radio -->
-                                          <div class="form-control col-sm-6">
-                                            <div class="custom-control custom-radio">
-                                              <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio2">
-                                              <label class="custom-control-label" for="userAccountTypeRadio2" style="color: grey;">Quốc tế</label>
-                                            </div>
-                                          </div>
-                                          <!-- End Custom Radio -->
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                            <!-- End Body -->
+                  
+                      <li class="step-item">
+                        <a class="step-content-wrapper" href="javascript:;"
+                           data-hs-step-form-next-options='{
+                             "targetSelector": "#validationFormProfile"
+                           }'>
+                          <span class="step-icon step-icon-soft-dark">2</span>
+                          <div class="step-content">
+                            <span class="step-title">Profile</span>
                           </div>
-                          <!-- End Card -->
-              
-                          <!-- Card -->
-                          <div class="card card-lg col-lg-11">
-                                <!-- Form -->
-                                  <div class="card-body">
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                      <label for="TenGTLabel" class="col-sm-3 col-form-label input-label">Tên dự án<i style="color: red;">*</i></label>
+                        </a>
+                      </li>
                   
-                                      <div class="col-sm-9 js-form-message">
-                                        <div class="input-group input-group-sm-down-break">
-                                          <input type="text" class="form-control" name="TenGoiThau" id="TenGTLabel" required>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- End Form Group -->
-                  
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                        <label for="FileExcel" class="col-sm-3 col-form-label input-label">Có thực hiện sơ tuyển<i style="color: red;">*</i></label>
-        
-                                        <div class="col-sm-9 ">
-                                            <div class="input-group input-group-sm-down-break" aria-required="true">
-                                              <!-- Custom Radio -->
-                                              <div class="form-control js-form-message">
-                                                <div class="custom-control custom-radio">
-                                                  <input type="radio" class="custom-control-input" name="rdoCT" id="rdoCT" required>
-                                                  <label class="custom-control-label" for="rdoCT" style="color: grey;">Có</label>
-                                                </div>
-                                              </div>
-                                              <!-- End Custom Radio -->
-                    
-                                              <label class="col-sm-1"></label>
-                    
-                                              <!-- Custom Radio -->
-                                              <div class="form-control col-sm-6 js-form-message">
-                                                <div class="custom-control custom-radio">
-                                                  <input type="radio" class="custom-control-input" name="rdoCT" id="rdoCT2" required>
-                                                  <label class="custom-control-label" for="rdoCT2" style="color: grey;">Không</label>
-                                                </div>
-                                              </div>
-                                              <!-- End Custom Radio -->
-                                            </div>
-                                          </div>
-                                      </div>
-                                    <!-- End Form Group -->
-                  
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                      <label for="phoneLabel" class="col-sm-3 col-form-label input-label">Nhóm dự án<i style="color: red;">*</i></label>
-                  
-                                      <div class="col-sm-9 js-form-message">
-                                        <!-- Select2 -->
-                                        <select class="js-select2-custom" multiple required
-                                                data-hs-select2-options='{
-                                                  "minimumResultsForSearch": "Infinity",
-                                                  "placeholder": "Chọn"
-                                                }'>
-                                              <option></option>
-                                              <option value="1">Bruce Maynard</option>
-                                              <option value="2">Hollis Clark</option>
-                                              <option value="3">Lester Howard</option>
-                                              <option value="4">George Marino</option>
-                                              <option value="5">Tyler Johnson</option>
-                                              <option value="6">Jennifer Craig</option>
-                                              <option value="7">Martha Barnwell</option>
-                                              <option value="8">Florencia Todd</option>
-                                              <option value="9">Henry Sloan</option>
-                                              <option value="10">Abigail Watson</option>
-                                        </select>
-                                        <!-- End Select2 -->
-                                      </div>
-                                    </div>
-                                    <!-- End Form Group -->
-                  
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                        <label for="phoneLabel" class="col-sm-3 col-form-label input-label">Loại hợp đồng<i style="color: red;">*</i></label>
-                    
-                                        <div class="col-sm-9 js-form-message">
-                                          <!-- Select2 -->
-                                          <select class="js-select2-custom" multiple required
-                                                  data-hs-select2-options='{
-                                                    "minimumResultsForSearch": "Infinity",
-                                                    "placeholder": "Chọn"
-                                                  }'>
-                                                <option></option>
-                                                <option value="1">Bruce Maynard</option>
-                                                <option value="2">Hollis Clark</option>
-                                                <option value="3">Lester Howard</option>
-                                                <option value="4">George Marino</option>
-                                                <option value="5">Tyler Johnson</option>
-                                                <option value="6">Jennifer Craig</option>
-                                                <option value="7">Martha Barnwell</option>
-                                                <option value="8">Florencia Todd</option>
-                                                <option value="9">Henry Sloan</option>
-                                                <option value="10">Abigail Watson</option>
-                                          </select>
-                                          <!-- End Select2 -->
-                                        </div>
-                                      </div>
-                                    <!-- End Form Group -->
-                  
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                      <label for="nguonvonLabel" class="col-sm-3 col-form-label input-label">Dự án khác</label>
-                   
-                                      <div class="col-sm-9 js-form-message">
-                                        <input type="text" class="form-control" name="nguonvon" id="nguonvonLabel">
-                                      </div>
-                                    </div>
-                                    <!-- End Form Group -->
-                  
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                      <label for="muctieuLabel" class="col-sm-3 col-form-label input-label">Mục tiêu đầu tư<i style="color: red;">*</i></label>
-                  
-                                      <div class="col-sm-9">
-                                        <input type="text" class="form-control" name="MucTieu" id="muctieuLabel" required>
-                                      </div>
-                                    </div>
-                                    <!-- End Form Group -->
-    
-                                    <!-- Form Group -->
-                                    <div id="accountType" class="row form-group">
-                                      <label for="quymoLabel" class="col-sm-3 col-form-label input-label">Quy mô đầu tư<i style="color: red;">*</i></label>
-                  
-                                      <div class="col-sm-9">
-                                        <input type="text" class="form-control" name="QuyMo" id="quymoLabel" required>
-                                      </div>
-                                    </div>
-                                    <!-- End Form Group -->
-    
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                      <label for="TGianTHLabel" class="col-sm-3 col-form-label input-label">Thời gian thực hiện dự án<i style="color: red;">*</i></label>
-                  
-                                      <div class="col-mb-3 ml-3 input-group-btn input-group-merge">
-                                          <div data-target="" class="input-group-prepend" style="height: 40px;">
-                                            <span class="input-group-text" id="inputGroupMergeEmailAddOn">
-                                              <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
-                                            </span>
-                                          </div>
-                                          <input style="width: 200px;height: 40px;" max="18/12/2020" type="text" class="form-control js-masked-input" name="TGianTH" id="TGianTHLabel" placeholder="dd/MM/yyyy" data-hs-mask-options='{
-                                            "template": "00/00/0000"
-                                          }' required>
-                                      </div>
-                                      <div class="ml-3">
-                                          <input style="width: 200px;height: 40px;" type="time" class="input-label col-form-label form-control" required>
-                                      </div>
-                                    </div>
-                                    <!-- End Form Group -->
-                  
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                        <label for="phoneLabel" class="col-sm-3 col-form-label input-label">Lĩnh vực đầu tư<i style="color: red;">*</i></label>
-                    
-                                        <div class="col-sm-9 js-form-message">
-                                          <!-- Select2 -->
-                                          <select class="js-select2-custom" multiple required
-                                                  data-hs-select2-options='{
-                                                    "minimumResultsForSearch": "Infinity",
-                                                    "placeholder": "Chọn"
-                                                  }'>
-                                                <option></option>
-                                                <option value="1">Bruce Maynard</option>
-                                                <option value="2">Hollis Clark</option>
-                                                <option value="3">Lester Howard</option>
-                                                <option value="4">George Marino</option>
-                                                <option value="5">Tyler Johnson</option>
-                                                <option value="6">Jennifer Craig</option>
-                                                <option value="7">Martha Barnwell</option>
-                                                <option value="8">Florencia Todd</option>
-                                                <option value="9">Henry Sloan</option>
-                                                <option value="10">Abigail Watson</option>
-                                          </select>
-                                          <!-- End Select2 -->
-                                        </div>
-                                      </div>
-                                    <!-- End Form Group -->                                    
-                                    
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                      <label for="zipCodeLabel" class="col-sm-3 col-form-label input-label">Địa điểm thực hiện</label>
-                  
-                                      <div class="col-sm-9">
-                                        <!-- Select2 -->
-                                        <select class="js-select2-custom" multiple
-                                                data-hs-select2-options='{
-                                                  "minimumResultsForSearch": "Infinity"
-                                                }'>
-                                              <option class="btn-pill" value="1" selected><i>+</i> Thêm địa điểm</option>
-                                              <option value="2">Hollis Clark</option>
-                                              <option value="3">Lester Howard</option>
-                                              <option value="4">George Marino</option>
-                                              <option value="5">Tyler Johnson</option>
-                                              <option value="6">Jennifer Craig</option>
-                                              <option value="7">Martha Barnwell</option>
-                                              <option value="8">Florencia Todd</option>
-                                              <option value="9">Henry Sloan</option>
-                                              <option value="10">Abigail Watson</option>
-                                        </select>
-                                        <!-- End Select2 -->
-                                      </div>
-                                    </div>
-                                    <!-- End Form Group -->
-
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                      <label for="TGianTHLabel" class="col-sm-3 col-form-label input-label">Tổng mức đầu tư dự án</label>
-                  
-                                      <div class="col-mb-3 ml-3">
-                                          <input style="width: 144px;height: 40px;" type="number" class="input-group-btn form-control" name="TGianTH" id="TGianTHLabel">
-                                      </div>
-                                      <div class="ml-1">
-                                        <!-- Select2 -->
-                                        <select class="js-select2-custom"
-                                                data-hs-select2-options='{
-                                                  "minimumResultsForSearch": "Infinity",
-                                                  "dropdownAutoWidth": true,
-                                                  "width": "5rem"
-                                                }'>
-                                              <option value="1">USD</option>
-                                              <option value="2">EUR</option>
-                                              <option value="3">#</option>
-                                              <option value="4">#</option>
-                                        </select>
-                                        <!-- End Select2 -->
-                                      </div>
-                                      <div class="ml-5">
-                                          <label for="TyGia" class="col-form-label input-label">Tỷ giá</label>
-                                      </div>
-                                      <div class="ml-4">
-                                        <input id="TyGia" style="width: 150px;height: 40px;" type="number" class="input-group form-control">
-                                      </div>
-                                    </div>
-                                    <!-- End Form Group -->
-
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                      <label for="tongmucLabel" class="col-sm-3 col-form-label input-label">Tổng mức đầu tư quy đổi về VND<i style="color: red;">*</i></label>
-                  
-                                      <div class="col-sm-9">
-                                        <input type="number" class="form-control" name="TM" id="tongmucLabel" required>
-                                      </div>
-                                    </div>
-                                    <!-- End Form Group -->
-                  
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                      <label for="zipCodeLabel" class="col-sm-3 col-form-label input-label">Số tiền bằng chữ</label>
-                  
-                                      <div class="col-sm-9">
-                                        <input type="text" class="js-masked-input form-control input-group-light" name="zipCode" id="zipCodeLabel" disabled>
-                                      </div>
-                                    </div>
-                                    <!-- End Form Group -->
-
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                        <label for="TGianTHLabel" class="col-sm-3 col-form-label input-label">Thời điểm quy đổi</label>
-                    
-                                        <div class="col-mb-3 ml-3 input-group-btn input-group-merge">
-                                            <div class="input-group-prepend" style="height: 40px;">
-                                              <span class="input-group-text" id="inputGroupMergeEmailAddOn">
-                                                <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt="logo"></i>
-                                              </span>
-                                            </div>
-                                            <input style="width: 200px;height: 40px;" type="text" class="form-control js-masked-input" name="TGianTH" id="TGianTHLabel" placeholder="dd/MM/yyyy" data-hs-mask-options='{
-                                              "template": "00/00/0000"
-                                            }' required>
-                                        </div>
-                                        <div class="ml-3">
-                                            <input style="width: 200px;height: 40px;" type="time" class="input-label col-form-label form-control">
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->                                    
-                                      <!-- Form Group -->
-                                     <div class="row form-group">
-                                        <label for="TGianTHLabel" class="col-sm-3 col-form-label input-label">Tổng mức đầu tư dự án</label>
-                    
-                                        <div class="col-mb-3 ml-3">
-                                            <input style="width: 200px;height: 40px;" type="number" class="input-group-btn form-control" name="TGianTH" id="TGianTHLabel">
-                                        </div>
-                                        <div class="ml-3">
-                                          <!-- Select2 -->
-                                          <select class="js-select2-custom"
-                                                  data-hs-select2-options='{
-                                                    "minimumResultsForSearch": "Infinity",
-                                                    "dropdownAutoWidth": true,
-                                                    "width": "5rem"
-                                                  }'>
-                                                <option value="1">USD</option>
-                                                <option value="2">EUR</option>
-                                                <option value="3">#</option>
-                                                <option value="4">#</option>
-                                          </select>
-                                          <!-- End Select2 -->
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->                                    
-                                      
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label for="tongmucLabel" class="col-sm-3 col-form-label input-label">Tên cơ quan Nhà nước có thẩm quyền<i style="color: red;">*</i></label>
-                    
-                                        <div class="col-sm-9">
-                                          <input type="number" class="form-control" name="TM" id="tongmucLabel" required>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->   
-
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label for="tongmucLabel" class="col-sm-3 col-form-label input-label">Địa chỉ liên hệ cơ quan Nhà nước có thẩm quyền<i style="color: red;">*</i></label>
-                    
-                                        <div class="col-sm-9">
-                                          <input type="number" class="form-control" name="TM" id="tongmucLabel" required>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
-                            </div>
-                          <!-- End Card -->
+                      <li class="step-item">
+                        <a class="step-content-wrapper" href="javascript:;"
+                           data-hs-step-form-next-options='{
+                             "targetSelector": "#validationFormAddress"
+                           }'>
+                          <span class="step-icon step-icon-soft-dark">3</span>
+                          <div class="step-content">
+                            <span class="step-title">Address</span>
                           </div>
-                       <!-- End Card -->
-                        </div>                      
-                       
-                       <div id="addQuyetDinh" class="row justify-content-lg-center card card-sm" style="display: none;">
-                       <!-- Card -->
-                        <div class="card-header">
-                            <h4 class="card-header-title">Quyết định phê duyệt dự án</h4>
-                          </div>
-                        
-                            <!-- Body -->
-                            <div class="card-body">
-                                <div class="row form-group">
-                                    <label for="FileExcel" class="col-sm-3 col-form-label input-label">Số quyết định phê duyệt dự án<i style="color: red;">*</i></label>
-    
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" required>
-                                      </div>
-                                </div>
-
-                                <div class="row form-group">
-                                    <label class="col-sm-3 col-form-label input-label">Ngày phê duyệt dự án<i style="color: red;">*</i></label>
-    
-                                    <div class="col-sm-9">
-                                        <input style="width: 200px;height: 40px;" type="date" class="form-control" required>
-                                      </div>
-                                </div>
-
-                                <div class="row form-group">
-                                    <label class="col-sm-3 col-form-label input-label">Quyết định phê duyệt</label>
-    
-                                    <div class="col-sm-9">
-                                        <label class="btn btn-lg btn-white transition-3d-hover custom-file-btn" for="fileAttachmentBtn">
-                                            <input id="fileAttachmentBtn" name="custom-file" type="file" class="js-file-attach custom-file-btn-input" placeholder="Chọn tệp đính kèm">
-                                        </label>
-                                      </div>
-                                </div>
-
-                                <div class="row form-group">
-                                  <label class="col-sm-3 col-form-label input-label">Các văn bản có liên quan</label>
-  
-                                  <div class="col-sm-9">
-                                      <label class="btn btn-lg btn-white transition-3d-hover custom-file-btn" for="fileAttachmentBtn">
-                                          <input id="fileAttachmentBtn" name="custom-file" type="file" class="js-file-attach custom-file-btn-input" placeholder="Chọn tệp đính kèm">
-                                      </label>
-                                    </div>
-                              </div>
-                            </div>
-                            <!-- End Body -->
-  
-                         <!-- End Card -->
-                       </div>
-
-                       <div id="addDA" class="row justify-content-lg-center card card-sm" style="display: none;">
-                        <!-- Card -->
-                         <div class="card-header">
-                           <h4 class="card-header-title">Dự kiến tiến độ triển khai</h4>
-                         </div>
-                       
-                         <!-- Table -->
-                         <div class="card-body">
-                          <div class="row form-group">
-                              <label for="FileExcel" class="col-sm-3 col-form-label input-label">Tóm tắt yêu cầu kĩ thuật</label>
-
-                              <div class="col-sm-9">
-                                  <input type="text" class="form-control" >
-                                </div>
-                          </div>
-
-                          <div class="row form-group">
-                              <label class="col-sm-3 col-form-label input-label">Báo cáo nghiên cứu khả thi</label>
-
-                              <div class="col-sm-9 ">
-                                <div class="input-group input-group-sm-down-break" aria-required="true">
-                                  <!-- Custom Radio -->
-                                  <div class="form-control js-form-message">
-                                    <div class="custom-control custom-radio">
-                                      <input type="radio" class="custom-control-input" name="rdoCT" id="rdoCT">
-                                      <label class="custom-control-label" for="rdoCT" style="color: grey;">Chưa có</label>
-                                    </div>
-                                  </div>
-                                  <!-- End Custom Radio -->
-        
-                                  <label class="col-sm-1"></label>
-        
-                                  <!-- Custom Radio -->
-                                  <div class="form-control col-sm-6 js-form-message">
-                                    <div class="custom-control custom-radio">
-                                      <input type="radio" class="custom-control-input" name="rdoCT" id="rdoCT2">
-                                      <label class="custom-control-label" for="rdoCT2" style="color: grey;">Đã có</label>
-                                    </div>
-                                  </div>
-                                  <!-- End Custom Radio -->
-                                </div>
-                              </div>
-                          </div>
-
-                          <div class="row form-group">
-                              <label class="col-sm-3 col-form-label input-label">Thời gian lập nghiên cứu báo cáo khả thi</label>
-
-                              <div class="col-mb-3 ml-4 input-group-btn input-group-merge">
-                                <div class="input-group-prepend" style="height: 40px;">
-                                  <span class="input-group-text" id="inputGroupMergeEmailAddOn">
-                                    <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt="date"></i>
-                                  </span>
-                                </div>
-                                <input style="width: 250px;height: 40px;" type="text" class="form-control js-masked-input" name="TGianLNC" id="TGianLNCLabel" placeholder="dd/MM/yyyy - dd/MM/yyyy" data-hs-mask-options='{
-                                  "template": "00/00/0000 - 00/00/00000"
-                                }'>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- End Step -->
+                  
+                    <!-- Content Step Form -->
+                    <div id="validationFormContent">
+                      <div id="validationFormAccount" class="active">
+                        <!-- Form Group -->
+                        <div class="row form-group">
+                          <label for="validationFormUsernameLabel" class="col-sm-3 col-form-label input-label">Username</label>
+                  
+                          <div class="col-sm-9">
+                            <div class="js-form-message">
+                              <input type="password" class="form-control" name="username" id="validationFormUsernameLabel" placeholder="Username" aria-label="Username" required data-msg="Please enter your username.">
                             </div>
                           </div>
-
-                          <div class="row form-group">
-                            <label class="col-sm-3 col-form-label input-label">Thời gian tổ chức  đấu thầu lựa chọn nhà đầu tư</label>
-
-                            <div class="col-mb-3 ml-4 input-group-btn input-group-merge">
-                              <div class="input-group-prepend" style="height: 40px;">
-                                <span class="input-group-text" id="inputGroupMergeEmailAddOn">
-                                  <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
-                                </span>
-                              </div>
-                              <input style="width: 250px;height: 40px;" type="text" class="form-control js-masked-input" name="TGianTC" id="TGianTCLabel" placeholder="dd/MM/yyyy - dd/MM/yyyy" data-hs-mask-options='{
-                                "template": "00/00/0000 - 00/00/0000"
-                              }'>
+                        </div>
+                        <!-- End Form Group -->
+                  
+                        <!-- Form Group -->
+                        <div class="row form-group">
+                          <label for="validationFormNewPasswordLabel" class="col-sm-3 col-form-label input-label">New password</label>
+                  
+                          <div class="col-sm-9">
+                            <div class="js-form-message">
+                              <input type="password" class="form-control" name="newPassword" id="validationFormNewPasswordLabel" placeholder="New password" aria-label="New password" required data-msg="Your password is invalid. Please try again.">
+                            </div>
                           </div>
+                        </div>
+                        <!-- End Form Group -->
+                  
+                        <!-- Form Group -->
+                        <div class="row form-group">
+                          <label for="validationFormCurrentPasswordLabel" class="col-sm-3 col-form-label input-label">Current password</label>
+                  
+                          <div class="col-sm-9">
+                            <div class="js-form-message">
+                              <input type="password" class="form-control" name="currentPassword" id="validationFormCurrentPasswordLabel" placeholder="Current password" aria-label="Current password" required data-msg="Password does not match the confirm password.">
+                            </div>
                           </div>
-
-                          <div class="row form-group">
-                            <label class="col-sm-3 col-form-label input-label">Thời gian xây dựng, khai thác công trình</label>
-
-                            <div class="col-mb-3 ml-4 input-group-btn input-group-merge">
-                              <div class="input-group-prepend" style="height: 40px;">
-                                <span class="input-group-text" id="inputGroupMergeEmailAddOn">
-                                  <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
-                                </span>
-                              </div>
-                              <input style="width: 250px;height: 40px;" type="text" class="form-control js-masked-input" name="TGianXD" id="TGianXDLabel" placeholder="dd/MM/yyyy - dd/MM/yyyy" data-hs-mask-options='{
-                                "template": "00/00/0000 - 00/00/0000"
-                              }'>
+                        </div>
+                        <!-- End Form Group -->
+                  
+                        <!-- Footer -->
+                        <!-- <div class="d-flex align-items-center">
+                          <div class="ml-auto">
+                            <button type="button" class="btn btn-primary"
+                                    data-hs-step-form-next-options='{
+                                      "targetSelector": "#validationFormProfile"
+                                    }'>
+                              Next <i class="tio-chevron-right"></i>
+                            </button>
                           </div>
-                       </div>
-                         <!-- End Table -->
- 
-                        <!-- End Card -->
+                        </div> -->
+                        <!-- End Footer -->
                       </div>
-
-                     <div id="addXacNhan" class="row justify-content-lg-center card card-sm" style="display: none;">
-                       <!-- Card -->
-                        <div class="card-header">
-                          <h4 class="card-header-title">Xác nhận thông tin hàng hoá</h4>
+                  
+                      <div id="validationFormProfile" style="display: none;">
+                        <!-- Form Group -->
+                        <div class="row form-group">
+                          <label for="validationFormFirstNameLabel" class="col-sm-3 col-form-label input-label">First name</label>
+                  
+                          <div class="col-sm-9">
+                            <div class="js-form-message">
+                              <input type="password" class="form-control" name="firstName" id="validationFormFirstNameLabel" placeholder="First name" aria-label="First name" required data-msg="Please enter your first name.">
+                            </div>
+                          </div>
                         </div>
-                      
-                        <!-- Table -->
-                        <div class="table-responsive datatable-custom">
-                          <table id="datatableWithCheckboxSelect" class="js-editable-table table table-sm table-thead-bordered table-nowrap table-align-middle"
-                          data-hs-datatables-options='{
-                            "columnDefs": [{
-                               "targets": [0],
-                               "orderable": false
-                            }],
-                            "order": [],
-                            "info": {
-                              "totalQty": "#datatableWithPaginationInfoTotalQty"
-                            },
-                            "search": "#datatableSearch",
-                            "entries": "#datatableEntries",
-                            "pageLength": 15,
-                            "isResponsive": false,
-                            "isShowPaging": false,
-                            "pagination": "datatablePagination"
-                          }'>
-                            <thead class="thead-light">
-                              <tr>
-                                <th style="width: 48px;height: 40px;" scope="col" class="text-center">STT</th>                         
-                                <th scope="col" class="table-column-pl-0" style="width: 180px;height: 40px;">Tên hàng hoá/ dịch vụ</th>
-                                <th scope="col" style="width: 180px;height: 40px;">Mô tả hàng hoá/ dịch vụ</th>
-                                <th scope="col" style="width: 100px;height: 40px;">Đơn vị tính</th>
-                                <th scope="col" style="width: 100px;height: 40px;" class="text-center">Số lượng</th>
-                                <th scope="col" style="width: 190px;height: 40px;" class="text-right">Đơn giá dự kiến mua sắm</th>
-                                <th scope="col" style="width: 150px;height: 40px;" class="text-center">Thành tiền</th>
-                                <th scope="col" style="width: 90px;height: 40px;" class="text-center">Thao tác</th>
-                              </tr>
-                            </thead>
-                      
-                            <tbody>
-                              <tr>
-                                <td class="text-center">
-                                  1
-                                </td>
-                                <td data-field="Tên hàng hoá/ dịch vụ">Máy tính HP<i data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></td>
-                                <td data-field="Mô tả hàng hoá/ dịch vụ">Hàng điện tử</td>
-                                <td data-field="Đơn vị tính">Cái</td>
-                                <td data-field="Số lượng" class="text-center">10</td>
-                                <td data-field="Đơn giá dự kiến mua sắm" class="text-right">10,000,000</td>
-                                <td data-field="Thành tiền" class="text-center">100,000,000</td>
-                                <td class="text-center">
-                                  <a class="js-edit btn btn-sm btn-white btn-soft-light" href="javascript:;">
-                                    <i><img  src="assets/img/160x160/Table/Element/icon/outlined/editor/edit.jpg" alt="logo"></i>
-                                  </a>
-                                  <a class="icon tio-delete-outlined" href="#" style="color: black;"></a>
-                                </td>
-                              </tr>
-                      
-                              <tr>
-                                <td class="text-center">
-                                  2
-                                </td>
-                                <td data-field="Tên hàng hoá/ dịch vụ">Máy tính HP<i data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></td>
-                                <td data-field="Mô tả hàng hoá/ dịch vụ">Hàng điện tử</td>
-                                <td data-field="Đơn vị tính">Cái</td>
-                                <td data-field="Số lượng" class="text-center">10</td>
-                                <td data-field="Đơn giá dự kiến mua sắm" class="text-right">10,000,000</td>
-                                <td data-field="Thành tiền" class="text-center">100,000,000</td>
-                                <td class="text-center">
-                                  <a class="js-edit btn btn-sm btn-white btn-soft-light" href="javascript:;">
-                                    <i></i><img  src="assets/img/160x160/Table/Element/icon/outlined/editor/edit.jpg" alt="logo">
-                                  </a>
-                                  <a class="icon tio-delete-outlined" href="#" style="color: black;"></a>
-                                </td>
-                              </tr>
-                      
-                              <tr>
-                                <td class="text-center">
-                                  3
-                                </td>
-                                <td data-field="Tên hàng hoá/ dịch vụ">Máy tính HP<i data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></td>
-                                <td data-field="Mô tả hàng hoá/ dịch vụ">Hàng điện tử</td>
-                                <td data-field="Đơn vị tính">Cái</td>
-                                <td data-field="Số lượng" class="text-center">10</td>
-                                <td data-field="Đơn giá dự kiến mua sắm" class="text-right">10,000,000</td>
-                                <td data-field="Thành tiền" class="text-center">100,000,000</td>
-                                <td class="text-center">
-                                  <a class="js-edit btn btn-sm btn-white btn-soft-light" href="javascript:;">
-                                    <i><img  src="assets/img/160x160/Table/Element/icon/outlined/editor/edit.jpg" alt="logo"></i>
-                                  </a>
-                                  <a class="icon tio-delete-outlined" href="#" style="color: black;"></a>
-                                </td>
-                              </tr>
-                      
-                              <tr>
-                                <td class="text-center">
-                                  4
-                                </td>
-                                <td data-field="Tên hàng hoá/ dịch vụ">Máy tính HP<i data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></td>
-                                <td data-field="Mô tả hàng hoá/ dịch vụ">Hàng điện tử</td>
-                                <td data-field="Đơn vị tính">Cái</td>
-                                <td data-field="Số lượng" class="text-center">10</td>
-                                <td data-field="Đơn giá dự kiến mua sắm" class="text-right">10,000,000</td>
-                                <td data-field="Thành tiền" class="text-center">100,000,000</td>
-                                <td class="text-center">
-                                  <a class="js-edit btn btn-sm btn-white btn-soft-light" href="javascript:;">
-                                    <i><img  src="assets/img/160x160/Table/Element/icon/outlined/editor/edit.jpg" alt="logo"></i>
-                                  </a>
-                                  <a class="icon tio-delete-outlined" href="#" style="color: black;"></a>
-                                </td>
-                              </tr>
-                      
-                              <tr>
-                                <td class="text-center">
-                                  5
-                                </td>
-                                <td data-field="Tên hàng hoá/ dịch vụ">Máy tính HP<i data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></td>
-                                <td data-field="Mô tả hàng hoá/ dịch vụ">Hàng điện tử</td>
-                                <td data-field="Đơn vị tính">Cái</td>
-                                <td data-field="Số lượng" class="text-center">10</td>
-                                <td data-field="Đơn giá dự kiến mua sắm" class="text-right">10,000,000</td>
-                                <td data-field="Thành tiền" class="text-center">100,000,000</td>
-                                <td class="text-center">
-                                  <a class="js-edit btn btn-sm btn-white btn-soft-light" href="javascript:;">
-                                    <i><img  src="assets/img/160x160/Table/Element/icon/outlined/editor/edit.jpg" alt="logo"></i>
-                                  </a>
-                                  <a class="icon tio-delete-outlined" href="#" style="color: black;"></a>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                        <!-- End Form Group -->
+                  
+                        <!-- Form Group -->
+                        <div class="row form-group">
+                          <label for="validationFormLastNameLabel" class="col-sm-3 col-form-label input-label">Last name</label>
+                  
+                          <div class="col-sm-9">
+                            <div class="js-form-message">
+                              <input type="password" class="form-control" name="lastName" id="validationFormLastNameLabel" placeholder="Last name" aria-label="Last name" required data-msg="Please enter your last name.">
+                            </div>
+                          </div>
                         </div>
-                        <!-- End Table -->
-
-                       <!-- End Card -->
-                     </div>
-                     <!-- End Content Step Form -->
+                        <!-- End Form Group -->
+                  
+                        <!-- Form Group -->
+                        <div class="row form-group">
+                          <label for="validationFormEmailLabel" class="col-sm-3 col-form-label input-label">Email</label>
+                  
+                          <div class="col-sm-9">
+                            <div class="js-form-message">
+                              <input type="password" class="form-control" name="email" id="validationFormEmailLabel" placeholder="Email address" aria-label="Email address" required data-msg="Please enter a valid email address.">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Form Group -->
+                  
+                        <!-- Footer -->
+                        <!-- <div class="d-flex align-items-center">
+                          <button type="button" class="btn btn-ghost-secondary mr-2"
+                             data-hs-step-form-prev-options='{
+                               "targetSelector": "#validationFormAccount"
+                             }'>
+                            <i class="tio-chevron-left"></i> Previous step
+                          </button>
+                  
+                          <div class="ml-auto">
+                            <button type="button" class="btn btn-primary"
+                                    data-hs-step-form-next-options='{
+                                      "targetSelector": "#validationFormAddress"
+                                    }'>
+                              Next <i class="tio-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div> -->
+                        <!-- End Footer -->
+                      </div>
+                  
+                      <div id="validationFormAddress" style="display: none;">
+                        <!-- Form Group -->
+                        <div class="row form-group">
+                          <label for="validationFormAddress1Label" class="col-sm-3 col-form-label input-label">Address 1</label>
+                  
+                          <div class="col-sm-9">
+                            <div class="js-form-message">
+                              <input type="password" class="form-control" name="address1" id="validationFormAddress1Label" placeholder="Address 1" aria-label="Address 1" required data-msg="Please enter your address.">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Form Group -->
+                  
+                        <!-- Form Group -->
+                        <div class="row form-group">
+                          <label for="validationFormAddress2Label" class="col-sm-3 col-form-label input-label">Address 2 <span class="input-label-secondary">(Optional)</span></label>
+                  
+                          <div class="col-sm-9">
+                            <input type="password" class="form-control" name="address2" id="validationFormAddress2Label" placeholder="Address 2" aria-label="Address 2">
+                          </div>
+                        </div>
+                        <!-- End Form Group -->
+                  
+                        <!-- Footer -->
+                        <div class="d-sm-flex align-items-center">
+                          <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 mr-2"
+                             data-hs-step-form-prev-options='{
+                               "targetSelector": "#validationFormProfile"
+                             }'>
+                            <i class="tio-chevron-left"></i> Previous step
+                          </button>
+                  
+                          <div class="d-flex justify-content-end ml-auto">
+                            <button type="button" class="btn btn-white mr-2" data-dismiss="modal" aria-label="Close">Cancel</button>
+                            <button id="validationFormFinishBtn" type="button" class="btn btn-primary">Save Changes</button>
+                          </div>
+                        </div>
+                        <!-- End Footer -->
+                      </div>
                     </div>
-
-                 <!-- End Row -->
+                    <!-- End Content Step Form -->
+                  
+                    <!-- Message Body -->
+                    <div id="validationFormSuccessMessage" style="display:none;">
+                      <div class="text-center">
+                        <img class="img-fluid mb-3" src="../assets/svg/illustrations/create.svg" alt="Image Description" style="max-width: 15rem;">
+                  
+                        <div class="mb-4">
+                          <h2>Successful!</h2>
+                          <p>Your changes have been successfully saved.</p>
+                        </div>
+                  
+                        <div class="d-flex justify-content-center">
+                          <a class="btn btn-white mr-3" href="#">
+                            <i class="tio-chevron-left ml-1"></i> Back to projects
+                          </a>
+                          <a class="btn btn-primary" href="#">
+                            <i class="tio-city mr-1"></i> Add new project
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                 </div>
-                </div>
-            </div>
+                    <!-- End Message Body -->
+                  </form>
+                  <!-- End Step Form -->
+                </div>    
+              </div>
           </div>
           <!-- End Row -->
         </div>
@@ -872,7 +383,7 @@
         </div>
   
         <!-- Footer -->
-      </main>
+    </main>
     <!-- ========== END MAIN CONTENT ========== -->
 
     <!-- JS Global Compulsory  -->
@@ -1250,6 +761,19 @@
        // initialization of Input Masks
        $('.js-masked-input').each(function () {
          $.HSCore.components.HSMask.init($(this));
+        });
+      });
+    </script>
+    <script>
+      $(document).on('ready', function () {
+        $.HSCore.components.HSDaterangepicker.init($('.js-daterangepicker-clear'));
+    
+        $('.js-daterangepicker-clear').on('apply.daterangepicker', function(ev, picker) {
+          $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+        });
+    
+        $('.js-daterangepicker-clear').on('cancel.daterangepicker', function(ev, picker) {
+          $(this).val('');
         });
       });
     </script>

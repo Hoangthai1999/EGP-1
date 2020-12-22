@@ -1,18 +1,156 @@
+<link rel="stylesheet" href="../../../assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="form">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Tìm kiếm nâng cao</h5>
-          <button type="button" class="btn btn-xs btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
-            <i class="tio-clear tio-lg"></i>
-          </button>
-        </div>
-        <div class="nav-divider">
-          <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+  <div class="modal-dialog modal-dialog-centered" role="form">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tìm kiếm nâng cao</h5>
+        <button type="button" class="btn btn-xs btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+          <i class="tio-clear tio-lg"></i>
+        </button>
       </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <div class="card-title text-left">Tổng mức đầu tư</div>
+            <!-- Range Slider -->
+            <input class="js-ion-range-slider" type="text"
+                   data-hs-ion-range-slider-options='{
+                     "extra_classes": "range-slider-custom range-slider-indicator range-slider-grid",
+                     "type": "double",
+                     "grid": false,
+                     "hide_from_to": true,
+                     "prefix": "$",
+                     "min": 0,
+                     "max": 20000000,
+                     "from": 1000000,
+                     "to": 10000000,
+                     "result_min_target_el": "#rangeSliderExample3MinResult",
+                     "result_max_target_el": "#rangeSliderExample3MaxResult"
+                   }'>
+                   
+            <div class="row justify-content-between mt-5">
+              <div class="col-6 mb-2">
+                <div class="input-group input-group-merge">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="vnd1">
+                      <i class="nav-icon">VND</i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" id="rangeSliderExample3MinResult" aria-describedby="vnd1">
+                </div>
+              </div>
+              <div class="col-6 mb-2">
+                <div class="input-group input-group-merge">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="vnd2">
+                      <i class="icon">VND</i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" id="rangeSliderExample3MaxResult" aria-describedby="vnd2">
+                </div>
+              </div>
+            </div>
+            <!-- End Range Slider -->
+          </li>
+          <li class="list-group-item">
+            <div class="header mb-2">
+              <span class="text-left card-title">Ngày tạo dự án</span>
+            </div>
+            <div class="col-7 form-group">
+              <div class="input-group input-group-merge">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="inputGroupMergeEmailOptionalAddOn2">
+                    <i class="icon nav-icon"><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt="datetime"></i>
+                  </span>
+                </div> 
+                <input type="text" class="js-daterangepicker form-control daterangepicker-custom-input" aria-describedby="inputGroupMergeEmailOptionalAddOn2"
+                      data-hs-daterangepicker-options='{
+                        "parentEl": "#exampleModal"
+                      }'>
+              </div>
+            </div>
+           
+          </li>
+          <li class="list-group-item">
+            <div class="mb-2 header text-left card-title">Trạng thái</div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <!-- Checkbox -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="customCheck12" class="custom-control-input" >
+                    <label class="custom-control-label" for="customCheck12">Đã đăng tải</label>
+                  </div>
+                  <!-- End Checkbox -->
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <!-- Checkbox -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="customCheck14" class="custom-control-input">
+                    <label class="custom-control-label" for="customCheck14">Chờ đăng tải</label>
+                  </div>
+                  <!-- End Checkbox -->
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <!-- Checkbox -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="customCheck15" class="custom-control-input">
+                    <label class="custom-control-label" for="customCheck15">Đã huỷ</label>
+                  </div>
+                  <!-- End Checkbox -->
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="header card-title mb-2">Người tạo</div>
+            <!-- Select2 -->
+            <select class="js-select2-custom"
+                    data-hs-select2-options='{
+                      "minimumResultsForSearch": "Infinity",
+                      "placeholder": "Chọn"
+                    }'>
+                  <option label="empty"></option>
+                  <option value="1">Bruce Maynard</option>
+                  <option value="2">Hollis Clark</option>
+                  <option value="3">Lester Howard</option>
+                  <option value="4">George Marino</option>
+                  <option value="5">Tyler Johnson</option>
+                  <option value="6">Jennifer Craig</option>
+                  <option value="7">Martha Barnwell</option>
+                  <option value="8">Florencia Todd</option>
+                  <option value="9">Henry Sloan</option>
+                  <option value="10">Abigail Watson</option>
+            </select>
+            <!-- End Select2 -->
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-6">
+                <button type="button" style="border-color: #064D69;color: #064D69;" class="btn btn-white btn-dashed-outline">Làm mới</button>
+              </div>
+              <div class="col-md-6 text-right">
+                <button type="button" class="btn btn-white" style="border-color: #064D69;background-color: #064D69;">Tìm kiếm</button>
+              </div>
+            </div>
+            
+          </li>
+        </ul>
+        <!-- End List Group -->
     </div>
   </div>
+</div>
+
+<script src="../../../assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+<script>
+  $(document).on("ready",function(){
+    $('.js-ion-range-slider').each(function () {
+          $.HSCore.components.HSIonRangeSlider.init($(this));
+        });
+  });
+</script>
 <!-- End Modal -->
