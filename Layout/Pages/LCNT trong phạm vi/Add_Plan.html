@@ -142,7 +142,7 @@
               }'>
               <!-- Step -->
               <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
-                <li class="step-item" data-step="1">
+                <li class="step-item" data-step="1" data-id="addThongTin">
                   <a class="step-content-wrapper" href="#addThongTin;"
                      data-hs-step-form-next-options='{
                       "targetSelector": "#addThongTin"
@@ -154,7 +154,7 @@
                   </a>
                 </li>
 
-                <li class="step-item" data-step="2">
+                <li class="step-item" data-step="2" data-id="addTongMuc">
                   <a class="step-content-wrapper" href="#addTongMuc;"
                      data-hs-step-form-next-options='{
                       "targetSelector": "#addTongMuc"
@@ -165,7 +165,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="step-item" data-step="3">
+                <li class="step-item" data-step="3" data-id="addQuyetDinh">
                   <a class="step-content-wrapper" href="#addQuyetDinh;"
                      data-hs-step-form-next-options='{
                       "targetSelector": "#addQuyetDinh"
@@ -176,7 +176,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="step-item" data-step="4">
+                <li class="step-item" data-step="4" data-id="addXacNhan">
                   <a class="step-content-wrapper" href="#addXacNhan;"
                      data-hs-step-form-next-options='{
                       "targetSelector": "#addXacNhan"
@@ -1592,9 +1592,6 @@
                     $("#" + forms).addClass("active");
                     step = step - 1;
                 }
-
-
-
             });
         })
     </script>
@@ -1608,13 +1605,4 @@
       if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/polyfill.min.js"><\/script>');
     </script>
   </body>
-  <script>
-    
-    $("#btnNext").click(function(){
-      debugger;
-      var step = $(this).data("step");
-      $(this).attr("data-step",step + 1);
-      $("#addUserStepFormProgress [data-step="+(step + 1)+"]").addClass("active");
-    });
-  </script>
 </html>
