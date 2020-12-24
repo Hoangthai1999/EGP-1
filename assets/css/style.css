@@ -1,0 +1,4 @@
+.is-invalid.select2-selection.custom-select{
+    border-color: #ed4c78 !important;
+    box-shadow: 0 0 10px rgba(237,76,120,.1) !important;
+}

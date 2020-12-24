@@ -15,19 +15,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../../assets/css/theme.min.css">
+
     <link rel="stylesheet" href="../../../assets/vendor/icon-set/style.css">
     <link rel="stylesheet" href="../../../assets/vendor/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="../../../assets/vendor/chart.js/dist/Chart.min.css">
     <link rel="stylesheet" href="../../../assets/vendor/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="../../../assets/vendor/flatpickr/dist/flatpickr.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="../../../assets/vendor/hs-sticky-header/src/hs.sticky-header.css">
     
 
     
 
     <!-- CSS Fis Template -->
-    <link rel="stylesheet" href="../../../assets/css/theme.min.css">
   </head>
 
   <body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl   footer-offset"
@@ -62,8 +62,9 @@
     <main id="content" role="main" class="main">
         <!-- Content -->
         <div class="content container-fluid">
-          <div class="row justify-content-lg-center">
-            <div class="col-sm mb-2 mb-sm-0">
+          <div class="page-header">
+            <div class="row align-items-end">
+              <div class="col-sm mb-2 mb-sm-0">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb breadcrumb-no-gutter">
                     <li class="breadcrumb-item" data-toggle="modal" data-target="#staticBackdrop"><a class="breadcrumb-link">Kế hoạch</a></li>
@@ -92,19 +93,24 @@
                 <!-- End Modal -->
   
                 <h1 class="page-title">Tạo dự án PPP</h1>
-            </div>
+              </div>
   
-              <div class="dropdown" style="margin-top: 1.5rem;">
-                <a class="btn btn-white dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Tạo dự án PPP
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdown-menu">
-                  <a class="dropdown-item active" href="Add_DAPPP_LCNT.html">Tạo dự án PPP</a>
-                  <a class="dropdown-item " href="Add_DA_SDD.html">Sử dụng đất</a>
-                  <a class="dropdown-item" href="#">Xã hội hoá</a>
+              <div class="col-sm-auto">
+                <div class="dropdown">
+                  <a class="btn btn-white dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tạo dự án PPP
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-menu">
+                    <a class="dropdown-item active" href="Add_DAPPP_LCNT.html">Tạo dự án PPP</a>
+                    <a class="dropdown-item " href="Add_DA_SDD.html">Sử dụng đất</a>
+                    <a class="dropdown-item" href="#">Xã hội hoá</a>
+                  </div>
                 </div>
               </div>
-              <!-- End Profile Header -->
+            </div>
+            <!-- End Row -->
+          </div>
+          <div class=" row justify-content-lg-center">
   
               <!-- Nav -->
               <div class="js-nav-scroller hs-nav-scroller-horizontal mb-5">
@@ -121,10 +127,9 @@
                   </span>
               </div>
               <!-- End Nav -->
-              <div class="content container-fluid justify-content-between">
-                <div class="col-lg-11">
+              <div class="content container-fluid">
                   <!-- Step Form -->
-                  <form class="js-step-form js-validate"
+                  <form class="js-step-form py-md-5 js-validate"
                         data-hs-step-form-options='{
                           "progressSelector": "#validationFormProgress",
                           "stepsSelector": "#validationFormContent",
@@ -132,254 +137,397 @@
                           "isValidate": true
                         }'>
                     <!-- Step -->
-                    <ul id="validationFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7">
-                      <li class="step-item">
-                        <a class="step-content-wrapper" href="javascript:;"
-                           data-hs-step-form-next-options='{
-                            "targetSelector": "#validationFormAccount"
-                          }'>
-                          <span class="step-icon step-icon-soft-dark">1</span>
-                          <div class="step-content">
-                            <span class="step-title">Account</span>
+                    <div class="row justify-content-lg-center">
+                      <div class="col-lg-9">
+                        <ul id="validationFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7">
+                          <li class="step-item">
+                            <a class="step-content-wrapper" href="javascript:;"
+                               data-hs-step-form-next-options='{
+                                "targetSelector": "#validationFormAccount"
+                              }'>
+                              <span class="step-icon step-icon-soft-dark">1</span>
+                              <div class="step-content">
+                                <span class="step-title">Thông tin chung</span>
+                              </div>
+                            </a>
+                          </li>
+                      
+                          <li class="step-item">
+                            <a class="step-content-wrapper" href="javascript:;"
+                               data-hs-step-form-next-options='{
+                                 "targetSelector": "#validationFormProfile"
+                               }'>
+                              <span class="step-icon step-icon-soft-dark">2</span>
+                              <div class="step-content">
+                                <span class="step-title">Quyết định phê duyệt</span>
+                              </div>
+                            </a>
+                          </li>
+                      
+                          <li class="step-item">
+                            <a class="step-content-wrapper" href="javascript:;"
+                               data-hs-step-form-next-options='{
+                                 "targetSelector": "#validationFormAddress"
+                               }'>
+                              <span class="step-icon step-icon-soft-dark">3</span>
+                              <div class="step-content">
+                                <span class="step-title">Dự kiến tiến độ triển khai</span>
+                              </div>
+                            </a>
+                          </li>
+    
+                          <li class="step-item">
+                            <a class="step-content-wrapper" href="javascript:;"
+                               data-hs-step-form-next-options='{
+                                 "targetSelector": "#validationFormAddress"
+                               }'>
+                              <span class="step-icon step-icon-soft-dark">4</span>
+                              <div class="step-content">
+                                <span class="step-title">Xác nhận thông tin</span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- End Step -->
+                      
+                        <!-- Content Step Form -->
+                        <div id="validationFormContent">
+                          <div id="validationFormAccount" class="active">
+
+                            <div class="card card-lg mb-3">
+                              <div class="card-header">
+                                <h4 class="card-header-title">Thông tin chi tiết gói thầu</h4>
+                              </div>
+                              <div class="card-body">
+                                <div class="row form-group">
+                                  <label class="col-sm-3 col-form-label input-label">Trong nước/ Quốc tế?</label>
+            
+                                  <div class="col-sm-9">
+                                    <div class="input-group input-group-sm-down-break">
+                                      <!-- Custom Radio -->
+                                      <div class="form-control">
+                                        <div class="custom-control custom-radio">
+                                          <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio1">
+                                          <label class="custom-control-label" for="userAccountTypeRadio1">Trong nước</label>
+                                        </div>
+                                      </div>
+                                      <!-- End Custom Radio -->
+            
+                                      <!-- Custom Radio -->
+                                      <div class="ml-4 form-control">
+                                        <div class="custom-control custom-radio">
+                                          <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio2">
+                                          <label class="custom-control-label" for="userAccountTypeRadio2">Quốc tế</label>
+                                        </div>
+                                      </div>
+                                      <!-- End Custom Radio -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card card-lg mt-5">                            
+                             <div class="card-body">
+                              <!-- Form Group -->
+                              <div class="row form-group">
+                                <label for="validationFormUsernameLabel" class="col-sm-3 col-form-label input-label">Tên dự án<i style="color: red;">*</i></label>
+                      
+                                <div class="col-sm-9">
+                                   <div class="js-form-message">
+                                     <input type="password" class="form-control" name="username" id="validationFormUsernameLabel" aria-label="Username" required data-msg="Mời nhập tên dự án">
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Form Group -->
+
+                              <div class="row form-group">
+                                <label class="col-sm-3 col-form-label input-label">Có thực hiện sơ tuyển ?</label>
+          
+                                <div class="col-sm-9">
+                                  <div class="input-group input-group-sm-down-break">
+                                    <!-- Custom Radio -->
+                                    <div class="form-control">
+                                      <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" name="userAccountTypeRadio4" id="userAccountTypeRadio4">
+                                        <label class="custom-control-label" for="userAccountTypeRadio4">Có</label>
+                                      </div>
+                                    </div>
+                                    <!-- End Custom Radio -->
+          
+                                    <!-- Custom Radio -->
+                                    <div class="ml-4 form-control">
+                                      <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" name="userAccountTypeRadio4" id="userAccountTypeRadio5">
+                                        <label class="custom-control-label" for="userAccountTypeRadio5">Không</label>
+                                      </div>
+                                    </div>
+                                    <!-- End Custom Radio -->
+                                  </div>
+                                </div>
+                              </div>
+                      
+                              <!-- Form Group -->
+                              <div class="row form-group">
+                                <label for="Select2HD" class="col-sm-3 col-form-label input-label ">Nhóm dự án<i style="color: red;">*</i></label>
+                      
+                                <div class="col-sm-9">
+                                    <!-- Select2 -->
+                                      <div class="js-form-message">
+                                        <select class="js-select2-custom" name="form-control-select2" required
+                                                data-hs-select2-options='{
+                                                  "minimumResultsForSearch": "Infinity",
+                                                  "placeholder": "Chọn"
+                                                }'>
+                                          <option></option>
+                                          <option value="1">Bruce Maynard</option>
+                                          <option value="2">Hollis Clark</option>
+                                          <option value="3">Lester Howard</option>
+                                          <option value="4">George Marino</option>
+                                          <option value="5">Tyler Johnson</option>
+                                          <option value="6">Jennifer Craig</option>
+                                          <option value="7">Martha Barnwell</option>
+                                          <option value="8">Florencia Todd</option>
+                                          <option value="9">Henry Sloan</option>
+                                          <option value="10">Abigail Watson</option>
+                                        </select>
+                                      </div>
+                                    <!-- End Select2 -->
+                                </div>
+                              </div>
+                              <!-- End Form Group -->
+
+                              <!-- Form Group -->
+                              <div class="row form-group">
+                                <label for="Select2HD2" class="col-sm-3 col-form-label input-label ">Loại hợp đồng<i style="color: red;">*</i></label>
+                      
+                                <div class="col-sm-9">
+                                    <!-- Select2 -->
+                                      <div class="js-form-message">
+                                        <select class="js-select2-custom" name="form-control-select2" required
+                                                data-hs-select2-options='{
+                                                  "minimumResultsForSearch": "Infinity",
+                                                  "placeholder": "Select member"
+                                                }'>
+                                          <option></option>
+                                          <option value="1">Bruce Maynard</option>
+                                          <option value="2">Hollis Clark</option>
+                                          <option value="3">Lester Howard</option>
+                                          <option value="4">George Marino</option>
+                                          <option value="5">Tyler Johnson</option>
+                                          <option value="6">Jennifer Craig</option>
+                                          <option value="7">Martha Barnwell</option>
+                                          <option value="8">Florencia Todd</option>
+                                          <option value="9">Henry Sloan</option>
+                                          <option value="10">Abigail Watson</option>
+                                        </select>
+                                      </div>
+                                    <!-- End Select2 -->
+                                </div>
+                              </div>
+                              <!-- End Form Group -->
+
+
+                      
+                              <!-- Form Group -->
+                              <div class="row form-group">
+                                <label for="DAKLabel" class="col-sm-3 col-form-label input-label">Dự án khác</label>
+                     
+                               <div class="col-sm-9">
+                                 <div class="js-form-message">
+                                   <input type="text" class="form-control" name="newPassword" id="DAKLabel">
+                                 </div>
+                               </div>
+                              </div>
+                              <!-- End Form Group -->
+
+                      
+                              <!-- Form Group -->
+                              <div class="row form-group">
+                                <label for="MTLabel" class="col-sm-3 col-form-label input-label">Mục tiêu đầu tư<i style="color: red;">*</i></label>
+                     
+                               <div class="col-sm-9">
+                                 <div class="js-form-message">
+                                   <input type="text" class="form-control" name="newPassword" id="MTLabel" aria-label="New password" required data-msg="Mời nhập nhóm dự án">
+                                 </div>
+                               </div>
+                              </div>
+                              <!-- End Form Group -->
+
+                              <!-- Form Group -->
+                              <div class="row form-group">
+                                <label for="QMLabel" class="col-sm-3 col-form-label input-label">Quy mô đầu tư<i style="color: red;">*</i></label>
+                     
+                               <div class="col-sm-9">
+                                 <div class="js-form-message">
+                                   <input type="text" class="form-control" name="newPassword" id="QMLabel" aria-label="New password" required data-msg="Mời nhập nhóm dự án">
+                                 </div>
+                               </div>
+                              </div>
+                              <!-- End Form Group -->
+
+                              <!-- Form Group -->
+                              <div class="row form-group">
+                                <label for="TGIANTHLabel" class="col-sm-3 col-form-label input-label">Thời gian thực hiện dự án<i style="color: red;">*</i></label>
+                     
+                               <div id="TGIANTHLabel" class="row col-sm-9">
+                                 <div class="col-md-4 js-form-message">
+                                   <input type="text" class="form-control" name="NgayTH" id="NTHLabel" placeholder="dd/MM/yyyy" aria-describedby="inputGroupMergeDate" aria-label="Ngày thực hiện" required data-msg="Mời nhập nhóm dự án">
+                                   <div class="input-group input-group-merge">
+                                    <div class="input-append">
+                                     <span class="input-group-text" id="inputGroupMergeDate">
+                                       <i class="icon"><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt="Date"></i>
+                                     </span>
+                                    </div>
+                                  </div>
+                                 </div>
+
+                                 <div class="col-md-4 js-form-message">
+                                  <input type="text" class="form-control" name="TGTH" id="TGTHLabel" placeholder="hh/mm" aria-label="Thời gian thực hiện" required data-msg="Mời nhập nhóm dự án">
+                                </div>
+                               </div>
+                              </div>
+                              <!-- End Form Group -->
+                             </div>
+                            </div>
                           </div>
-                        </a>
-                      </li>
-                  
-                      <li class="step-item">
-                        <a class="step-content-wrapper" href="javascript:;"
-                           data-hs-step-form-next-options='{
-                             "targetSelector": "#validationFormProfile"
-                           }'>
-                          <span class="step-icon step-icon-soft-dark">2</span>
-                          <div class="step-content">
-                            <span class="step-title">Profile</span>
+                      
+                          <div id="validationFormProfile" style="display: none;">
+                            <!-- Form Group -->
+                            <div class="row form-group">
+                              <label for="validationFormFirstNameLabel" class="col-sm-3 col-form-label input-label">First name</label>
+                       
+                              <div class="col-sm-9">
+                                <div class="js-form-message">
+                                  <input type="password" class="form-control" name="firstName" id="validationFormFirstNameLabel" placeholder="First name" aria-label="First name" required data-msg="Please enter your first name.">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Form Group -->
+                      
+                            <!-- Form Group -->
+                            <div class="row form-group">
+                              <label for="validationFormLastNameLabel" class="col-sm-3 col-form-label input-label">Last name</label>
+                      
+                              <div class="col-sm-9">
+                                <div class="js-form-message">
+                                  <input type="password" class="form-control" name="lastName" id="validationFormLastNameLabel" placeholder="Last name" aria-label="Last name" required data-msg="Please enter your last name.">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Form Group -->
+                      
+                            <!-- Form Group -->
+                            <div class="row form-group">
+                              <label for="validationFormEmailLabel" class="col-sm-3 col-form-label input-label">Email</label>
+                      
+                              <div class="col-sm-9">
+                                <div class="js-form-message">
+                                  <input type="password" class="form-control" name="email" id="validationFormEmailLabel" placeholder="Email address" aria-label="Email address" required data-msg="Please enter a valid email address.">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Form Group -->
                           </div>
-                        </a>
-                      </li>
-                  
-                      <li class="step-item">
-                        <a class="step-content-wrapper" href="javascript:;"
-                           data-hs-step-form-next-options='{
-                             "targetSelector": "#validationFormAddress"
-                           }'>
-                          <span class="step-icon step-icon-soft-dark">3</span>
-                          <div class="step-content">
-                            <span class="step-title">Address</span>
+                      
+                          <div id="validationFormAddress" style="display: none;">
+                            <!-- Form Group -->
+                            <div class="row form-group">
+                              <label for="validationFormAddress1Label" class="col-sm-3 col-form-label input-label">Address 1</label>
+                      
+                              <div class="col-sm-9">
+                                <div class="js-form-message">
+                                  <input type="password" class="form-control" name="address1" id="validationFormAddress1Label" placeholder="Address 1" aria-label="Address 1" required data-msg="Please enter your address.">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Form Group -->
+                      
+                            <!-- Form Group -->
+                            <div class="row form-group">
+                              <label for="validationFormAddress2Label" class="col-sm-3 col-form-label input-label">Address 2 <span class="input-label-secondary">(Optional)</span></label>
+                      
+                              <div class="col-sm-9">
+                                <input type="password" class="form-control" name="address2" id="validationFormAddress2Label" placeholder="Address 2" aria-label="Address 2">
+                              </div>
+                            </div>
+                            <!-- End Form Group -->
+                      
+                            <!-- Footer -->
+                            <div class="d-sm-flex align-items-center">
+                              <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 mr-2"
+                                 data-hs-step-form-prev-options='{
+                                   "targetSelector": "#validationFormProfile"
+                                 }'>
+                                <i class="tio-chevron-left"></i> Previous step
+                              </button>
+                      
+                              <div class="d-flex justify-content-end ml-auto">
+                                <button type="button" class="btn btn-white mr-2" data-dismiss="modal" aria-label="Close">Cancel</button>
+                                <button id="validationFormFinishBtn" type="button" class="btn btn-primary">Save Changes</button>
+                              </div>
+                            </div>
+                            <!-- End Footer -->
                           </div>
-                        </a>
-                      </li>
-                    </ul>
-                    <!-- End Step -->
-                  
-                    <!-- Content Step Form -->
-                    <div id="validationFormContent">
-                      <div id="validationFormAccount" class="active">
-                        <!-- Form Group -->
-                        <div class="row form-group">
-                          <label for="validationFormUsernameLabel" class="col-sm-3 col-form-label input-label">Username</label>
-                  
-                          <div class="col-sm-9">
-                            <div class="js-form-message">
-                              <input type="password" class="form-control" name="username" id="validationFormUsernameLabel" placeholder="Username" aria-label="Username" required data-msg="Please enter your username.">
+                        </div>
+                        <!-- End Content Step Form -->
+                      
+                        <!-- Message Body -->
+                        <div id="validationFormSuccessMessage" style="display:none;">
+                          <div class="text-center">
+                            <img class="img-fluid mb-3" src="../assets/svg/illustrations/create.svg" alt="Image Description" style="max-width: 15rem;">
+                      
+                            <div class="mb-4">
+                              <h2>Successful!</h2>
+                              <p>Your changes have been successfully saved.</p>
+                            </div>
+                      
+                            <div class="d-flex justify-content-center">
+                              <a class="btn btn-white mr-3" href="#">
+                                <i class="tio-chevron-left ml-1"></i> Back to projects
+                              </a>
+                              <a class="btn btn-primary" href="#">
+                                <i class="tio-city mr-1"></i> Add new project
+                              </a>
                             </div>
                           </div>
                         </div>
-                        <!-- End Form Group -->
-                  
-                        <!-- Form Group -->
-                        <div class="row form-group">
-                          <label for="validationFormNewPasswordLabel" class="col-sm-3 col-form-label input-label">New password</label>
-                  
-                          <div class="col-sm-9">
-                            <div class="js-form-message">
-                              <input type="password" class="form-control" name="newPassword" id="validationFormNewPasswordLabel" placeholder="New password" aria-label="New password" required data-msg="Your password is invalid. Please try again.">
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Form Group -->
-                  
-                        <!-- Form Group -->
-                        <div class="row form-group">
-                          <label for="validationFormCurrentPasswordLabel" class="col-sm-3 col-form-label input-label">Current password</label>
-                  
-                          <div class="col-sm-9">
-                            <div class="js-form-message">
-                              <input type="password" class="form-control" name="currentPassword" id="validationFormCurrentPasswordLabel" placeholder="Current password" aria-label="Current password" required data-msg="Password does not match the confirm password.">
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Form Group -->
-                  
-                        <!-- Footer -->
-                        <!-- <div class="d-flex align-items-center">
-                          <div class="ml-auto">
-                            <button type="button" class="btn btn-primary"
-                                    data-hs-step-form-next-options='{
-                                      "targetSelector": "#validationFormProfile"
-                                    }'>
-                              Next <i class="tio-chevron-right"></i>
-                            </button>
-                          </div>
-                        </div> -->
-                        <!-- End Footer -->
-                      </div>
-                  
-                      <div id="validationFormProfile" style="display: none;">
-                        <!-- Form Group -->
-                        <div class="row form-group">
-                          <label for="validationFormFirstNameLabel" class="col-sm-3 col-form-label input-label">First name</label>
-                  
-                          <div class="col-sm-9">
-                            <div class="js-form-message">
-                              <input type="password" class="form-control" name="firstName" id="validationFormFirstNameLabel" placeholder="First name" aria-label="First name" required data-msg="Please enter your first name.">
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Form Group -->
-                  
-                        <!-- Form Group -->
-                        <div class="row form-group">
-                          <label for="validationFormLastNameLabel" class="col-sm-3 col-form-label input-label">Last name</label>
-                  
-                          <div class="col-sm-9">
-                            <div class="js-form-message">
-                              <input type="password" class="form-control" name="lastName" id="validationFormLastNameLabel" placeholder="Last name" aria-label="Last name" required data-msg="Please enter your last name.">
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Form Group -->
-                  
-                        <!-- Form Group -->
-                        <div class="row form-group">
-                          <label for="validationFormEmailLabel" class="col-sm-3 col-form-label input-label">Email</label>
-                  
-                          <div class="col-sm-9">
-                            <div class="js-form-message">
-                              <input type="password" class="form-control" name="email" id="validationFormEmailLabel" placeholder="Email address" aria-label="Email address" required data-msg="Please enter a valid email address.">
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Form Group -->
-                  
-                        <!-- Footer -->
-                        <!-- <div class="d-flex align-items-center">
-                          <button type="button" class="btn btn-ghost-secondary mr-2"
-                             data-hs-step-form-prev-options='{
-                               "targetSelector": "#validationFormAccount"
-                             }'>
-                            <i class="tio-chevron-left"></i> Previous step
-                          </button>
-                  
-                          <div class="ml-auto">
-                            <button type="button" class="btn btn-primary"
-                                    data-hs-step-form-next-options='{
-                                      "targetSelector": "#validationFormAddress"
-                                    }'>
-                              Next <i class="tio-chevron-right"></i>
-                            </button>
-                          </div>
-                        </div> -->
-                        <!-- End Footer -->
-                      </div>
-                  
-                      <div id="validationFormAddress" style="display: none;">
-                        <!-- Form Group -->
-                        <div class="row form-group">
-                          <label for="validationFormAddress1Label" class="col-sm-3 col-form-label input-label">Address 1</label>
-                  
-                          <div class="col-sm-9">
-                            <div class="js-form-message">
-                              <input type="password" class="form-control" name="address1" id="validationFormAddress1Label" placeholder="Address 1" aria-label="Address 1" required data-msg="Please enter your address.">
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Form Group -->
-                  
-                        <!-- Form Group -->
-                        <div class="row form-group">
-                          <label for="validationFormAddress2Label" class="col-sm-3 col-form-label input-label">Address 2 <span class="input-label-secondary">(Optional)</span></label>
-                  
-                          <div class="col-sm-9">
-                            <input type="password" class="form-control" name="address2" id="validationFormAddress2Label" placeholder="Address 2" aria-label="Address 2">
-                          </div>
-                        </div>
-                        <!-- End Form Group -->
-                  
-                        <!-- Footer -->
-                        <div class="d-sm-flex align-items-center">
-                          <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 mr-2"
-                             data-hs-step-form-prev-options='{
-                               "targetSelector": "#validationFormProfile"
-                             }'>
-                            <i class="tio-chevron-left"></i> Previous step
-                          </button>
-                  
-                          <div class="d-flex justify-content-end ml-auto">
-                            <button type="button" class="btn btn-white mr-2" data-dismiss="modal" aria-label="Close">Cancel</button>
-                            <button id="validationFormFinishBtn" type="button" class="btn btn-primary">Save Changes</button>
-                          </div>
-                        </div>
-                        <!-- End Footer -->
+                        <!-- End Message Body -->
                       </div>
                     </div>
-                    <!-- End Content Step Form -->
-                  
-                    <!-- Message Body -->
-                    <div id="validationFormSuccessMessage" style="display:none;">
-                      <div class="text-center">
-                        <img class="img-fluid mb-3" src="../assets/svg/illustrations/create.svg" alt="Image Description" style="max-width: 15rem;">
-                  
-                        <div class="mb-4">
-                          <h2>Successful!</h2>
-                          <p>Your changes have been successfully saved.</p>
-                        </div>
-                  
-                        <div class="d-flex justify-content-center">
-                          <a class="btn btn-white mr-3" href="#">
-                            <i class="tio-chevron-left ml-1"></i> Back to projects
-                          </a>
-                          <a class="btn btn-primary" href="#">
-                            <i class="tio-city mr-1"></i> Add new project
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Message Body -->
                   </form>
                   <!-- End Step Form -->
-                </div>    
+   
               </div>
           </div>
           <!-- End Row -->
         </div>
         <!-- End Content -->
-        <div class="footer">
-            <div class="row justify-content-between align-items-center">
-              <div class="col" style="margin-left: 9rem;">
-                <button id="btnReturn" type="button" class="btn btn-pill"><a href="#"></a><i class="tio-back-ui"></i> Quay lại</button>
-              </div>
-              <div class="col-auto" style="margin-right: 18rem;">
-                <div class="d-flex justify-content-end">
-                  <!-- List Dot -->
-                  <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <button style="margin-right: 5px;" style="background-color: #F5F5F5;" type="submit" id="btnLuu" class="btn btn-white" >Lưu<i style="margin-left: 3px;" class="tio-save-outlined"></i></button>
-                    </li>
-  
-                    <li class="list-inline-item">
-                        <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary"
+        <div class="navbar-vertical-footer footer">
+          <div class="row justify-content-lg-center align-items-center">
+            <div class="col-md-2 ml-5">
+              <button id="btnReturn" type="button" class="btn btn-pill mb-0"><a href="#"></a><i class="tio-back-ui"></i> Quay lại</button>
+            </div>
+            <div class="col-md-7 mr-5">
+              <div class="d-flex justify-content-end">
+                <!-- List Dot -->
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <button style="background-color: #F5F5F5;" type="submit" id="btnLuu" class="btn btn-white" >Lưu<i class="tio-save-outlined"></i></button>
+                  </li>
+
+                  <li class="list-inline-item">
+                    <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary"
                         data-hs-step-form-prev-options='{
                           "targetSelector": "#addTongMuc"
                         }'>
-                          Tiếp tục<i class="tio-next-ui" style="margin-left: 1ex;"></i>
+                          Tiếp tục <i class="tio-next-ui"></i>
                         </button>
-                    </li>
-
-                  </ul>
-                  <!-- End List Dot -->
-                </div>
+                  </li>
+                </ul>
               </div>
             </div>
+          </div>
         </div>
   
         <!-- Footer -->
@@ -416,6 +564,8 @@
     <script src="../../../assets/vendor/datatables.net.extensions/select/select.min.js"></script>
     <script src="../../../assets/vendor/table-edits/build/table-edits.min.js"></script>
     <script src="../../../assets/vendor/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+
     
 
     
