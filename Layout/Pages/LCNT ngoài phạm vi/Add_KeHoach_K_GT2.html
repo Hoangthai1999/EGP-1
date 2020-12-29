@@ -334,25 +334,37 @@
   
         <!-- Footer -->
         
-        <div class="nav-divider"></div>
+        <div id="alert" class="card-alert col-lg-8 mt-6">
+                    <div class="alert alert-soft-success media" role="alert" style="display: none">
+                      <i class="mr-2"><img src="../../../assets/img/160x160/Snack bar/Color style/icon/filled/suggested/Vector.jpg" alt=""></i>
+                      <div class="media-body" role="alert">
+                        Đăng tải thành công, chờ phê duyệt
+                      </div>
+                    </div>
+                </div>
 
-        <!-- Footer -->
-          <div class=" page-footer" id="addPlanFinishBtn">
-            <div class="row justify-content-between align-items-center">
-              <div class="col" style="margin-left: 9rem;">
-                <button id="btnReturn" type="button" class="btn btn-pill"><i class="tio-back-ui"></i> Quay lại</button>
-              </div>
-              <div class="col-auto" style="margin-right: 13rem;">
-                <button style="margin-right: 5px;" style="background-color: #F5F5F5;" type="submit" id="btnLuu" class="btn btn-white" >Lưu<i style="margin-left: 3px;" class="tio-save-outlined"></i></button>
-                <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary" 
-                data-hs-step-form-prev-options='{
-                  "targetSelector": "#addTongMuc"
-                }'>
-                  Đăng tải<i class="tio-upload-on-cloud" style="margin-left: 1ex;"></i>
-                </button>
-              </div>
-            </div>
-          </div>
+                <div class="navbar-vertical-footer footer">
+                  <div class="row justify-content-lg-center align-items-center">
+                    <div class="col-5 mr-3">
+                      <button id="btnReturn" type="button" class="btn btn-pill"><i class="tio-back-ui"></i>Quay lại</button>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="d-flex justify-content-end">
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <button style="background-color: #F5F5F5;" type="button" id="btnLuu" class="btn btn-white" >Lưu<i class="tio-save-outlined"></i></button>
+                          </li>
+        
+                          <li class="list-inline-item">
+                            <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary">
+                                  Tiếp tục <i class="tio-next-ui"></i>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
         
   
         

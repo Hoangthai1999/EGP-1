@@ -133,7 +133,7 @@
         <!-- End Page Header -->
         
         <!-- Step Form -->
-        <div style="margin-left: 5rem; margin-right: 5rem;" class="js-step-form py-md-0" id="stepForm"
+        <div class="js-step-form py-md-0" id="stepForm"
               data-hs-step-form-options='{
                 "progressSelector": "#addUserStepFormProgress",
                 "stepsSelector": "#addUserStepFormContent",
@@ -141,56 +141,60 @@
                 "isValidate": false
               }'>
               <!-- Step -->
-              <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
-                <li class="step-item" data-step="1" data-id="addThongTin">
-                  <a class="step-content-wrapper" href="#addThongTin;"
-                     data-hs-step-form-next-options='{
-                      "targetSelector": "#addThongTin"
-                    }'>
-                    <span class="step-icon step-icon-soft-dark">01</span>
-                    <div class="step-content">
-                      <small><span class="step-title" style="color: black;">Thông tin cơ bản</span></small>
-                    </div>
-                  </a>
-                </li>
-
-                <li class="step-item" data-step="2" data-id="addTongMuc">
-                  <a class="step-content-wrapper" href="#addTongMuc;"
-                     data-hs-step-form-next-options='{
-                      "targetSelector": "#addTongMuc"
-                    }'>
-                    <span class="step-icon step-icon-soft-dark">02</span>
-                    <div class="step-content">
-                      <small><span class="step-title">Tổng mức đầu tư</span></small>
-                    </div>
-                  </a>
-                </li>
-                <li class="step-item" data-step="3" data-id="addQuyetDinh">
-                  <a class="step-content-wrapper" href="#addQuyetDinh;"
-                     data-hs-step-form-next-options='{
-                      "targetSelector": "#addQuyetDinh"
-                    }'>
-                    <span class="step-icon step-icon-soft-dark">03</span>
-                    <div class="step-content">
-                      <small><span class="step-title">Quyết định phê duyệt</span></small>
-                    </div>
-                  </a>
-                </li>
-                <li class="step-item" data-step="4" data-id="addXacNhan">
-                  <a class="step-content-wrapper" href="#addXacNhan;"
-                     data-hs-step-form-next-options='{
-                      "targetSelector": "#addXacNhan"
-                    }'>
-                    <span class="step-icon step-icon-soft-dark">04</span>
-                    <div class="step-content">
-                      <small><span class="step-title">Xác nhận thông tin</span></small>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+              <div class="row justify-content-lg-center">
+                <div class="col-lg-10">
+                  <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
+                    <li class="step-item" data-step="1" data-id="addThongTin">
+                      <a class="step-content-wrapper" href="#addThongTin;"
+                         data-hs-step-form-next-options='{
+                          "targetSelector": "#addThongTin"
+                        }'>
+                        <span class="step-icon step-icon-soft-dark">01</span>
+                        <div class="step-content">
+                          <small><span class="step-title" style="color: black;">Thông tin cơ bản</span></small>
+                        </div>
+                      </a>
+                    </li>
+    
+                    <li class="step-item" data-step="2" data-id="addTongMuc">
+                      <a class="step-content-wrapper" href="#addTongMuc;"
+                         data-hs-step-form-next-options='{
+                          "targetSelector": "#addTongMuc"
+                        }'>
+                        <span class="step-icon step-icon-soft-dark">02</span>
+                        <div class="step-content">
+                          <small><span class="step-title">Tổng mức đầu tư</span></small>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="step-item" data-step="3" data-id="addQuyetDinh">
+                      <a class="step-content-wrapper" href="#addQuyetDinh;"
+                         data-hs-step-form-next-options='{
+                          "targetSelector": "#addQuyetDinh"
+                        }'>
+                        <span class="step-icon step-icon-soft-dark">03</span>
+                        <div class="step-content">
+                          <small><span class="step-title">Quyết định phê duyệt</span></small>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="step-item" data-step="4" data-id="addXacNhan">
+                      <a class="step-content-wrapper" href="#addXacNhan;"
+                         data-hs-step-form-next-options='{
+                          "targetSelector": "#addXacNhan"
+                        }'>
+                        <span class="step-icon step-icon-soft-dark">04</span>
+                        <div class="step-content">
+                          <small><span class="step-title">Xác nhận thông tin</span></small>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <!-- End Step -->
           <div class="row justify-content-lg-center hs-nav-scroller-unfold">
-            <div class="col-lg-11">
+            <div class="col-lg-10">
               <!-- Content Step Form -->
               <div id="addUserStepFormContent">
                 <!-- Card -->
@@ -1252,23 +1256,40 @@
                 </div>
               </div>  
             </div>
-          </div>  
-          <div class="nav-divider"></div>
+          </div> 
 
       <!-- Footer -->
-        <div class=" page-footer">
-          <div class="row justify-content-between align-items-center">
-            <div class="col" style="margin-left: 10rem;">
-              <button id="btnReturn" type="button" class="btn btn-pill"><i class="tio-back-ui"></i> Quay lại</button>
-            </div>
-            <div class="col-auto" style="margin-right: 11rem;">
-              <button style="margin-right: 5px;" style="background-color: #F5F5F5;" type="submit" id="btnLuu" class="btn btn-white" >Lưu<i style="margin-left: 3px;" class="tio-save-outlined"></i></button>
-              <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" data-step="1" class="btn btn-primary" >
-                Tiếp tục<i class="tio-next-ui" style="margin-left: 1ex;"></i>
-              </button>
-            </div>
-          </div>
-        </div>
+        <div id="alert" class="card-alert col-lg-10 mt-6">
+                    <div class="alert alert-soft-success media" role="alert" style="display: none">
+                      <i class="mr-2"><img src="../../../assets/img/160x160/Snack bar/Color style/icon/filled/suggested/Vector.jpg" alt=""></i>
+                      <div class="media-body" role="alert">
+                        Đăng tải thành công, chờ phê duyệt
+                      </div>
+                    </div>
+                </div>
+
+                <div class="navbar-vertical-footer footer">
+                  <div class="row justify-content-lg-center align-items-center">
+                    <div class="col-5 mr-3">
+                      <button id="btnReturn" type="button" class="btn btn-pill"><i class="tio-back-ui"></i>Quay lại</button>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="d-flex justify-content-end">
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <button style="background-color: #F5F5F5;" type="button" id="btnLuu" class="btn btn-white" >Lưu<i class="tio-save-outlined"></i></button>
+                          </li>
+        
+                          <li class="list-inline-item">
+                            <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary">
+                                  Tiếp tục <i class="tio-next-ui"></i>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
           <!-- End Row -->
         </div>
         <!-- End Step Form -->
