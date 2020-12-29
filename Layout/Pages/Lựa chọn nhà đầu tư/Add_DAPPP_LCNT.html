@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../../assets/vendor/icon-set/style.css">
     <link rel="stylesheet" href="../../../assets/vendor/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="../../../assets/vendor/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="../../../assets/vendor/daterangepicker/daterangepicker.css">
 
     <!-- CSS Fis Template -->
     <link rel="stylesheet" href="../../../assets/css/theme.min.css">
@@ -42,12 +43,12 @@
     <!-- ========== MAIN CONTENT ========== -->
     <!-- Navbar Vertical -->
 
-    <aside id="verticalMenu" class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered">
+    <aside id="verticalMenu" class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-expand-xxl navbar-vertical navbar-vertical-fixed navbar-bordered">
     </aside>
 
     <main id="content" role="main" class="main">
         <!-- Content -->
-        <div class="content container-fluid">
+        <div class="content container-fluid" style="background-color: #F5F5F5;">
             <!-- Page Header -->
             <div class="page-header">
                 <div class="row align-items-sm-end">
@@ -106,22 +107,22 @@
                   }'>
                 <!-- Step -->
                 <div class="row justify-content-lg-center">
-                  <div class="col-lg-8">
+                  <div class="col-lg-10">
                     <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
                       <li class="step-item" data-step="1" data-id="addThongTin">
-                          <a class="step-content-wrapper" href="javascript:;"
+                          <a class="step-content-wrapper" href="#addThongTin"
                              data-hs-step-form-next-options='{
                               "targetSelector": "#addThongTin"
                              }'>
                               <span class="step-icon step-icon-soft-dark">01</span>
                               <div class="step-content">
-                                  <small><span class="step-title" style="color: black;">Thông tin chung</span></small>
+                                  <small><span class="step-title">Thông tin chung</span></small>
                               </div>
                           </a>
                       </li>
   
                       <li class="step-item" data-step="2" data-id="addTongMuc">
-                          <a class="step-content-wrapper" href="javascript:;"
+                          <a class="step-content-wrapper" href="#addTongMuc"
                              data-hs-step-form-next-options='{
                               "targetSelector": "#addTongMuc"
                              }'>
@@ -158,9 +159,8 @@
                   <!-- Content Step Form -->
                   <div class="hs-nav-scroller-unfold">
                           <div id="addUserStepFormContent">
-                            <form>
                               <div id="addThongTin" class="active">
-                                <div class="card card-lg mb-3 mb-lg-5">
+                                <div class="card card-sm mb-3 mb-lg-5">
                                   <div class="card-header">
                                     <h4 class="card-header-title">Thông tin chi tiết gói thầu</h4>
                                   </div>
@@ -193,7 +193,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="card card-lg">
+                                <div class="card card-sm">
                                     <div class="card-body">
                                       <!-- Form Group -->
                                       <div class="row form-group">
@@ -206,6 +206,7 @@
                                           </div>
                                       </div>
                                       <!-- End Form Group -->
+                                      
                                       <!-- Form Group -->
                                       <div class="row form-group">
                                           <label for="firstNameLabel" class="col-sm-3 col-form-label input-label">Gói thực hiện sơ tuyển</label>
@@ -236,7 +237,7 @@
                                       
                                       <!-- Form Group -->
                                       <div class="row form-group">
-                                          <label for="NCTQLabel" class="col-sm-3 col-form-label input-label">Địa điểm thực hiện <i style="color: red;">*</i></label>
+                                          <label for="NCTQLabel" class="col-sm-3 col-form-label input-label">Nhóm dự án <i style="color: red;">*</i></label>
   
                                           <div class="col-sm-9 js-form-message" data-validate-state>
                                               <!-- Select2 -->
@@ -365,188 +366,772 @@
                                           </div>
                                       </div>
                                       <!-- End Form Group -->
-                                      
+
                                       <!-- Form Group -->
                                       <div class="row form-group">
-                                          <label for="NCTQLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Hình thức quản lý dự án<span style="color: red;">*</span></label>
-  
-                                          <div class="col-sm-9">
-                                              <!-- Select2 -->
-                                              <select class="js-select2-custom" required
-                                                      data-hs-select2-options='{
-                                                        "minimumResultsForSearch": "Infinity",
-                                                        "placeholder": "Chọn"
-                                                      }'>
-                                                  <option label="empty"></option>
-                                                  <option value="1">Bruce Maynard</option>
-                                                  <option value="2">Hollis Clark</option>
-                                                  <option value="3">Lester Howard</option>
-                                                  <option value="4">George Marino</option>
-                                                  <option value="5">Tyler Johnson</option>
-                                                  <option value="6">Jennifer Craig</option>
-                                                  <option value="7">Martha Barnwell</option>
-                                                  <option value="8">Florencia Todd</option>
-                                                  <option value="9">Henry Sloan</option>
-                                                  <option value="10">Abigail Watson</option>
-                                              </select>
-                                              <!-- End Select2 -->
+                                        <label for="inputGroupMergeFullName" class="col-sm-3 input-label col-form-label">Địa điểm thực hiện dự án <i style="color: red;">*</i></label>
+                                      
+                                        <div class="col-sm-9 input-group input-group-merge">
+                                          <div class="col-sm-1 input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupMergeFullNameAddOn">
+                                              <i class="tio-add"></i>
+                                            </span>
                                           </div>
+                                          <input type="text" class="form-control" id="inputGroupMergeFullName" aria-label="Mark Williams" aria-describedby="inputGroupMergeFullNameAddOn" required>
+                                        </div>
                                       </div>
                                       <!-- End Form Group -->
-                                      
+
                                       <!-- Form Group -->
                                       <div class="row form-group">
-                                          <label for="NCTQLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Hình thức đầu tư<span style="color: red;">*</span></label>
-  
-                                          <div class="col-sm-9">
+                                        <label class="col-sm-3 col-form-label input-label">Tổng mức đầu tư dự án <i style="color: red;">*</i></label>
+
+                                        <div class="col-sm-9">
+                                          <div class="input-group input-group-sm-down-break">
+                                            <!-- Custom Radio -->
+                                            <div class=" mr-lg-2">
+                                              <input type="text" class="form-control input-group" required>
+                                            </div>
+
+                                            <div class="mr-lg-10">
                                               <!-- Select2 -->
                                               <select class="js-select2-custom" required
                                                       data-hs-select2-options='{
-                                                        "minimumResultsForSearch": "Infinity",
-                                                        "placeholder": "Chọn"
+                                                        "minimumResultsForSearch": "Infinity"
                                                       }'>
-                                                  <option label="empty"></option>
-                                                  <option value="1">Bruce Maynard</option>
-                                                  <option value="2">Hollis Clark</option>
-                                                  <option value="3">Lester Howard</option>
-                                                  <option value="4">George Marino</option>
-                                                  <option value="5">Tyler Johnson</option>
-                                                  <option value="6">Jennifer Craig</option>
-                                                  <option value="7">Martha Barnwell</option>
-                                                  <option value="8">Florencia Todd</option>
-                                                  <option value="9">Henry Sloan</option>
-                                                  <option value="10">Abigail Watson</option>
+                                                    <option value="1">VND</option>
+                                                    <option value="2">USD</option>
+                                                    <option value="3">EUR</option>
+                                              </select>
+                                              <!-- End Select2 -->
+                                            </div>
+                                            <!-- End Custom Radio -->
+                  
+                                            <!-- Custom Radio -->
+                                            <div class="row ml-lg-10">
+                                              <label for="TyGia" class="mr-3 input-label col-form-label">Tỷ giá</label>
+
+                                              <div>
+                                                <input type="text" class="input-group form-control" id="TyGia" required>
+                                              </div>
+                                            </div>
+                                            <!-- End Custom Radio -->
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- End Form Group -->
+
+                                      <!-- Form Group -->
+                                      <div class="row form-group">
+                                        <label for="inputGroupMergeVND1" class="input-label col-form-label col-sm-3">Tổng mức đầu tư quy đổi về VND <i style="color: red;">*</i></label>
+                                      
+                                        <div class="col-sm-9 js-form-message">
+                                          <div class="input-group input-group-merge">
+                                            <input type="text" class="form-control" id="inputGroupMergeVND1" aria-describedby="inputGroupMergeVND" required>
+                                            <div class="input-group-append">
+                                              <span class="input-group-text" id="inputGroupMergeVND">
+                                                <i class="icon">VND</i>
+                                              </span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- End Form Group -->
+
+                                      <!-- Form Group -->
+                                      <div class="row form-group">
+                                        <label for="SoTien" class="input-label col-form-label col-sm-3">Số tiền bằng chữ</label>
+                                      
+                                        <div class="col-sm-9">
+                                          <div class="input-group">
+                                            <input type="text" class="form-control input-group-light" id="SoTien" disabled>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- End Form Group -->
+
+                                      <!-- Form Group -->
+                                      <div class="row form-group">
+                                        <label for="TGIANLabel" class="col-sm-3 col-form-label input-label">Thời điểm quy đổi</label>
+                             
+                                       <div id="TGIANLabel" class="row col-sm-9">
+                                         <div class="col-md-4">
+                                           <input type="date" class="form-control" name="Ngay" id="NLabel" placeholder="dd/MM/yyyy" aria-describedby="inputGroupMergeDate" aria-label="Ngày thực hiện">
+                                         </div>
+        
+                                         <div class="col-md-4">
+                                          <input type="time" class="form-control" name="TG" id="TGLabel" placeholder="hh/mm" aria-label="Thời gian thực hiện">
+                                         </div>
+                                       </div>
+                                      </div>
+                                      <!-- End Form Group -->
+
+                                      <!-- Form Group -->
+                                      <div class="row form-group">
+                                        <label class="col-sm-3 col-form-label input-label">Vốn đầu tư nhà nước</label>
+                                        
+                                        <div id="MoneyLabel2" class="row col-sm-9">
+                                          <div class="col-md-4 js-form-message">
+                                            <input type="text" class="form-control" name="Money" id="MoneyLabel">
+                                          </div>
+         
+                                          <div class="col-md-2 js-form-message">
+                                              <!-- Select2 -->
+                                              <select class="js-select2-custom"
+                                                      data-hs-select2-options='{
+                                                        "minimumResultsForSearch": "Infinity"
+                                                      }'>
+                                                    <option value="1">VND</option>
+                                                    <option value="2">USD</option>
+                                                    <option value="3">EUR</option>
                                               </select>
                                               <!-- End Select2 -->
                                           </div>
+                                        </div>
+                                      </div>
+                                      <!-- End Form Group -->
+
+                                      <!-- Form Group -->
+                                      <div class="form-group row">
+                                        <label for="nameLabel" class="col-sm-3 col-form-label input-label">Tên cơ quan Nhà nước có thẩm quyền <i style="color: red;">*</i></label>
+                                        <div class="col-sm-9 js-form-message">
+                                          <input type="text" class="form-control" id="nameLabel" name="name" required>
+                                        </div>
+                                      </div>
+                                      <!-- End Form Group -->
+
+                                      <!-- Form Group -->
+                                      <div class="form-group row">
+                                        <label for="emailLabel" class="col-sm-3 col-form-label input-label">Địa chỉ liên hệ cơ quan Nhà nước có thẩm quyền <i style="color: red;">*</i></label>
+                                        <div class="col-sm-9 js-form-message">
+                                          <input type="email" class="form-control" id="emailLabel" name="email" required>
+                                        </div>
                                       </div>
                                       <!-- End Form Group -->
                                   </div>
                                 </div>
                               </div>
-                              <div class="navbar-vertical-footer footer">
-                                <div class="row justify-content-lg-center align-items-center">
-                                  <div class="col-4 mr-3">
-                                    <button id="btnReturn" type="button" class="btn btn-pill"><i class="tio-back-ui"></i>Quay lại</button>
+
+  
+                              <div id="addTongMuc" style="display: none;">
+                                <div class="card card-sm">
+                                  <div class="card-header">
+                                    <div class="card-header-title"> <h4>Quyết định phê duyệt dự án</h4></div>
                                   </div>
-                                  <div class="col-md-4">
-                                    <div class="d-flex justify-content-end">
-                                      <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                          <button style="background-color: #F5F5F5;" type="submit" id="btnLuu" class="btn btn-white" >Lưu<i class="tio-save-outlined"></i></button>
-                                        </li>
-                      
-                                        <li class="list-inline-item">
-                                          <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary">
-                                                Tiếp tục <i class="tio-next-ui"></i>
-                                          </button>
-                                        </li>
-                                      </ul>
+                                  
+                                  <div class="card-body">
+                                    <!-- Form Group -->
+                                    <div class="row form-group">
+                                        <label for="validationFormFirstNameLabel" class="col-sm-3 col-form-label input-label">Số quyết định phê duyệt dự án <i style="color: red;">*</i></label>
+    
+                                        <div class="col-sm-9">
+                                            <div class="js-form-message">
+                                                <input type="text" class="form-control" name="firstName" id="validationFormFirstNameLabel" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Form Group -->
+                                    
+                                    <!-- Form Group -->
+                                    <div class="row form-group">
+                                        <label for="validationFormLastNameLabel" class="col-sm-3 col-form-label input-label">Ngày phê duyệt dự án <i style="color: red;">*</i></label>
+    
+                                        <div class="col-sm-4">
+                                            <div class="js-form-message">
+                                              <div class="input-group input-group-merge">
+                                                <input type="text" class="js-flatpickr form-control flatpickr-custom" name="form-control-flatpickr" placeholder="dd/MM/yyyy" aria-describedby="inputGroupMergeDt" required
+                                                  data-hs-flatpickr-options='{
+                                                  "dateFormat": "d/m/Y"
+                                                  }'>
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text" id="inputGroupMergeDt">
+                                                    <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
+                                                  </span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Form Group -->
+                                    
+                                    <!-- Form Group -->
+                                    <div class="row form-group">
+                                        <label for="validationFormEmailLabel" class="col-sm-3 col-form-label input-label">Cơ quan ra quyết định <i style="color: red;">*</i></label>
+    
+                                        <div class="col-sm-9">
+                                            <div class="js-form-message">
+                                                <input type="text" class="form-control" name="email" id="validationFormEmailLabel" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Form Group -->
+
+                                    <!-- Form Group -->
+                                    <div class="row form-group">
+                                      <label class="col-sm-3 col-form-label input-label">Quyết định phê duyệt</label>
+  
+                                      <div class="col-sm-9">
+                                          <div class="js-form-message">
+                                            <form>
+                                              <div class="custom-file">
+                                                <input type="file" class="js-file-attach custom-file-input" id="customFile" placeholder="chọn tệp đính kèm"
+                                                        data-hs-file-attach-options='{
+                                                          "textTarget": "[for=\"customFile\"]",
+                                                       }'>
+                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                              </div>
+                                            </form>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- End Form Group -->
+
+                                  <!-- Form Group -->
+                                  <div class="row form-group">
+                                    <label class="col-sm-3 col-form-label input-label">Các văn bản có liên quan</label>
+
+                                    <div class="col-sm-9">
+                                        <div class="js-form-message">
+                                          <form>
+                                            <div class="custom-file">
+                                              <input type="file" class="js-file-attach custom-file-input" id="customFile2" placeholder="chọn tệp đính kèm"
+                                                      data-hs-file-attach-options='{
+                                                        "textTarget": "[for=\"customFile\"]",
+                                                     }'>
+                                              <label class="custom-file-label" for="customFile2s">Choose file</label>
+                                            </div>
+                                          </form>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <!-- End Form Group -->
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div id="addQuyetDinh" style="display: none;">
+                                <div class="card card-lg">
+                                  <div class="card-header">
+                                    <div class="card-header-title">
+                                      <h4>Dự kiến tiến độ triển khai</h4>
+                                    </div>
+                                  </div>
+
+                                  <div class="card-body">
+                                    <!-- Form Group -->
+                                    <div class="row form-group">
+                                        <label for="KTLabel" class="col-sm-3 col-form-label input-label">Tóm tắt yêu cầu kĩ thuật</label>
+    
+                                        <div class="col-sm-9">
+                                          <input type="password" class="form-control" name="address1" id="KTLabel">
+                                        </div>
+                                    </div>
+                                    <!-- End Form Group -->
+                                    
+                                    <!-- Form Group -->
+                                    <div class="row form-group">
+                                        <label for="validationFormAddress2Label" class="col-sm-3 col-form-label input-label">Báo cáo nghiên cứu khả thi</label>
+    
+                                        <div class="col-sm-9">
+                                          <div class="input-group input-group-sm-down-break">
+                                            <!-- Custom Radio -->
+                                            <div class="form-control mr-4">
+                                              <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" name="BCAccountTypeRadio" id="BCAccountTypeRadio1">
+                                                <label class="custom-control-label" for="BCAccountTypeRadio1">Chưa có</label>
+                                              </div>
+                                            </div>
+                                            <!-- End Custom Radio -->
+                  
+                                            <!-- Custom Radio -->
+                                            <div class="form-control">
+                                              <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" name="BCAccountTypeRadio" id="BCAccountTypeRadio2">
+                                                <label class="custom-control-label" for="BCAccountTypeRadio2">Đã có</label>
+                                              </div>
+                                            </div>
+                                            <!-- End Custom Radio -->
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Form Group -->
+
+                                    <div class="row form-group">
+                                      <label for="TgianBC" class="input-label col-form-label col-sm-3">Thời gian lập báo cáo nghiên cứu khả thi</label>
+
+                                      <div class="col-sm-4">
+                                        
+                                       <div class="input-group input-group-merge">
+                                        <input id="TgianBC" type="text" class="js-daterangepicker-clear form-control daterangepicker-custom-input" placeholder="dd/MM/yyyy-dd/MM/yyyy"
+                                        data-hs-daterangepicker-options='{
+                                         "autoUpdateInput": false,
+                                         "locale": {
+                                           "cancelLabel": "Clear"
+                                         }
+                                        }'>
+                                        <div class="input-group-append">
+                                          <span class="input-group-text" id="inputGroupMergeEmailOptionalAddOn">
+                                            <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
+                                          </span>
+                                        </div>
+                                       </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                      <label for="TgianTC" class="input-label col-form-label col-sm-3">Thời gian tổ chức  đấu thầu lựa chọn nhà đầu tư</label>
+
+                                      <div class="col-sm-4">
+                                       <div class="input-group input-group-merge">
+                                        <input id="TgianTC" type="text" class="js-daterangepicker-clear form-control daterangepicker-custom-input" placeholder="dd/MM/yyyy-dd/MM/yyyy"
+                                           data-hs-daterangepicker-options='{
+                                             "autoUpdateInput": false,
+                                             "locale": {
+                                             "cancelLabel": "Clear"
+                                            }
+                                          }'>
+                                          <div class="input-group-append">
+                                            <span class="input-group-text" id="inputGroupMergeEmailOptionalAddOn">
+                                              <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
+                                            </span>
+                                          </div>
+                                       </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                      <label for="TgianXD" class="input-label col-form-label col-sm-3">Thời gian xây dựng, khai thác công trình</label>
+
+                                      <div class="col-sm-4">
+                                       <div class="input-group input-group-merge">
+                                        <input id="TgianXD" type="text" class="js-daterangepicker-clear form-control daterangepicker-custom-input" placeholder="dd/MM/yyyy-dd/MM/yyyyy"
+                                        data-hs-daterangepicker-options='{
+                                         "autoUpdateInput": false,
+                                         "locale": {
+                                           "cancelLabel": "Clear"
+                                         }
+                                       }'>
+                                       <div class="input-group-append">
+                                        <span class="input-group-text" id="inputGroupMergeEmailOptionalAddOn">
+                                          <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
+                                        </span>
+                                      </div>
+                                      </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </form>
-  
-                              <div id="addTongMuc" style="display: none;">
-                                  <!-- Form Group -->
-                                  <div class="row form-group">
-                                      <label for="validationFormFirstNameLabel" class="col-sm-3 col-form-label input-label">First name</label>
-  
-                                      <div class="col-sm-9">
-                                          <div class="js-form-message">
-                                              <input type="password" class="form-control" name="firstName" id="validationFormFirstNameLabel" placeholder="First name" aria-label="First name" required data-msg="Please enter your first name.">
-                                          </div>
-                                      </div>
+
+                              <div id="addXacNhan" style="display: none;">
+                                <div class="card">
+                                  <div class="card-header">
+                                    <h4 class="card-header-title">Xác nhận thông tin</h4>
                                   </div>
-                                  <!-- End Form Group -->
-                                  <!-- Form Group -->
-                                  <div class="row form-group">
-                                      <label for="validationFormLastNameLabel" class="col-sm-3 col-form-label input-label">Last name</label>
-  
-                                      <div class="col-sm-9">
-                                          <div class="js-form-message">
-                                              <input type="password" class="form-control" name="lastName" id="validationFormLastNameLabel" placeholder="Last name" aria-label="Last name" required data-msg="Please enter your last name.">
-                                          </div>
-                                      </div>
+                                
+                                  <!-- Table -->
+                                  <div class="table-responsive">
+                                    <table class="table table-lg table-thead-bordered table-nowrap table-align-middle">
+                                      <thead class="thead-light">
+                                        <tr>
+                                          <th>Thông tin dự án</th>
+                                          <th></th>
+                                        </tr>
+                                      </thead>
+                                
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span>Số dự án</span>
+                                          </td>
+                                          <td>
+                                            4432191238
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            <span>Mã dự án ở hệ thống đầu tư Công</span>
+                                          </td>
+                                          <td>
+                                            589231
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            <span>Trạng thái dự án</span>
+                                          </td>
+                                          <td>
+                                            Tạo mới
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            Đơn vị công bố danh mục dự án
+                                          </td>
+                                          <td>
+                                            Công ty TNHH MTV Điện Lực Miền Bắc
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            Phiên bản thay đổi
+                                          </td>
+                                          <td>
+                                            01
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Mã QHNS
+                                          </td>
+                                          <td>
+                                            24125124
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Trạng thái đăng tải
+                                          </td>
+                                          <td>
+                                            Chưa đăng tải
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
                                   </div>
-                                  <!-- End Form Group -->
-                                  <!-- Form Group -->
-                                  <div class="row form-group">
-                                      <label for="validationFormEmailLabel" class="col-sm-3 col-form-label input-label">Email</label>
-  
-                                      <div class="col-sm-9">
-                                          <div class="js-form-message">
-                                              <input type="password" class="form-control" name="email" id="validationFormEmailLabel" placeholder="Email address" aria-label="Email address" required data-msg="Please enter a valid email address.">
-                                          </div>
-                                      </div>
+                                  <!-- End Table -->
+
+                                  <!-- Table -->
+                                  <div class="table-responsive">
+                                    <table class="table table-lg table-thead-bordered table-nowrap table-align-middle">
+                                      <thead class="thead-light">
+                                        <tr>
+                                          <th scope="col">Thông tin chung dự án</th>
+                                          <th scope="col"></th>
+                                        </tr>
+                                      </thead>
+                                
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span>Tên dự án</span>
+                                          </td>
+                                          <td>
+                                            Nâng cấp hạ tầng viễn thông 5G
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            <span>Có thực hiện sơ tuyển?</span>
+                                          </td>
+                                          <td>
+                                            Công ty TNHH MTV Điện lực Hà Nội
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            <span>Trong nước/ Quốc tế</span>
+                                          </td>
+                                          <td>
+                                            Trong nước
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            Nhóm dự án
+                                          </td>
+                                          <td>
+                                            Nhóm dự án OCA
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            Loại hợp đồng
+                                          </td>
+                                          <td>
+                                            Hợp đồng điện tử
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Dự án khác
+                                          </td>
+                                          <td>
+                                            Dự án xây lắp đèn giao thông thông minh
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Mục tiêu đầu tư
+                                          </td>
+                                          <td>
+                                            Nâng cấp hệ thống giao thông
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Quy mô đầu tư
+                                          </td>
+                                          <td>
+                                            13,000,000,000  VND
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Thời gian thực hiện dự án
+                                          </td>
+                                          <td>
+                                            20/10/2020
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Lĩnh vực đầu tư
+                                          </td>
+                                          <td>
+                                            Cơ sở hạ tầng
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Địa điểm thực hiện dự án
+                                          </td>
+                                          <td class="d-flex">
+                                            <span class="mr-lg-10">530,000 USD</span>
+                                            <span>Tỷ giá 23,000.00</span>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Tổng mức quy đổi về VND
+                                          </td>
+                                          <td>
+                                            <span>13,000,000,000 VND</span>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Số tiền bằng chữ
+                                          </td>
+                                          <td>
+                                            <span>Mười ba tỉ đồng</span>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Thời điểm quy đổi
+                                          </td>
+                                          <td>
+                                            <span>20/10/2020</span>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Vốn đầu tư Nhà nước
+                                          </td>
+                                          <td>
+                                            <span>5,000,000  VND</span>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>
+                                            Tên cơ quan Nhà nước có thẩm quyền
+                                          </td>
+                                          <td>
+                                            <span>Bộ Giao thông vận tải</span>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>Địa chỉ cơ quan Nhà nước có thẩm quyền</td>
+                                          <td>E6 Phạm Hùng</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
                                   </div>
-                                  <!-- End Form Group -->
-                                  <!-- Footer -->
-                                  <div class="d-flex align-items-center">
-                                      <button type="button" class="btn btn-ghost-secondary mr-2"
-                                              data-hs-step-form-prev-options='{
-                                              "targetSelector": "#validationFormAccount"
-                                              }'>
-                                          <i class="tio-chevron-left"></i> Previous step
-                                      </button>
-  
-                                      <div class="ml-auto">
-                                          <button type="button" class="btn btn-primary"
-                                                data-hs-step-form-next-options='{
-                                                  "targetSelector": "#validationFormAddress"
-                                                }'>
-                                              Next <i class="tio-chevron-right"></i>
-                                          </button>
-                                      </div>
+                                  <!-- End Table -->
+
+                                  <!-- Table -->
+                                  <div class="table-responsive">
+                                    <table class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle">
+                                      <thead class="thead-light">
+                                        <tr>
+                                          <th>Quyết định phê duyệt dự án</th>
+                                          <th></th>
+                                        </tr>
+                                      </thead>
+                                
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span>Số quyết định phê duyệt</span>
+                                          </td>
+                                          <td>
+                                            412512612412
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            <span>Ngày phê duyệt dự án</span>
+                                          </td>
+                                          <td>
+                                            13/10/2020
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            <span>Cơ quan ra quyết định</span>
+                                          </td>
+                                          <td>
+                                            Bộ Giao Thông Vận Tải
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            Quyết định phê duyệt
+                                          </td>
+                                          <td>
+                                            <button class="btn btn-soft-secondary btn-pill" disabled>Quyetdinh....pdf</button>
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            Các văn bản có liên quan
+                                          </td>
+                                          <td>
+                                            <button class="btn btn-soft-secondary btn-pill" disabled>Quyetdinhpheduyet....pdf</button>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
                                   </div>
-                                  <!-- End Footer -->
-                              </div>
-  
-                              <div id="addQuyetDinh" style="display: none;">
-                                  <!-- Form Group -->
-                                  <div class="row form-group">
-                                      <label for="validationFormAddress1Label" class="col-sm-3 col-form-label input-label">Address 1</label>
-  
-                                      <div class="col-sm-9">
-                                          <div class="js-form-message">
-                                              <input type="password" class="form-control" name="address1" id="validationFormAddress1Label" placeholder="Address 1" aria-label="Address 1" required data-msg="Please enter your address.">
-                                          </div>
-                                      </div>
+                                  <!-- End Table -->
+
+                                  <!-- Table -->
+                                  <div class="table-responsive">
+                                    <table class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle">
+                                      <thead class="thead-light">
+                                        <tr>
+                                          <th>Dự kiến tiến độ triển khai</th>
+                                          <th></th>
+                                        </tr>
+                                      </thead>
+                                
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span>Tóm tắt yêu cầu kỹ thuật</span>
+                                          </td>
+                                          <td>
+                                            Yêu cầu hoàn thành nghiêm túc, nhanh chóng và đảm bảo an toàn các hạng mục đã đề ra
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            <span>Báo cáo nghiên cứu khả thi</span>
+                                          </td>
+                                          <td>
+                                            Chưa có
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            <span>Thời gian lập báo cáo nghiên cứu khả thi</span>
+                                          </td>
+                                          <td>
+                                            12/10/2020 - 30/12/2020
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            Thời gian tổ chức đấu thầu lựa chọn nhà đầu tư
+                                          </td>
+                                          <td>
+                                            30/06/2020 - 21/10/2020
+                                          </td>
+                                        </tr>
+                                
+                                        <tr>
+                                          <td>
+                                            Thời gian xây dựng, khai thác công trình
+                                          </td>
+                                          <td>
+                                            30/05/2020 -  13/08/2020
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
                                   </div>
-                                  <!-- End Form Group -->
-                                  <!-- Form Group -->
-                                  <div class="row form-group">
-                                      <label for="validationFormAddress2Label" class="col-sm-3 col-form-label input-label">Address 2 <span class="input-label-secondary">(Optional)</span></label>
-  
-                                      <div class="col-sm-9">
-                                          <input type="password" class="form-control" name="address2" id="validationFormAddress2Label" placeholder="Address 2" aria-label="Address 2">
-                                      </div>
-                                  </div>
-                                  <!-- End Form Group -->
-                                  <!-- Footer -->
-                                  <div class="d-sm-flex align-items-center">
-                                      <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 mr-2"
-                                              data-hs-step-form-prev-options='{
-                                              "targetSelector": "#validationFormProfile"
-                                              }'>
-                                          <i class="tio-chevron-left"></i> Previous step
-                                      </button>
-  
-                                      <div class="d-flex justify-content-end ml-auto">
-                                          <button type="button" class="btn btn-white mr-2" data-dismiss="modal" aria-label="Close">Cancel</button>
-                                          <button id="validationFormFinishBtn" type="button" class="btn btn-primary">Save Changes</button>
-                                      </div>
-                                  </div>
-                                  <!-- End Footer -->
+                                  <!-- End Table -->
+                                </div>
+                                <!-- End Card -->
                               </div>
                           </div>
                           <!-- End Content Step Form -->
-                          <!-- Message Body -->
-                          <!-- End Message Body -->
                   </div>
+                </div>
+                
+
+                <div id="alert" class="card-alert col-lg-10 mt-6">
+                    <div class="alert alert-soft-success media" role="alert" style="display: none">
+                      <i class="mr-2"><img src="../../../assets/img/160x160/Snack bar/Color style/icon/filled/suggested/Vector.jpg" alt=""></i>
+                      <div class="media-body" role="alert">
+                        Đăng tải thành công, chờ phê duyệt
+                      </div>
+                    </div>
+                </div>
+
+                <div class="navbar-vertical-footer footer">
+                  <div class="row justify-content-lg-center align-items-center">
+                    <div class="col-5 mr-3">
+                      <button id="btnReturn" type="button" class="btn btn-pill"><i class="tio-back-ui"></i>Quay lại</button>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="d-flex justify-content-end">
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <button style="background-color: #F5F5F5;" type="button" id="btnLuu" class="btn btn-white" >Lưu<i class="tio-save-outlined"></i></button>
+                          </li>
+        
+                          <li class="list-inline-item">
+                            <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary">
+                                  Tiếp tục <i class="tio-next-ui"></i>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                </div>        
+                </div>
+        
             </form>
             <!-- End Step Form -->
             <!-- End Step Form -->
@@ -558,15 +1143,15 @@
     <!-- ========== END MAIN CONTENT ========== -->
     <!-- ========== SECONDARY CONTENTS ========== -->
     <!-- Go to Top -->
-    <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+    <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;border-color: #064D69;background-color: #064D69;color: #ffffff;"
        data-hs-go-to-options='{
-         "offsetTop": 700,
+         "offsetTop": 200,
          "position": {
            "init": {
-             "right": 32
+             "right": 40
            },
            "show": {
-             "bottom": 32
+             "bottom": 85
            },
            "hide": {
              "bottom": -32
@@ -592,6 +1177,8 @@
     <script src="../../../assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
     <script src="../../../assets/vendor/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
     <script src="../../../assets/vendor/hs-step-form/dist/hs-step-form.min.js"></script>
+    <script src="../../../assets/vendor/daterangepicker/moment.min.js"></script>
+    <script src="../../../assets/vendor/daterangepicker/daterangepicker.js"></script>
     <!-- JS Fis -->
     <script src="../../../assets/js/theme.min.js"></script>
 
@@ -643,8 +1230,7 @@
                   $("#" + forms).addClass("active");
                   step = step + 1;
               }
-
-
+              
           });
           $("#btnReturn").click(function () {
               if (step > 1) {
@@ -657,6 +1243,19 @@
                   step = step - 1;
               }
           });
+      });
+    </script>
+    <script>
+      $(document).on('ready', function () {
+        $.HSCore.components.HSDaterangepicker.init($('.js-daterangepicker-clear'));
+    
+        $('.js-daterangepicker-clear').on('apply.daterangepicker', function(ev, picker) {
+          $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+        });
+    
+        $('.js-daterangepicker-clear').on('cancel.daterangepicker', function(ev, picker) {
+          $(this).val('');
+        });
       });
     </script>
 
