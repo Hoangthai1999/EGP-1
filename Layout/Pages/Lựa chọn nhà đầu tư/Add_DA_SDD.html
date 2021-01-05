@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Trang chủ | IDNE - Admin &amp; Dashboard Template</title>
+    <title>Tạo dự án sử dụng đất | IDNE - Admin &amp; Dashboard Template</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../../favicon.svg">
@@ -61,7 +61,7 @@
 
     <main id="content" role="main" class="main">
         <!-- Content -->
-        <div class="content container-fluid">
+        <div class="content container-fluid" style="background-color: #F5F5F5;padding-bottom:0;">
           <div class="page-header">
             <div class="row align-items-sm-end">
                 <div class="col-sm mb-2 mb-sm-0">
@@ -74,7 +74,7 @@
 
                     <!-- Modal -->
                     <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div style="width: 340px;height: 158px;" class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <button style="margin-left: 9.5rem;" type="button" class="btn btn-xs btn-pill btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
                                     <i class="tio-clear tio-lg"></i>
@@ -95,14 +95,14 @@
                     <h1 class="page-title">Tạo dự án đầu tư có sử dụng đất</h1>
                 </div>
 
-                  <div class="dropdown col-sm-auto">
+                  <div class="dropdown dropleft">
                     <a class="btn btn-white dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Dự án đầu tư có sử dụng đất
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdown-menu">
                       <a class="dropdown-item " href="../../../Layout/Pages/Lựa chọn nhà đầu tư/Add_DAPPP_LCNT.html">Tạo dự án PPP</a>
                       <a class="dropdown-item active" href="../../../Layout/Pages/Lựa chọn nhà đầu tư/Add_DA_SDD.html">Dự án đầu tư có sử dụng đất</a>
-                      <a class="dropdown-item" href="#">Xã hội hoá</a>
+                      <a class="dropdown-item" href="../Lựa chọn nhà đầu tư/Add_DA_XHH.html">Xã hội hoá</a>
                     </div>
                   </div>
             </div>
@@ -115,47 +115,47 @@
                     "stepsSelector": "#addUserStepFormContent",
                     "endSelector": "#validationFormFinishBtn",
                     "isValidate": true
-                  }'>
+                  }' style="position: relative;">
                 <!-- Step -->
                 <div class="row justify-content-lg-center">
-                  <div class="col-lg-10">
+                  <div class="col-lg-11">
                     <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
                       <li class="step-item" data-step="1" data-id="addThongTin">
-                          <a class="step-content-wrapper" href="#addThongTin"
+                          <a class="step-content-wrapper" href="#"
                              data-hs-step-form-next-options='{
                               "targetSelector": "#addThongTin"
                              }'>
                               <span class="step-icon step-icon-soft-dark">01</span>
                               <div class="step-content">
-                                  <small><span class="step-title" style="color: black;">Thông tin chung</span></small>
+                                  <small><span class="step-title" style="color: black;">Thông tin chung dự án</span></small>
                               </div>
                           </a>
                       </li>
   
                       <li class="step-item" data-step="2" data-id="addTongMuc">
-                          <a class="step-content-wrapper" href="#addTongMuc"
+                          <a class="step-content-wrapper" href="#"
                              data-hs-step-form-next-options='{
                               "targetSelector": "#addTongMuc"
                              }'>
                               <span class="step-icon step-icon-soft-dark">02</span>
                               <div class="step-content">
-                                  <small><span class="step-title">Quyết định phê duyệt</span></small>
+                                  <small><span class="step-title">Quyết định phê duyệt dự án</span></small>
                               </div>
                           </a>
                       </li>
                       <li class="step-item" data-step="3" data-id="addQuyetDinh">
-                          <a class="step-content-wrapper" href="#addQuyetDinh;"
+                          <a class="step-content-wrapper" href="#"
                              data-hs-step-form-next-options='{
                               "targetSelector": "#addQuyetDinh"
                               }'>
                               <span class="step-icon step-icon-soft-dark">03</span>
                               <div class="step-content">
-                                  <small><span class="step-title">Dự kiến tiến độ triển khai</span></small>
+                                  <small><span class="step-title">Thông báo mới quan tâm dự án đầu tư có sử dụng đất</span></small>
                               </div>
                           </a>
                       </li>
                       <li class="step-item" data-step="4" data-id="addXacNhan">
-                          <a class="step-content-wrapper" href="javascript:;"
+                          <a class="step-content-wrapper" href="#"
                              data-hs-step-form-next-options='{
                               "targetSelector": "#addXacNhan"
                               }'>
@@ -171,258 +171,283 @@
                   <div class="hs-nav-scroller-unfold">
                           <div id="addUserStepFormContent">
                               <div id="addThongTin" class="active">
-                                <div class="card card-sm mb-3 mb-lg-5">
-                                  <div class="card-header">
-                                    <h4 class="card-header-title">Thông tin chi tiết gói thầu</h4>
-                                  </div>
-
-                                  <div class="card-body">
-                                    <div class="row form-group">
-                                      <label class="input-label col-form-label col-sm-3">Trong nước/Quốc tế ?</label>
-
-                                      <div class="col-sm-9">
-                                        <div class="input-group input-group-sm-down-break">
-                                          <!-- Custom Radio -->
-                                          <div class="form-control mr-2">
-                                            <div class="custom-control custom-radio">
-                                              <input type="radio" class="custom-control-input" name="userAccountTypeRadio3" id="rdoTn">
-                                              <label class="custom-control-label" for="rdoTn">Trong nước</label>
-                                            </div>
-                                          </div>
-                                          <!-- End Custom Radio -->
-                
-                                          <!-- Custom Radio -->
-                                          <div class="form-control ml-1">
-                                            <div class="custom-control custom-radio">
-                                              <input type="radio" class="custom-control-input" name="userAccountTypeRadio3" id="rdoQt">
-                                              <label class="custom-control-label" for="rdoQt">Quốc tế</label>
-                                            </div>
-                                          </div>
-                                          <!-- End Custom Radio -->
+                                <div class="row justify-content-lg-center">
+                                  <div class="col-lg-12" style="height:470px; overflow-y: auto;">
+                                    <div class="card card-sm mb-3 mb-lg-5">
+                                      <div class="card-header">
+                                        <h4 class="card-header-title">Thông tin chi tiết gói thầu</h4>
+                                        <div class="hs-unfold mr-2">
+                                          <a style="color: #064D69;border-color: #064D69;" class="js-hs-unfold-invoker btn btn-sm btn-dashed-outline btn-white" href="javascript:;">
+                                            <i class="mr-1"><img src="../../../assets/img/160x160/button1/Button/dash/32px/icon/outlined/application/cloud-download.jpg" alt="upload"></i><span>Nhận dữ liệu từ hệ thống đầu tư công</span>
+                                          </a>
                                         </div>
+                                      </div>
+    
+                                      <div class="card-body">
+                                        <div class="row form-group">
+                                          <label class="input-label col-form-label col-sm-3">Trong nước/Quốc tế ?</label>
+    
+                                          <div class="col-sm-9">
+                                            <div class="input-group input-group-sm-down-break">
+                                              <!-- Custom Radio -->
+                                              <div class="form-control mr-2">
+                                                <div class="custom-control custom-radio">
+                                                  <input type="radio" class="custom-control-input" name="userAccountTypeRadio3" id="rdoTn">
+                                                  <label class="custom-control-label" for="rdoTn">Trong nước</label>
+                                                </div>
+                                              </div>
+                                              <!-- End Custom Radio -->
+                    
+                                              <!-- Custom Radio -->
+                                              <div class="form-control ml-1">
+                                                <div class="custom-control custom-radio">
+                                                  <input type="radio" class="custom-control-input" name="userAccountTypeRadio3" id="rdoQt">
+                                                  <label class="custom-control-label" for="rdoQt">Quốc tế</label>
+                                                </div>
+                                              </div>
+                                              <!-- End Custom Radio -->
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card card-sm">
+                                        <div class="card-body">
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                              <label class="col-sm-3 col-form-label input-label" for="MaLabel">Tên dự án <i style="color: red;">*</i></label>
+      
+                                              <div class="col-sm-9">
+                                                  <div class="input-group">
+                                                      <input type="text" required class="form-control" name="text" id="MaLabel">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- End Form Group -->
+    
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label" for="MTLabel">Mục tiêu đầu tư <i style="color: red;">*</i></label>
+    
+                                            <div class="col-sm-9">
+                                                <div class="input-group">
+                                                    <input type="text" required class="form-control" name="MT" id="MTLabel">
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <!-- End Form Group -->
+    
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label" for="QMLabel">Quy mô đầu tư <i style="color: red;">*</i></label>
+    
+                                            <div class="col-sm-9">
+                                              <div class="input-group">
+                                                  <input type="text" required class="form-control" name="QM" id="QMLabel">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- End Form Group -->
+    
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label" for="TomTatLabel">Tóm tắt các yêu cầu cơ bản<i style="color: red;">*</i></label>
+    
+                                            <div class="col-sm-9">
+                                              <div class="input-group">
+                                                <input type="text" required class="form-control" name="TomTat" id="TomTatLabel">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- End Form Group -->
+                                      
+                                          
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                              <label for="NCTQLabel" class="col-sm-3 col-form-label input-label">Thời hạn tiến độ đầu tư <i style="color: red;">*</i></label>
+      
+                                              <div class="col-sm-3 js-form-message">
+                                                <div class="input-group input-group-merge">
+                                                  <input type="text" class="js-flatpickr form-control flatpickr-custom" name="form-control-flatpickr" placeholder="dd/mm/yyyy" required
+                                                       data-hs-flatpickr-options='{
+                                                         "dateFormat": "d/m/Y",
+                                                         "maxDate": "today"
+                                                       }'>
+                                                  <div class="input-group-append">
+                                                    <span class="input-group-text" id="inputGroupMergeDt">
+                                                      <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
+                                                    </span>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                          <!-- End Form Group -->
+    
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label for="inputGroupMergeFullName" class="col-sm-3 input-label col-form-label">Địa điểm thực hiện dự án <i style="color: red;">*</i></label>
+                                          
+                                            <div class="col-sm-9 js-form-message">
+                                              <!-- Select2 -->
+                                              <select class="js-select2-custom" multiple required
+                                                      data-hs-select2-options='{
+                                                        "minimumResultsForSearch": "Infinity"
+                                                      }'>
+                                                  <option value="2">Hollis Clark</option>
+                                                  <option value="3">Lester Howard</option>
+                                                  <option value="4">George Marino</option>
+                                                  <option value="5">Tyler Johnson</option>
+                                                  <option value="6">Jennifer Craig</option>
+                                                  <option value="7">Martha Barnwell</option>
+                                                  <option value="8">Florencia Todd</option>
+                                                  <option value="9">Henry Sloan</option>
+                                                  <option value="10">Abigail Watson</option>
+                                              </select>
+                                              <!-- End Select2 -->
+                                          </div>
+                                          </div>
+                                          <!-- End Form Group -->
+    
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label for="DienTichInput" class="col-sm-3 col-form-label input-label">Diện tích khu đất <i style="color: red;">*</i></label>
+    
+                                            <div class="col-sm-3">
+                                              <div class="input-group input-group-sm-down-break">
+                                                  <input type="text" class="form-control input-group" id="DienTichInput" name="DienTich" required>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- End Form Group -->
+
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label for="iinputGroupMD" class="col-sm-3 input-label col-form-label">Mục đích sử dụng đất <i style="color: red;">*</i></label>
+                                          
+                                            <div class="col-sm-9 input-group input-group-merge">
+                                              <input type="text" class="form-control" id="inputGroupMD" name="MucDich" required>
+                                            </div>
+                                          </div>
+                                          <!-- End Form Group -->
+
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label for="inputGroupCT" class="col-sm-3 input-label col-form-label">Các chỉ tiêu quy hoạch được duyệt <i style="color: red;">*</i></label>
+                                          
+                                            <div class="col-sm-9 input-group input-group-merge">
+                                              <input type="text" class="form-control" id="inputGroupCT" name="CacCT" required>
+                                            </div>
+                                          </div>
+                                          <!-- End Form Group -->
+    
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label for="NCTQLabel" class="col-sm-3 col-form-label input-label">Hiện trạng khu đất</label>
+    
+                                            <div class="col-sm-9 js-form-message">
+                                                <!-- Select2 -->
+                                                <select class="js-select2-custom"
+                                                        data-hs-select2-options='{
+                                                          "minimumResultsForSearch": "Infinity",
+                                                          "placeholder": "Chọn"
+                                                        }'>
+                                                    <option></option>
+                                                    <option value="2">Hollis Clark</option>
+                                                    <option value="3">Lester Howard</option>
+                                                    <option value="4">George Marino</option>
+                                                    <option value="5">Tyler Johnson</option>
+                                                    <option value="6">Jennifer Craig</option>
+                                                    <option value="7">Martha Barnwell</option>
+                                                    <option value="8">Florencia Todd</option>
+                                                    <option value="9">Henry Sloan</option>
+                                                    <option value="10">Abigail Watson</option>
+                                                </select>
+                                                <!-- End Select2 -->
+                                            </div>
+                                          </div>
+                                          <!-- End Form Group -->
+
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label for="inputGroupTT" class="col-sm-3 input-label col-form-label">Các thông tin khác về dự án <i style="color: red;">*</i></label>
+                                          
+                                            <div class="col-sm-9 input-group input-group-merge">
+                                              <input type="text" class="form-control" id="inputGroupTT" name="ThongTinKhac" required>
+                                            </div>
+                                          </div>
+                                          <!-- End Form Group -->
+
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label for="inputGroupTTDT" class="col-sm-3 input-label col-form-label">Thông tin của Sở Kế hoạch và Đầu tư <i style="color: red;">*</i></label>
+                                          
+                                            <div class="col-sm-9 input-group input-group-merge">
+                                              <input type="text" class="form-control" id="inputGroupTTDT" name="ThongTinSo" required>
+                                            </div>
+                                          </div>
+                                          <!-- End Form Group -->
+
+                                          <!-- Form Group -->
+                                          <div class="row form-group">
+                                            <label for="inputGroupMergeVND1" class="input-label col-form-label col-sm-3">Tổng mức đầu tư quy đổi về VND <i style="color: red;">*</i></label>
+                                          
+                                            <div class="col-sm-9 js-form-message">
+                                              <div class="input-group input-group-merge">
+                                                <input type="text" class="form-control" id="inputGroupMergeVND1" aria-describedby="inputGroupMergeVND" name="TongMuc" required>
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text" id="inputGroupMergeVND">
+                                                    <i class="icon">VND</i>
+                                                  </span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- End Form Group -->
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="card card-sm">
-                                    <div class="card-body">
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                          <label class="col-sm-3 col-form-label input-label" for="MaLabel">Tên dự án <i style="color: red;">*</i></label>
-  
-                                          <div class="col-sm-9">
-                                              <div class="input-group">
-                                                  <input type="text" required class="form-control" name="text" id="MaLabel">
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label class="col-sm-3 col-form-label input-label" for="MTLabel">Mục tiêu đầu tư <i style="color: red;">*</i></label>
-
-                                        <div class="col-sm-9">
-                                            <div class="input-group">
-                                                <input type="text" required class="form-control" name="text" id="MTLabel">
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label class="col-sm-3 col-form-label input-label" for="QMLabel">Quy mô đầu tư <i style="color: red;">*</i></label>
-
-                                        <div class="col-sm-9">
-                                          <div class="input-group">
-                                              <input type="text" required class="form-control" name="text" id="QMLabel">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label class="col-sm-3 col-form-label input-label" for="TomTatLabel">Tóm tắt các yêu cầu cơ bản<i style="color: red;">*</i></label>
-
-                                        <div class="col-sm-9">
-                                          <div class="input-group">
-                                            <input type="text" required class="form-control" name="text" id="TomTatLabel">
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
-                                  
-                                      
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                          <label for="NCTQLabel" class="col-sm-3 col-form-label input-label">Thời hạn tiến độ đầu tư <i style="color: red;">*</i></label>
-  
-                                          <div class="col-sm-3 js-form-message" data-validate-state>
-                                            <div class="input-group input-group-merge">
-                                              <input type="text" class="js-flatpickr form-control flatpickr-custom" name="form-control-flatpickr" placeholder="dd/MM/yyyy" aria-describedby="inputGroupMergeDt" required
-                                                data-hs-flatpickr-options='{
-                                                "dateFormat": "d/m/Y"
-                                                }'>
-                                              <div class="input-group-append">
-                                                <span class="input-group-text" id="inputGroupMergeDt">
-                                                  <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
-                                                </span>
-                                              </div>
-                                            </div>
-                                          </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label for="inputGroupMergeFullName" class="col-sm-3 input-label col-form-label">Địa điểm thực hiện dự án <i style="color: red;">*</i></label>
-                                      
-                                        <div class="col-sm-9 input-group input-group-merge">
-                                          <div class="col-sm-1 input-group-prepend">
-                                            <span class="input-group-text" id="inputGroupMergeFullNameAddOn">
-                                              <i class="tio-add"></i>
-                                            </span>
-                                          </div>
-                                          <input type="text" class="form-control" id="inputGroupMergeFullName" aria-label="Mark Williams" aria-describedby="inputGroupMergeFullNameAddOn" required>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label class="col-sm-3 col-form-label input-label">Tổng mức đầu tư dự án <i style="color: red;">*</i></label>
-
-                                        <div class="col-sm-9">
-                                          <div class="input-group input-group-sm-down-break">
-                                            <!-- Custom Radio -->
-                                            <div class=" mr-lg-2">
-                                              <input type="text" class="form-control input-group" required>
-                                            </div>
-
-                                            <div class="mr-lg-10">
-                                              <!-- Select2 -->
-                                              <select class="js-select2-custom" required
-                                                      data-hs-select2-options='{
-                                                        "minimumResultsForSearch": "Infinity"
-                                                      }'>
-                                                    <option value="1">VND</option>
-                                                    <option value="2">USD</option>
-                                                    <option value="3">EUR</option>
-                                              </select>
-                                              <!-- End Select2 -->
-                                            </div>
-                                            <!-- End Custom Radio -->
-                  
-                                            <!-- Custom Radio -->
-                                            <div class="row ml-lg-10">
-                                              <label for="TyGia" class="mr-3 input-label col-form-label">Tỷ giá</label>
-
-                                              <div>
-                                                <input type="text" class="input-group form-control" id="TyGia" required>
-                                              </div>
-                                            </div>
-                                            <!-- End Custom Radio -->
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label for="inputGroupMergeVND1" class="input-label col-form-label col-sm-3">Tổng mức đầu tư quy đổi về VND <i style="color: red;">*</i></label>
-                                      
-                                        <div class="col-sm-9 js-form-message">
-                                          <div class="input-group input-group-merge">
-                                            <input type="text" class="form-control" id="inputGroupMergeVND1" aria-describedby="inputGroupMergeVND" required>
-                                            <div class="input-group-append">
-                                              <span class="input-group-text" id="inputGroupMergeVND">
-                                                <i class="icon">VND</i>
-                                              </span>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label for="SoTien" class="input-label col-form-label col-sm-3">Số tiền bằng chữ</label>
-                                      
-                                        <div class="col-sm-9">
-                                          <div class="input-group">
-                                            <input type="text" class="form-control input-group-light" id="SoTien" disabled>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label for="TGIANLabel" class="col-sm-3 col-form-label input-label">Thời điểm quy đổi</label>
-                             
-                                       <div id="TGIANLabel" class="row col-sm-9">
-                                         <div class="col-md-4">
-                                           <input type="date" class="form-control" name="Ngay" id="NLabel" placeholder="dd/MM/yyyy" aria-describedby="inputGroupMergeDate" aria-label="Ngày thực hiện">
-                                         </div>
-        
-                                         <div class="col-md-4">
-                                          <input type="time" class="form-control" name="TG" id="TGLabel" placeholder="hh/mm" aria-label="Thời gian thực hiện">
-                                         </div>
-                                       </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="row form-group">
-                                        <label class="col-sm-3 col-form-label input-label">Vốn đầu tư nhà nước</label>
-                                        
-                                        <div id="MoneyLabel2" class="row col-sm-9">
-                                          <div class="col-md-4 js-form-message">
-                                            <input type="text" class="form-control" name="Money" id="MoneyLabel">
-                                          </div>
-         
-                                          <div class="col-md-2 js-form-message">
-                                              <!-- Select2 -->
-                                              <select class="js-select2-custom"
-                                                      data-hs-select2-options='{
-                                                        "minimumResultsForSearch": "Infinity"
-                                                      }'>
-                                                    <option value="1">VND</option>
-                                                    <option value="2">USD</option>
-                                                    <option value="3">EUR</option>
-                                              </select>
-                                              <!-- End Select2 -->
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="form-group row">
-                                        <label for="nameLabel" class="col-sm-3 col-form-label input-label">Tên cơ quan Nhà nước có thẩm quyền <i style="color: red;">*</i></label>
-                                        <div class="col-sm-9 js-form-message">
-                                          <input type="text" class="form-control" id="nameLabel" name="name" required>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
-
-                                      <!-- Form Group -->
-                                      <div class="form-group row">
-                                        <label for="emailLabel" class="col-sm-3 col-form-label input-label">Địa chỉ liên hệ cơ quan Nhà nước có thẩm quyền <i style="color: red;">*</i></label>
-                                        <div class="col-sm-9 js-form-message">
-                                          <input type="email" class="form-control" id="emailLabel" name="email" required>
-                                        </div>
-                                      </div>
-                                      <!-- End Form Group -->
+                                <div id="alert" class="card-alert col-lg-10 mt-6">
+                                  <div class="alert alert-soft-success media" role="alert" style="display: none">
+                                    <i class="mr-2"><img src="../../../assets/img/160x160/Snack bar/Color style/icon/filled/suggested/Vector.jpg" alt=""></i>
+                                    <div class="media-body" role="alert">
+                                      Đăng tải thành công, chờ phê duyệt
+                                    </div>
                                   </div>
                                 </div>
+              
+                               <div class="card-footer" style="position: absolute;width: 100%;padding-bottom: 0;">
+                                <div class="row justify-content-lg-start">
+                                  <div class="col-md-6">
+                                    <!-- <div class="row justify-content-start">
+                                      <button id="btnReturn" type="button" class="btn btn-pill"><i class="tio-back-ui"></i>Quay lại</button>
+                                    </div> -->
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="d-flex justify-content-lg-end">
+                                      <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                          <button style="background-color: #F5F5F5;" type="button" id="btnLuu" class="btn btn-white" >Lưu<i class="tio-save-outlined"></i></button>
+                                        </li>
+                      
+                                        <li class="list-inline-item">
+                                          <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary" 
+                                          data-hs-step-form-next-options='{
+                                            "targetSelector": "#addTongMuc"
+                                          }'>
+                                                Tiếp tục <i class="tio-next-ui"></i>
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>
                               </div>
 
   
                               <div id="addTongMuc" style="display: none;">
-                                <div class="card card-sm">
+                                <div class="card card-lg" style="height: 470px;">
                                   <div class="card-header">
                                     <div class="card-header-title"> <h4>Quyết định phê duyệt dự án</h4></div>
                                   </div>
@@ -515,531 +540,660 @@
                                   <!-- End Form Group -->
                                   </div>
                                 </div>
+
+                                <div id="alert" class="card-alert col-lg-10 mt-6">
+                                  <div class="alert alert-soft-success media" role="alert" style="display: none">
+                                    <i class="mr-2"><img src="../../../assets/img/160x160/Snack bar/Color style/icon/filled/suggested/Vector.jpg" alt=""></i>
+                                    <div class="media-body" role="alert">
+                                      Đăng tải thành công, chờ phê duyệt
+                                    </div>
+                                  </div>
+                                </div>
+              
+                               <div class="card-footer" style="position: absolute;width: 100%;padding-bottom: 0;">
+                                <div class="row justify-content-lg-start">
+                                  <div class="col-md-6">
+                                    <div class="row justify-content-start">
+                                      <button id="btnReturn" type="button" class="btn btn-pill" data-hs-step-form-next-options='{
+                                        "targetSelector": "#addThongTin"
+                                      }'>
+                                      <i class="tio-back-ui"></i>Quay lại</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="d-flex justify-content-lg-end">
+                                      <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                          <button style="background-color: #F5F5F5;" type="button" id="btnLuu" class="btn btn-white" >Lưu<i class="tio-save-outlined"></i></button>
+                                        </li>
+                      
+                                        <li class="list-inline-item">
+                                          <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary" 
+                                          data-hs-step-form-next-options='{
+                                            "targetSelector": "#addQuyetDinh"
+                                          }'>
+                                                Tiếp tục <i class="tio-next-ui"></i>
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>
                               </div>
   
                               <div id="addQuyetDinh" style="display: none;">
-                                <div class="card card-lg">
-                                  <div class="card-header">
-                                    <div class="card-header-title">
-                                      <h4>Dự kiến tiến độ triển khai</h4>
-                                    </div>
-                                  </div>
-
-                                  <div class="card-body">
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                        <label for="KTLabel" class="col-sm-3 col-form-label input-label">Tóm tắt yêu cầu kĩ thuật</label>
-    
-                                        <div class="col-sm-9">
-                                          <input type="password" class="form-control" name="address1" id="KTLabel">
+                                <div class="row justify-content-lg-center">
+                                  <div class="col-lg-12" style="height: 470px;overflow-y: auto;">
+                                    <div class="card card-lg">
+                                      <div class="card-header">
+                                        <div class="card-header-title">
+                                          <h4>Thông báo mời quan tâm dự án đầu tư có sử dụng đất</h4>
                                         </div>
-                                    </div>
-                                    <!-- End Form Group -->
-                                    
-                                    <!-- Form Group -->
-                                    <div class="row form-group">
-                                        <label for="validationFormAddress2Label" class="col-sm-3 col-form-label input-label">Báo cáo nghiên cứu khả thi</label>
+                                      </div>
     
-                                        <div class="col-sm-9">
-                                          <div class="input-group input-group-sm-down-break">
-                                            <!-- Custom Radio -->
-                                            <div class="form-control mr-4">
-                                              <div class="custom-control custom-radio">
-                                                <input type="radio" class="custom-control-input" name="BCAccountTypeRadio" id="BCAccountTypeRadio1">
-                                                <label class="custom-control-label" for="BCAccountTypeRadio1">Chưa có</label>
-                                              </div>
-                                            </div>
-                                            <!-- End Custom Radio -->
-                  
-                                            <!-- Custom Radio -->
-                                            <div class="form-control">
-                                              <div class="custom-control custom-radio">
-                                                <input type="radio" class="custom-control-input" name="BCAccountTypeRadio" id="BCAccountTypeRadio2">
-                                                <label class="custom-control-label" for="BCAccountTypeRadio2">Đã có</label>
-                                              </div>
-                                            </div>
-                                            <!-- End Custom Radio -->
-                                          </div>
+                                      <div class="card-body">
+                                        <div class="row form-group">
+                                            <h5 class="col-sm-3">Thông tin dự án đã phê duyệt</h5>
                                         </div>
-                                    </div>
-                                    <!-- End Form Group -->
-
-                                    <div class="row form-group">
-                                      <label for="TgianBC" class="input-label col-form-label col-sm-3">Thời gian lập báo cáo nghiên cứu khả thi</label>
-
-                                      <div class="col-sm-4">
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Mục tiêu đầu tư</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Quy mô đầu tư dự án</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
                                         
-                                       <div class="input-group input-group-merge">
-                                        <input id="TgianBC" type="text" class="js-daterangepicker-clear form-control daterangepicker-custom-input" placeholder="dd/MM/yyyy-dd/MM/yyyy"
-                                        data-hs-daterangepicker-options='{
-                                         "autoUpdateInput": false,
-                                         "locale": {
-                                           "cancelLabel": "Clear"
-                                         }
-                                        }'>
-                                        <div class="input-group-append">
-                                          <span class="input-group-text" id="inputGroupMergeEmailOptionalAddOn">
-                                            <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
-                                          </span>
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Sơ bộ tổng chi phí thục hiện dự án</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                            </div>
                                         </div>
-                                       </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="row form-group">
-                                      <label for="TgianTC" class="input-label col-form-label col-sm-3">Thời gian tổ chức  đấu thầu lựa chọn nhà đầu tư</label>
-
-                                      <div class="col-sm-4">
-                                       <div class="input-group input-group-merge">
-                                        <input id="TgianTC" type="text" class="js-daterangepicker-clear form-control daterangepicker-custom-input" placeholder="dd/MM/yyyy-dd/MM/yyyy"
-                                           data-hs-daterangepicker-options='{
-                                             "autoUpdateInput": false,
-                                             "locale": {
-                                             "cancelLabel": "Clear"
-                                            }
-                                          }'>
-                                          <div class="input-group-append">
-                                            <span class="input-group-text" id="inputGroupMergeEmailOptionalAddOn">
-                                              <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
-                                            </span>
-                                          </div>
-                                       </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="row form-group">
-                                      <label for="TgianXD" class="input-label col-form-label col-sm-3">Thời gian xây dựng, khai thác công trình</label>
-
-                                      <div class="col-sm-4">
-                                       <div class="input-group input-group-merge">
-                                        <input id="TgianXD" type="text" class="js-daterangepicker-clear form-control daterangepicker-custom-input" placeholder="dd/MM/yyyy-dd/MM/yyyyy"
-                                        data-hs-daterangepicker-options='{
-                                         "autoUpdateInput": false,
-                                         "locale": {
-                                           "cancelLabel": "Clear"
-                                         }
-                                       }'>
-                                       <div class="input-group-append">
-                                        <span class="input-group-text" id="inputGroupMergeEmailOptionalAddOn">
-                                          <i><img src="../../../assets/img/160x160/Text field/48px/icon/outlined/application/Vector.jpg" alt=""></i>
-                                        </span>
-                                      </div>
-                                      </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Chi phí bồi thường, hỗ trợ, tái định cư</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Thời hạn, tiến độ đầu tư</label>
+    
+                                            <div class="col-sm-9">
+                                              <input type="text" class="js-flatpickr d-none" placeholder="Select dates"
+                                              data-hs-flatpickr-options='{
+                                                "dateFormat": "d/m/Y",
+                                                "inline": true
+                                              }'>
+                                              <!-- End Flatpickr -->
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Địa điểm thực hiện dự án</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Diện thích khu đất</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Địa điểm thực hiện dự án</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="divider"></div>
+                                        
+                                        <div class="row form-group mt-2">
+                                            <h5 class="col-sm-3">Cách thức nộp hồ sơ đăng ký thực hiện dự án</h5>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Hình thức đăng ký</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control input-group-light" placeholder="Qua mạng" disabled>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Địa điểm nhận hồ sơ đăng ký</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control input-group-light" placeholder="Website: http//muasamcong.mpi.gov.vn" disabled>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Địa điểm phát hành TBMQT</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control input-group-light" placeholder="Website: http//muasamcong.mpi.gov.vn" disabled>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Thời hạn để nhà đầu tư nộp hồ sơ đăng ký thực hiện dự án *</label>
+    
+                                            <div class="col-sm-9">
+                                                <div class="input-group input-group-sm-down-break">
+                                                    <!-- Custom Radio -->
+                                                    <div class="mr-2">
+                                                        <input type="date" class="form-control"  name="userAccountTypeRadio3" id="rdoTn">
+                                                    </div>
+                                                    <!-- End Custom Radio -->
+                              
+                                                    <!-- Custom Radio -->
+                                                    <div class="ml-1 col-sm-2">
+                                                        <input type="time" class="form-control" name="userAccountTypeRadio3" id="rdoQt">
+                                                    </div>
+                                                    <!-- End Custom Radio -->
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Thời điểm mở hồ sơ đăng ký thực hiện dự án *</label>
+    
+                                            <div class="col-sm-9">
+                                                <div class="input-group input-group-sm-down-break">
+                                                    <!-- Custom Radio -->
+                                                    <div class="mr-2">
+                                                      <input type="text" class="js-flatpickr d-none" placeholder="Select dates"
+                                                      data-hs-flatpickr-options='{
+                                                        "dateFormat": "d/m/Y",
+                                                        "inline": true
+                                                      }'>
+                                                      <!-- End Flatpickr -->
+                                                    </div>
+                                                    <!-- End Custom Radio -->
+                              
+                                                    <!-- Custom Radio -->
+                                                    <div class="ml-1 col-sm-2">
+                                                        <input type="time" class="form-control" name="userAccountTypeRadio3" id="rdoQt">
+                                                    </div>
+                                                    <!-- End Custom Radio -->
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Địa điểm mở hồ sơ</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control input-group-light" placeholder="Website: http//muasamcong.mpi.gov.vn" disabled>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Địa điểm mở hồ sơ</label>
+    
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control input-group-light" placeholder="Địa chỉ, số điện thoại, số Fax,...">
+                                            </div>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="row form-group mt-2">
+                                            <h5 class="col-sm-3">Yêu cầu sơ bộ năng lực kinh nghiệm</h5>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">* Yêu cầu sơ bộ về năng lực, kinh nghiệm của nhà đầu tư</label>
+    
+                                            <div class="col-sm-9">
+                                                <div class="input-group d-flex">
+                                                    <!-- Custom Radio -->
+                                                    <input type="text" class="form-control input-group-light mr-6" placeholder="Website: http//muasamcong.mpi.gov.vn" disabled>
+                                                    <button class="btn btn-outline-primary">Đính kèm</button>
+    
+                                                    <button class="ml-4 btn btn-outline-danger">Huỷ bỏ</button>
+                                                    <!-- End Custom Radio -->
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row form-group">
+                                            <label class="col-sm-3 col-form-label input-label">Nội dung khác</label>
+    
+                                            <div class="col-sm-9">
+                                                <div class="input-group d-flex">
+                                                    <!-- Custom Radio -->
+                                                    <input type="text" class="form-control input-group-light mr-6" placeholder="Website: http//muasamcong.mpi.gov.vn" disabled>
+                                                    <button class="btn btn-outline-primary">Đính kèm</button>
+    
+                                                    <button class="ml-4 btn btn-outline-danger">Huỷ bỏ</button>
+                                                    <!-- End Custom Radio -->
+                                                </div>
+                                            </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
+
+                                <div id="alert" class="card-alert col-lg-10 mt-6">
+                                  <div class="alert alert-soft-success media" role="alert" style="display: none">
+                                    <i class="mr-2"><img src="../../../assets/img/160x160/Snack bar/Color style/icon/filled/suggested/Vector.jpg" alt=""></i>
+                                    <div class="media-body" role="alert">
+                                      Đăng tải thành công, chờ phê duyệt
+                                    </div>
+                                  </div>
+                                </div>
+              
+                               <div class="card-footer" style="position: absolute;width: 100%;padding-bottom: 0;">
+                                <div class="row justify-content-lg-start">
+                                  <div class="col-md-6">
+                                    <div class="row justify-content-start">
+                                      <button id="btnReturn" type="button" class="btn btn-pill" data-hs-step-form-next-options='{
+                                        "targetSelector": "#addTongMuc"
+                                      }'>
+                                      <i class="tio-back-ui"></i>Quay lại</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="d-flex justify-content-lg-end">
+                                      <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                          <button style="background-color: #F5F5F5;" type="button" id="btnLuu" class="btn btn-white" >Lưu<i class="tio-save-outlined"></i></button>
+                                        </li>
+                      
+                                        <li class="list-inline-item">
+                                          <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary" 
+                                          data-hs-step-form-next-options='{
+                                            "targetSelector": "#addXacNhan"
+                                          }'>
+                                                Tiếp tục <i class="tio-next-ui"></i>
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>
                               </div>
 
                               <div id="addXacNhan" style="display: none;">
-                                <div class="card">
-                                  <div class="card-header">
-                                    <h4 class="card-header-title">Xác nhận thông tin</h4>
+                                <div class="row justify-content-lg-center">
+                                  <div class="col-lg-12" style="height: 470px;overflow-y: auto;">
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <h4 class="card-header-title">Xác nhận thông tin</h4>
+                                      </div>
+                                    
+                                      <!-- Table -->
+                                      <div class="table-responsive">
+                                        <table class="table table-lg table-thead-bordered table-nowrap table-align-middle">
+                                          <thead class="thead-light">
+                                            <tr>
+                                              <th>Thông tin dự án</th>
+                                              <th></th>
+                                            </tr>
+                                          </thead>
+                                    
+                                          <tbody>
+                                            <tr>
+                                              <td>
+                                                <span>Số dự án</span>
+                                              </td>
+                                              <td>
+                                                4432191238
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                <span>Mã dự án ở hệ thống đầu tư Công</span>
+                                              </td>
+                                              <td>
+                                                589231
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                <span>Trạng thái dự án</span>
+                                              </td>
+                                              <td>
+                                                Tạo mới
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                Đơn vị công bố danh mục dự án
+                                              </td>
+                                              <td>
+                                                Công ty TNHH MTV Điện Lực Miền Bắc
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                Phiên bản thay đổi
+                                              </td>
+                                              <td>
+                                                01
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Mã QHNS
+                                              </td>
+                                              <td>
+                                                24125124
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Trạng thái đăng tải
+                                              </td>
+                                              <td>
+                                                Chưa đăng tải
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <!-- End Table -->
+    
+                                      <!-- Table -->
+                                      <div class="table-responsive">
+                                        <table class="table table-lg table-thead-bordered table-nowrap table-align-middle">
+                                          <thead class="thead-light">
+                                            <tr>
+                                              <th scope="col">Thông tin chung dự án</th>
+                                              <th scope="col"></th>
+                                            </tr>
+                                          </thead>
+                                    
+                                          <tbody>
+                                            <tr>
+                                              <td>
+                                                <span>Tên dự án</span>
+                                              </td>
+                                              <td>
+                                                Nâng cấp hạ tầng viễn thông 5G
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                <span>Có thực hiện sơ tuyển?</span>
+                                              </td>
+                                              <td>
+                                                Công ty TNHH MTV Điện lực Hà Nội
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                <span>Trong nước/ Quốc tế</span>
+                                              </td>
+                                              <td>
+                                                Trong nước
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                Nhóm dự án
+                                              </td>
+                                              <td>
+                                                Nhóm dự án OCA
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                Loại hợp đồng
+                                              </td>
+                                              <td>
+                                                Hợp đồng điện tử
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Dự án khác
+                                              </td>
+                                              <td>
+                                                Dự án xây lắp đèn giao thông thông minh
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Mục tiêu đầu tư
+                                              </td>
+                                              <td>
+                                                Nâng cấp hệ thống giao thông
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Quy mô đầu tư
+                                              </td>
+                                              <td>
+                                                13,000,000,000  VND
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Thời gian thực hiện dự án
+                                              </td>
+                                              <td>
+                                                20/10/2020
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Lĩnh vực đầu tư
+                                              </td>
+                                              <td>
+                                                Cơ sở hạ tầng
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Địa điểm thực hiện dự án
+                                              </td>
+                                              <td class="d-flex">
+                                                <span class="mr-lg-10">530,000 USD</span>
+                                                <span>Tỷ giá 23,000.00</span>
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Tổng mức quy đổi về VND
+                                              </td>
+                                              <td>
+                                                <span>13,000,000,000 VND</span>
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Số tiền bằng chữ
+                                              </td>
+                                              <td>
+                                                <span>Mười ba tỉ đồng</span>
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Thời điểm quy đổi
+                                              </td>
+                                              <td>
+                                                <span>20/10/2020</span>
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Vốn đầu tư Nhà nước
+                                              </td>
+                                              <td>
+                                                <span>5,000,000  VND</span>
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>
+                                                Tên cơ quan Nhà nước có thẩm quyền
+                                              </td>
+                                              <td>
+                                                <span>Bộ Giao thông vận tải</span>
+                                              </td>
+                                            </tr>
+    
+                                            <tr>
+                                              <td>Địa chỉ cơ quan Nhà nước có thẩm quyền</td>
+                                              <td>E6 Phạm Hùng</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <!-- End Table -->
+    
+                                      <!-- Table -->
+                                      <div class="table-responsive">
+                                        <table class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle">
+                                          <thead class="thead-light">
+                                            <tr>
+                                              <th>Quyết định phê duyệt dự án</th>
+                                              <th></th>
+                                            </tr>
+                                          </thead>
+                                    
+                                          <tbody>
+                                            <tr>
+                                              <td>
+                                                <span>Số quyết định phê duyệt</span>
+                                              </td>
+                                              <td>
+                                                412512612412
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                <span>Ngày phê duyệt dự án</span>
+                                              </td>
+                                              <td>
+                                                13/10/2020
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                <span>Cơ quan ra quyết định</span>
+                                              </td>
+                                              <td>
+                                                Bộ Giao Thông Vận Tải
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                Quyết định phê duyệt
+                                              </td>
+                                              <td>
+                                                <button class="btn btn-soft-secondary btn-pill" disabled>Quyetdinh....pdf</button>
+                                              </td>
+                                            </tr>
+                                    
+                                            <tr>
+                                              <td>
+                                                Các văn bản có liên quan
+                                              </td>
+                                              <td>
+                                                <button class="btn btn-soft-secondary btn-pill" disabled>Quyetdinhpheduyet....pdf</button>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <!-- End Table -->
+                                    </div>
                                   </div>
-                                
-                                  <!-- Table -->
-                                  <div class="table-responsive">
-                                    <table class="table table-lg table-thead-bordered table-nowrap table-align-middle">
-                                      <thead class="thead-light">
-                                        <tr>
-                                          <th>Thông tin dự án</th>
-                                          <th></th>
-                                        </tr>
-                                      </thead>
-                                
-                                      <tbody>
-                                        <tr>
-                                          <td>
-                                            <span>Số dự án</span>
-                                          </td>
-                                          <td>
-                                            4432191238
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            <span>Mã dự án ở hệ thống đầu tư Công</span>
-                                          </td>
-                                          <td>
-                                            589231
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            <span>Trạng thái dự án</span>
-                                          </td>
-                                          <td>
-                                            Tạo mới
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            Đơn vị công bố danh mục dự án
-                                          </td>
-                                          <td>
-                                            Công ty TNHH MTV Điện Lực Miền Bắc
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            Phiên bản thay đổi
-                                          </td>
-                                          <td>
-                                            01
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Mã QHNS
-                                          </td>
-                                          <td>
-                                            24125124
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Trạng thái đăng tải
-                                          </td>
-                                          <td>
-                                            Chưa đăng tải
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                  <!-- End Table -->
-
-                                  <!-- Table -->
-                                  <div class="table-responsive">
-                                    <table class="table table-lg table-thead-bordered table-nowrap table-align-middle">
-                                      <thead class="thead-light">
-                                        <tr>
-                                          <th scope="col">Thông tin chung dự án</th>
-                                          <th scope="col"></th>
-                                        </tr>
-                                      </thead>
-                                
-                                      <tbody>
-                                        <tr>
-                                          <td>
-                                            <span>Tên dự án</span>
-                                          </td>
-                                          <td>
-                                            Nâng cấp hạ tầng viễn thông 5G
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            <span>Có thực hiện sơ tuyển?</span>
-                                          </td>
-                                          <td>
-                                            Công ty TNHH MTV Điện lực Hà Nội
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            <span>Trong nước/ Quốc tế</span>
-                                          </td>
-                                          <td>
-                                            Trong nước
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            Nhóm dự án
-                                          </td>
-                                          <td>
-                                            Nhóm dự án OCA
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            Loại hợp đồng
-                                          </td>
-                                          <td>
-                                            Hợp đồng điện tử
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Dự án khác
-                                          </td>
-                                          <td>
-                                            Dự án xây lắp đèn giao thông thông minh
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Mục tiêu đầu tư
-                                          </td>
-                                          <td>
-                                            Nâng cấp hệ thống giao thông
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Quy mô đầu tư
-                                          </td>
-                                          <td>
-                                            13,000,000,000  VND
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Thời gian thực hiện dự án
-                                          </td>
-                                          <td>
-                                            20/10/2020
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Lĩnh vực đầu tư
-                                          </td>
-                                          <td>
-                                            Cơ sở hạ tầng
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Địa điểm thực hiện dự án
-                                          </td>
-                                          <td class="d-flex">
-                                            <span class="mr-lg-10">530,000 USD</span>
-                                            <span>Tỷ giá 23,000.00</span>
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Tổng mức quy đổi về VND
-                                          </td>
-                                          <td>
-                                            <span>13,000,000,000 VND</span>
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Số tiền bằng chữ
-                                          </td>
-                                          <td>
-                                            <span>Mười ba tỉ đồng</span>
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Thời điểm quy đổi
-                                          </td>
-                                          <td>
-                                            <span>20/10/2020</span>
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Vốn đầu tư Nhà nước
-                                          </td>
-                                          <td>
-                                            <span>5,000,000  VND</span>
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>
-                                            Tên cơ quan Nhà nước có thẩm quyền
-                                          </td>
-                                          <td>
-                                            <span>Bộ Giao thông vận tải</span>
-                                          </td>
-                                        </tr>
-
-                                        <tr>
-                                          <td>Địa chỉ cơ quan Nhà nước có thẩm quyền</td>
-                                          <td>E6 Phạm Hùng</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                  <!-- End Table -->
-
-                                  <!-- Table -->
-                                  <div class="table-responsive">
-                                    <table class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle">
-                                      <thead class="thead-light">
-                                        <tr>
-                                          <th>Quyết định phê duyệt dự án</th>
-                                          <th></th>
-                                        </tr>
-                                      </thead>
-                                
-                                      <tbody>
-                                        <tr>
-                                          <td>
-                                            <span>Số quyết định phê duyệt</span>
-                                          </td>
-                                          <td>
-                                            412512612412
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            <span>Ngày phê duyệt dự án</span>
-                                          </td>
-                                          <td>
-                                            13/10/2020
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            <span>Cơ quan ra quyết định</span>
-                                          </td>
-                                          <td>
-                                            Bộ Giao Thông Vận Tải
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            Quyết định phê duyệt
-                                          </td>
-                                          <td>
-                                            <button class="btn btn-soft-secondary btn-pill" disabled>Quyetdinh....pdf</button>
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            Các văn bản có liên quan
-                                          </td>
-                                          <td>
-                                            <button class="btn btn-soft-secondary btn-pill" disabled>Quyetdinhpheduyet....pdf</button>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                  <!-- End Table -->
-
-                                  <!-- Table -->
-                                  <div class="table-responsive">
-                                    <table class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle">
-                                      <thead class="thead-light">
-                                        <tr>
-                                          <th>Dự kiến tiến độ triển khai</th>
-                                          <th></th>
-                                        </tr>
-                                      </thead>
-                                
-                                      <tbody>
-                                        <tr>
-                                          <td>
-                                            <span>Tóm tắt yêu cầu kỹ thuật</span>
-                                          </td>
-                                          <td>
-                                            Yêu cầu hoàn thành nghiêm túc, nhanh chóng và đảm bảo an toàn các hạng mục đã đề ra
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            <span>Báo cáo nghiên cứu khả thi</span>
-                                          </td>
-                                          <td>
-                                            Chưa có
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            <span>Thời gian lập báo cáo nghiên cứu khả thi</span>
-                                          </td>
-                                          <td>
-                                            12/10/2020 - 30/12/2020
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            Thời gian tổ chức đấu thầu lựa chọn nhà đầu tư
-                                          </td>
-                                          <td>
-                                            30/06/2020 - 21/10/2020
-                                          </td>
-                                        </tr>
-                                
-                                        <tr>
-                                          <td>
-                                            Thời gian xây dựng, khai thác công trình
-                                          </td>
-                                          <td>
-                                            30/05/2020 -  13/08/2020
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                  <!-- End Table -->
                                 </div>
-                                <!-- End Card -->
+
+                                <div id="alert" class="card-alert col-lg-10 mt-6">
+                                  <div class="alert alert-soft-success media" role="alert" style="display: none">
+                                    <i class="mr-2"><img src="../../../assets/img/160x160/Snack bar/Color style/icon/filled/suggested/Vector.jpg" alt=""></i>
+                                    <div class="media-body" role="alert">
+                                      Đăng tải thành công, chờ phê duyệt
+                                    </div>
+                                  </div>
+                                </div>
+              
+                               <div class="card-footer" style="position: absolute;width: 100%;padding-bottom: 0;">
+                                <div class="row justify-content-lg-start">
+                                  <div class="col-md-6">
+                                    <div class="row justify-content-start">
+                                      <button id="btnReturn" type="button" class="btn btn-pill" data-hs-step-form-next-options='{
+                                        "targetSelector": "#addQuyetDinh"
+                                      }'>
+                                      <i class="tio-back-ui"></i>Quay lại</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="d-flex justify-content-lg-end">
+                                      <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                          <button style="background-color: #F5F5F5;" type="button" id="btnLuu" class="btn btn-white" >Lưu<i class="tio-save-outlined"></i></button>
+                                        </li>
+                      
+                                        <li class="list-inline-item">
+                                          <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary" 
+                                          data-hs-step-form-next-options='{
+                                            "targetSelector": "#"
+                                          }'>
+                                                Tiếp tục <i class="tio-next-ui"></i>
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>
                               </div>
                           </div>
                           <!-- End Content Step Form -->
                   </div>
-                </div>
-                
-
-                <div id="alert" class="card-alert col-lg-8 mt-6">
-                    <div class="alert alert-soft-success media" role="alert" style="display: none">
-                      <i class="mr-2"><img src="../../../assets/img/160x160/Snack bar/Color style/icon/filled/suggested/Vector.jpg" alt=""></i>
-                      <div class="media-body" role="alert">
-                        Đăng tải thành công, chờ phê duyệt
-                      </div>
-                    </div>
-                </div>
-
-                <div class="navbar-vertical-footer footer">
-                  <div class="row justify-content-lg-center align-items-center">
-                    <div class="col-5 mr-3">
-                      <button id="btnReturn" type="button" class="btn btn-pill"><i class="tio-back-ui"></i>Quay lại</button>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="d-flex justify-content-end">
-                        <ul class="list-inline">
-                          <li class="list-inline-item">
-                            <button style="background-color: #F5F5F5;" type="button" id="btnLuu" class="btn btn-white" >Lưu<i class="tio-save-outlined"></i></button>
-                          </li>
-        
-                          <li class="list-inline-item">
-                            <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary">
-                                  Tiếp tục <i class="tio-next-ui"></i>
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </form>
+                 </div>
+                </div> 
+          </form>
         </div>
       </main>
     <!-- ========== END MAIN CONTENT ========== -->
@@ -1116,43 +1270,23 @@
             $('.js-masked-input').each(function () {
                 $.HSCore.components.HSMask.init($(this));
             });
+            $('.js-step-form').each(function () {
+              var stepForm = new HSStepForm($(this), {
+                finish: function() {
+                  $("#validationFormProgress").hide();
+                  $("#validationFormContent").hide();
+                  $("#validationFormSuccessMessage").show();
+                }
+              }).init();
+            });
         });
-    </script>
-    <script>
-      $(document).on('ready', function () {
-          var step = 1;
-          $("#btnNext").click(function () {
-              var count = $("#addUserStepFormProgress").children().length;
-              if (step < count) {
-                  $(this).attr("data-step", step + 1);
-                  $("#addUserStepFormProgress [data-step=" + (step + 1) + "]").addClass("active");
-                  var forms = $("#addUserStepFormProgress [data-step=" + (step + 1) + "]").data("id");
-                  $("#addUserStepFormContent").children().hide();
-                  $("#" + forms).show();
-                  $("#" + forms).addClass("active");
-                  step = step + 1;
-              }
-              
-          });
-          $("#btnReturn").click(function () {
-              if (step > 1) {
-                  $(this).attr("data-step", step - 1);
-                  $("#addUserStepFormProgress [data-step=" + (step) + "]").removeClass("active");
-                  var forms = $("#addUserStepFormProgress [data-step=" + (step - 1) + "]").data("id");
-                  $("#addUserStepFormContent").children().hide();
-                  $("#" + forms).show();
-                  $("#" + forms).addClass("active");
-                  step = step - 1;
-              }
-          });
-      });
     </script>
     <script>
       $(document).on('ready', function () {
         $.HSCore.components.HSDaterangepicker.init($('.js-daterangepicker-clear'));
     
         $('.js-daterangepicker-clear').on('apply.daterangepicker', function(ev, picker) {
-          $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+          $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
         });
     
         $('.js-daterangepicker-clear').on('cancel.daterangepicker', function(ev, picker) {
@@ -1168,12 +1302,6 @@
     <script>
         $("#header").load("../../../Layout/Element/Header/HeaderEGP.html");
         $("#verticalMenu").load("../../../Layout/Element/Sidebar/Submenu.html");
-    </script>
-      
-
-    <!-- IE Support -->
-    <script>
-      if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/polyfill.min.js"><\/script>');
     </script>
   </body>
 </html>

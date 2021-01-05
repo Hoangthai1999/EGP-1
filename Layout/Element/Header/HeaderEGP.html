@@ -21,9 +21,9 @@
 
           <!-- Search Form -->
           <div class="d-none d-md-block">
-            <a href="#" style="color: #064D69;">Trang chủ</a>
-            <a href="#" style="color: #064D69;margin-left: 2ex;">Hoạt động</a>
-            <a href="#" style="color: #064D69;margin-left: 2ex;">Báo cáo</a>
+            <a class="mr-2" href="#" style="color: #064D69;">Trang chủ</a>
+            <a class="mr-2" href="#" style="color: #064D69;">Hoạt động</a>
+            <a href="#" style="color: #064D69;">Báo cáo</a>
           </div>
           <!-- End Search Form -->
         </div>
@@ -32,10 +32,25 @@
         <div class="navbar-nav-wrap-content-right">
           <!-- Navbar -->
           <ul class="navbar-nav align-items-center flex-row">
+            <li class="nav-item">
+              <!-- Search Trigger -->
+              <div class="hs-unfold">
+                <a class="media align-items-center">
+                  <div class="media-body mr-2 mt-2">
+                    <span class="d-block text-right" style="color: red;">12 : 12 PM</span>
+                    <span class="d-block font-size-sm h1">Thứ hai, 16/11/2020</span>
+                  </div>
+                  <button type="button" class="btn btn-danger btn-icon">
+                    <i class="tio-time"></i>
+                  </button>
+                </a>
+              </div>
+              <!-- End Search Trigger -->
+            </li>
             <li class="nav-item d-md-none">
               <!-- Search Trigger -->
               <div class="hs-unfold">
-                <a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle" href="javascript:;"
+                <a class="js-hs-unfold-invoker btn btn-icon btn-soft-secondary rounded-circle" href="javascript:;"
                    data-hs-unfold-options='{
                      "target": "#searchDropdown",
                      "type": "css-animation",
@@ -52,7 +67,7 @@
             <li class="nav-item d-none d-sm-inline-block">
               <!-- Notification -->
               <div class="hs-unfold">
-                <a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle" href="javascript:;"
+                <a class="js-hs-unfold-invoker btn btn-icon btn-soft-secondary rounded-circle" href="javascript:;"
                    data-hs-unfold-options='{
                      "target": "#notificationDropdown",
                      "type": "css-animation"
@@ -131,7 +146,7 @@
                                     <label class="custom-control-label" for="notificationCheck1"></label>
                                     <span class="custom-checkbox-list-stretched-bg"></span>
                                   </div>
-                                  <div class="avatar avatar-sm avatar-circle">
+                                  <div class="avatar avatar-sm avatar-circle avatar-soft-dark">
                                     <img class="avatar-img" src="../../../assets/img/160x160/img3.jpg" alt="Image Description">
                                   </div>
                                 </div>
