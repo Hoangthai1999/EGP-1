@@ -109,7 +109,7 @@
                 <div class="row justify-content-lg-center">
                   <div class="col-lg-10">
                     <div class="row justify-content-lg-center">
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
                               <li class="step-item">
                                   <a class="step-content-wrapper" href="#addThongTin"
@@ -136,9 +136,9 @@
                           </ul>
                         </div>
                     </div>
-                  <!-- End Step -->
-                  <!-- Content Step Form -->
-                  <div class="hs-nav-scroller-unfold">
+                    <!-- End Step -->
+                    <!-- Content Step Form -->
+                    <div class="hs-nav-scroller-unfold">
                           <div id="addUserStepFormContent">
                               <div id="addThongTin" class="active">
                                 <div class="row justify-content-lg-center" >
@@ -179,7 +179,7 @@
                                               <label for="QuyMoLabel" class="col-sm-3 col-form-label input-label">Đơn vị công bố danh mục dự án <i style="color: red;">*</i></label>
       
                                               <div class="col-sm-9">
-                                                  <input type="text" class="form-control" name="DonVi" id="QuyMoLabel">
+                                                  <input type="text" class="form-control" name="DonVi" id="QuyMoLabel" required>
                                               </div>
                                           </div>
                                           <!-- End Form Group -->
@@ -190,10 +190,10 @@
                                             
                                             <div id="MoneyLabel2" class="row col-sm-9">
                                               <div class="col-md-4 js-form-message">
-                                                <input type="text" class="form-control" name="Money" id="MoneyLabel">
+                                                <input type="number" class="form-control" name="Money" id="MoneyLabel">
                                               </div>
              
-                                              <div class="col-md-2 js-form-message">
+                                              <div class="col-sm-1 js-form-message">
                                                   <!-- Select2 -->
                                                   <select class="js-select2-custom"
                                                           data-hs-select2-options='{
@@ -211,11 +211,11 @@
     
                                           <!-- Form Group -->
                                           <div class="form-group row">
-                                            <label for="customFile" class="col-sm-3 col-form-label input-label">Quyết định đính kèm <i style="color: red;">*</i></label>
+                                            <label class="col-sm-3 col-form-label input-label">Quyết định đính kèm <i style="color: red;">*</i></label>
                                             
                                             <div class="col-sm-9 js-form-message">
                                                     <div class="custom-file">
-                                                      <input type="file" class="js-file-attach custom-file-input" id="customFile"
+                                                      <input type="file" class="js-file-attach custom-file-input" required name="DinhKem"
                                                               data-hs-file-attach-options='{
                                                                 "textTarget": "[for=\"customFile\"]"
                                                              }'>
@@ -280,7 +280,7 @@
                                         <table class="table table-lg table-borderless table-thead-bordered table-nowrap table-align-middle">
                                           <thead class="thead-light">
                                             <tr>
-                                              <th>Số dự án</th>
+                                              <th>Thông tin  dự án</th>
                                               <th></th>
                                             </tr>
                                           </thead>
@@ -355,7 +355,7 @@
                                       <div class="row justify-content-start">
                                         <button id="btnReturn" type="button" class="btn btn-pill" 
                                         data-hs-step-form-prev-options='{
-                                          "targetSelector": "#addQuyetDinh"
+                                          "targetSelector": "#addThongTin"
                                         }'>
                                           <i class="tio-back-ui"></i>Quay lại</button>
                                       </div>
@@ -433,6 +433,7 @@
     <script src="../../../assets/vendor/hs-step-form/dist/hs-step-form.min.js"></script>
     <script src="../../../assets/vendor/daterangepicker/moment.min.js"></script>
     <script src="../../../assets/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="../../../assets/vendor/hs-file-attach/dist/hs-file-attach.min.js"></script>
     <!-- JS Fis -->
     <script src="../../../assets/js/theme.min.js"></script>
 
@@ -469,6 +470,14 @@
                 $.HSCore.components.HSMask.init($(this));
             });
         });
+    </script>
+    <script>
+      $(document).on('ready', function () {
+        // initialization of custom file
+        $('.js-file-attach').each(function () {
+          var customFile = new HSFileAttach($(this)).init();
+        });
+      });
     </script>
     <script>
       $(document).on('ready', function () {
