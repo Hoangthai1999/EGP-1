@@ -87,7 +87,7 @@
 
     <main id="content" role="main" class="main">
         <!-- Content -->
-        <div class="content container-fluid">
+        <div class="content container-fluid bg-light">
           <div class="row justify-content-lg-center">
             <div class="col-sm mb-2 mb-sm-0">
                 <nav aria-label="breadcrumb">
@@ -141,19 +141,19 @@
                       <i class="tio-chevron-right"></i>
                     </a>
                   </span>
-                <ul class="nav nav-tabs align-items-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="Add_KeHoach.html">Thông tin chung</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="Add_KeHoach_GoiThau.html">Thông tin gói thầu</a>
-                  </li>
-                </ul>
+                  <ul class="nav nav-tabs align-items-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="Add_KeHoach.html">Thông tin chung</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="Add_KeHoach_GoiThau.html">Thông tin gói thầu</a>
+                    </li>
+                  </ul>
               </div>
               <!-- End Nav -->
   
               <div class="content container-fluid">     
-                <form class="js-step-form py-md-0" id="stepForm"
+                <form class="js-step-form js-validate"
                     data-hs-step-form-options='{
                       "progressSelector": "#addUserStepFormProgress",
                       "stepsSelector": "#addUserStepFormContent",
@@ -162,7 +162,7 @@
                     }'>
                 <!-- Step -->
                 <div class="row justify-content-lg-center">
-                  <div class="col-lg-10">                
+                  <div class="col-lg-11">                
                     <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
                       <li class="step-item">
                         <a class="step-content-wrapper" href="#addDuAn;"
@@ -216,9 +216,9 @@
                 <!-- End Step -->
                 <div class="row justify-content-lg-center hs-nav-scroller-unfold">
                     <!-- Content Step Form -->
-                    <div id="addUserStepFormContent" class="col-lg-10">
+                    <div id="addUserStepFormContent" class="col-lg-11">
                       <!-- Card -->
-                      <div id="addDuAn" class="card card-lg active js-validate">
+                      <div id="addDuAn" class="card card-lg active">
                         <div class="card-header">
                           <div class="card-header-title mr-2" style="color: black;">Thông tin dự án</div>
                         </div>
@@ -226,72 +226,70 @@
                         <div class="card-body">
                           <!-- Form Group -->
                           <div class="row form-group">
-                            <label class="col-sm-3 col-form-label input-label" for="MaLabel" style="color: #595959;">Trạng thái phê duyệt dự án<span style="color: red;">*</span></label>
+                            <label class="col-sm-3 col-form-label input-label" for="MaLabel">Trạng thái phê duyệt dự án<span style="color: red;">*</span></label>
+      
+                            <div class="col-sm-9 js-form-message" data-validate-state>
+                                <select class="js-select2-custom" name="TrangThai" required
+                                    data-hs-select2-options='{
+                                    "minimumResultsForSearch": "Infinity",
+                                    "placeholder": "Chọn",
+                                    "name":"TrangThai"
+                                    }'>
+                                    <option></option>
+                                    <option value="1">Chưa đăng tải</option>
+                                    <option value="2">Đang đăng tải</option>
+                                    <option value="3">Đã đăng tải</option>
+                                </select>
+                            </div>
+                          </div>
+                          <!-- End Form Group -->
+      
+                          <!-- Form Group -->
+                          <div class="row form-group">
+                            <label class="col-sm-3 col-form-label input-label">Số dự án<span style="color: red;">*</span></label>
+      
+                            <div class="col-sm-9 js-form-message" data-validate-state>
+                                <select class="js-select2-custom" name="SoDA" required
+                                    data-hs-select2-options='{
+                                    "minimumResultsForSearch": "Infinity",
+                                    "placeholder": "Chọn dự án",
+                                    "name":"SoDA"
+                                    }'>
+                                    <option></option>
+                                    <option value="1">Chưa đăng tải</option>
+                                    <option value="2">Đang đăng tải</option>
+                                    <option value="3">Đã đăng tải</option>
+                                </select>
+                            </div>
+                          </div>
+                          <!-- End Form Group -->
+      
+                          <!-- Form Group -->
+                          <div class="row form-group">
+                            <label for="TenDALabel" class="col-sm-3 col-form-label input-label">Tên dự án<span style="color: red;">*</span></label>
       
                             <div class="col-sm-9">
-                              <div class="d-flex align-items-center input-group input-group-sm-down-break">
-                                <select class="js-select2-custom" name="form-control-select2" required
-                                    data-hs-select2-options='{
-                                    "minimumResultsForSearch": "Infinity",
-                                    "placeholder": "Chọn"
-                                    }'>
-                                    <option></option>
-                                    <option value="1">Chưa đăng tải</option>
-                                    <option value="2">Đang đăng tải</option>
-                                    <option value="3">Đã đăng tải</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- End Form Group -->
-      
-                          <!-- Form Group -->
-                          <div class="row form-group">
-                            <label for="firstNameLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Số dự án<span style="color: red;">*</span></label>
-      
-                            <div class="col-sm-9 js-form-message">
-                              <div class="input-group input-group-sm-down-break">
-                                <select class="js-select2-custom" name="form-control-select2" required
-                                    data-hs-select2-options='{
-                                    "minimumResultsForSearch": "Infinity",
-                                    "placeholder": "Chọn dự án"
-                                    }'>
-                                    <option></option>
-                                    <option value="1">Chưa đăng tải</option>
-                                    <option value="2">Đang đăng tải</option>
-                                    <option value="3">Đã đăng tải</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- End Form Group -->
-      
-                          <!-- Form Group -->
-                          <div class="row form-group">
-                            <label for="TenDALabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Tên dự án<span style="color: red;">*</span></label>
-      
-                            <div class="col-sm-9 input-group-light">
-                              <input type="text" class="form-control" name="TenDuAn" id="TenDALabel" required>
+                              <input type="text" class="form-control input-group-light" name="TenDuAn" id="TenDALabel" disabled>
                             </div>
                           </div>
                           <!-- End Form Group -->
                           
                           <!-- Form Group -->
                           <div class="row form-group">
-                            <label for="NguonVonLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Nguồn vốn dự án<span style="color: red;">*</span></label>
+                            <label for="NguonVonLabel" class="col-sm-3 col-form-label input-label">Nguồn vốn dự án<span style="color: red;">*</span></label>
       
-                            <div class="col-sm-9 input-group-light">
-                              <input type="text" class="form-control" name="NguonVon" id="NguonVonLabel" required>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control  input-group-light" name="NguonVon" id="NguonVonLabel" disabled>
                             </div>
                           </div>
                           <!-- End Form Group -->
       
                           <!-- Form Group -->
                           <div class="row form-group">
-                            <label for="ChuDTLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Chủ đầu tư/ Đơn vị chuẩn bị dự án<span style="color: red;">*</span></label>
+                            <label for="ChuDTLabel" class="col-sm-3 col-form-label input-label">Chủ đầu tư/ Đơn vị chuẩn bị dự án<span style="color: red;">*</span></label>
       
-                            <div class="col-sm-9 input-group-light">
-                              <input type="text" class="form-control" name="ChuDauTu" id="ChuDTLabel" required>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control  input-group-light" name="ChuDauTu" id="ChuDTLabel" disabled>
                             </div>
                           </div>
                           <!-- End Form Group -->
@@ -444,30 +442,6 @@
                                 <input type="text" class="form-control" name="ChuDauTu" id="ChuDTLabel" required>
                             </div>
                           </div>
-                          <!-- End Form Group -->
-      
-                          <!-- Form Group -->
-                          <!-- <div class="row form-group">
-                            <label class="col-sm-3 col-form-label input-label" style="color: #595959;">Có sử dụng vốn ODA ?</label>
-          
-                                <div class="col-sm-9">
-                                  <div class="input-group input-group-sm-down-break align-items-center">
-                                    <div class="col-sm-6 form-control">
-                                      <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio1">
-                                        <label style="color: #BFBFBF;" class="custom-control-label" for="userAccountTypeRadio1">Có</label>
-                                      </div>
-                                    </div>
-                                    <label class="col-sm-1 col-form-label input-label"></label>
-                                    <div class="col-sm-6 form-control">
-                                      <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio1">
-                                        <label style="color: #BFBFBF;" class="custom-control-label" for="userAccountTypeRadio1">Không</label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                          </div> -->
                           <!-- End Form Group -->
                         </div>
                         <!-- End Body -->
